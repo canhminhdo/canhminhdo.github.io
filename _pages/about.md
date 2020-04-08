@@ -34,7 +34,7 @@ at JAIST. The main purposes of this website are listed below:
 The content of this website is expressed under my personal opinions. Either mistakes or misunderstanding is inevitable, so I am open to receive your comments as well as advices to make the website better as well as improving my knowledge.
 
 # Citations
-If you would like to cite the blog posts and articles in this site or repositories on my Github,
+If you would like to cite the blog posts in this site or repositories on my Github,
 please use the URLs. I would not change the URLs, unless someday Github does not exist.
 
 # Contact Me
