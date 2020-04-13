@@ -7,13 +7,13 @@ tags:
     - C++
 excerpt:
 ---
-In this post, I show you how to calculate a leap year given a year.
+This post shows you how to calculate a leap year given a year.
 Before, we dive into code to solve the problem.
 
 What is a leap year?
 
 A year has 29 days in February called a leap year. The 29th day is called the leap day.
-Below is tricky to to differentiate a leap year.
+Below is tricky to differentiate a leap year.
 
 > on every year that is evenly divisible by 4 <br/>
 except every year that is evenly divisible by 100 unless <br/>
