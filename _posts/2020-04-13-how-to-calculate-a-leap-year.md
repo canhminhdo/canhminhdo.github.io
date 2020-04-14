@@ -25,12 +25,6 @@ The following is the snippet code in C++ implemented the program to check a leap
 
 {% highlight c++ %}
 bool is_leap_year(int year) {
-    if (year % 4 == 0) {
-        if (year % 100 == 0 && year % 400 != 0) {
-            return false;
-        }
-        return true;
-    }
-    return false;
+    return year % 4 == 0 && (year % 100 != 00 || year % 400 == 0);
 }
 {% endhighlight %}
