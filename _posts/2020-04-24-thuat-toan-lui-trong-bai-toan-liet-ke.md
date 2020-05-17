@@ -15,7 +15,6 @@ thực hiện các bước sau:
 - Xét tất cả các giá trị x[1] có thể nhận được. Với mỗi giá trị gán cho x[1] chúng ta sẽ:
 - Xét tất cả các giá trị x[2] có thể nhận được. Với mỗi giá trị gán cho x[2] chúng ta sẽ
 xét tiếp tất cả các giá trị cho x[3], ...
-
 - Xét tất cả các giá trị x[n] có thể nhận, với mỗi giá trị gán cho x[n], chúng ta có thêm
 một cấu hình tìm được (x[1], x[2], ..., x[n])
 
@@ -30,9 +29,9 @@ void function Attemp(i) {
         if <x[i] là phần tử cuối cùng trong cấu hình> {
             <thông báo cấu hình tìm được>
         } else {
-            <Ghi nhận việc cho x[i] nhân giá trị V (nếu cần)>;
+            <ghi nhận việc thử x[i] = V (nếu cần)>;
             Attemp(i + 1);
-            <Nếu cần phải ghi nhận việc thử x[i] := V để thử giá trị khác>;
+            <bỏ ghi nhận việc thử x[i] := V (nếu cần)>;
         }
     }
 }

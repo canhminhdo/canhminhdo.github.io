@@ -29,7 +29,7 @@ là quan trọng hơn bộ nhớ tạm, chúng ta có thể lắp thêm và chi 
 phức tạp tính toán. Nếu độ dài dãy là **1,000,000** số thì số vòng lặp sẽ là $$1,000,000^2$$.
 Một con số rất là lớn, sau đây chúng ta sẽ xem một cách tiếp cận khác sử dụng hashtable để
 có thể tìm được kết quả bài toán với độ phức tạp $$O(N)$$ - Time Complexity nhưng cần phải sử dụng thêm bộ
-nhớ tạm với độ phức tạp $$0(N)$$ - Space Complexity.
+nhớ tạm với độ phức tạp không gian $$O(N)$$ - Space Complexity.
 
 {% highlight python %}
 {% include codes/problems/sum.py %}
