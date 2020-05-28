@@ -28,7 +28,7 @@ void function BubbleSort() {
 }
 {% endhighlight %}
 
-Độ phức tạp của thuật toán luôn là $$O(n^2)$$ bấp chấp dữ liệu ban đầu như thế nào.
+Độ phức tạp của thuật toán luôn là $$O(n^2)$$ bấp chấp dữ liệu ban đầu như thế nào, giống như thuật toán sắp xếp [**Selection Sort**]({% post_url 2020-05-27-sorting-series-thuat-toan-selection-sort %}).<br/>
 Hãy cùng xem cách cài đặt trường trình bằng C++ như sau:
 
 {% highlight c++ %}

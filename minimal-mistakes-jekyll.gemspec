@@ -24,6 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-data"
   spec.add_runtime_dependency "jekyll-watch"
   spec.add_runtime_dependency "jekyll-scholar"
+  spec.add_runtime_dependency "jekyll-archives"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake", ">= 12.3.3"
