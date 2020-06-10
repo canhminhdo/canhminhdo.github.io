@@ -11,8 +11,8 @@ permalink: /about/
 
 # Who am I
 
-My name is Canh Minh Do, I am a 1st Ph.D. student at Japan Advanced Institute of Science
-and Technology (JAIST). My research interests are mainly in the areas of formal method
+My name is Canh Minh Do, I am a 1st **Ph.D.** student at **Japan Advanced Institute of Science
+and Technology (JAIST)**. My research interests are mainly in the areas of formal method
 and software verification. Besides, machine learning and deep learning that could be
 applied to verification tasks.
 
@@ -27,7 +27,7 @@ state of art technologies to improve our daily life.
 # About This Site
 This website was formally built in the Spring of 2020 when I was the 1st year Ph.D. student
 at JAIST. The main purposes of this website are listed below:
-* Discuss the formal method, software verification as well as machine learning and deep learning.
+* Discuss about formal method, software verification as well as machine learning and deep learning.
 * Present my research projects
 * Record my personal achievements when I start learning something new.
 
