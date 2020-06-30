@@ -32,19 +32,19 @@ dạng công thức sau:
 Cho $$X = (x_1, x_2, ..., x_n)$$ thay thế vào công thức trên ta có
 <center>$$P(y|x_1,...,x_n) = \frac{P(y) P(x_1,..,x_n|y)}{P(x_1,...,x_n)}$$</center>
 Dựa vào xác suất có điều kiện chúng ta có thể khai triển như sau
-<center>$$P(x_1,...,x_n|y) = P(x_1|y, x_2,...,x_n)P(x_2,...,x_n|y)$$</center>
+<center>$$P(x_1,...,x_n|y) = P(x_1|y,x_2,...,x_n)P(x_2,...,x_n|y)$$</center>
 <center>$$P(x_1,...,x_n) = P(x_1|x_2,...,x_n)P(x_2,...,x_n)$$</center>
 Naive Bayes cho chúng ta một giả thuyết rằng tất cả các biến ngẫu nhiên $$x_i$$ là độc lập với nhau.
 Vì vậy ta có thể suy ra như sau:
 <center>$$P(x_1|y, x_2,...,x_n) = P(x_1|y)$$</center>
 <center>$$P(x_1|x_2,...,x_n) = P(x_1)$$</center>
 Công thức ban đầu sẽ trở thành
-<center>$$P(y|x_1,...,x_n) = \frac{P(x_1|y)...P(x_n|y)P(y)}{P(x_1)...P(x_n)}$$</center>
+<center>$$P(y|x_1,...,x_n) = \frac{P(y) \prod^n_{i=1}P(x_i|y)}{P(x_1)...P(x_n)}$$</center>
 Để ước lượng xác suất của tất cả giá trị y với đầu vào X, ta có thể thấy rằng
 $$P(X) = P(x_1)...P(x_n)$$ là một hằng số. Vì vậy, để tìm được sắc suất lớn nhất của giá trị y
 với đầu vào X ta có công thức sau.
-<center>$$P(y|x_1,...,x_n) \approx P(x_1|y),...,P(x_n|y)P(y)$$</center>
-<center>$$y^{estimate} = argmax(P(x_1|y),...,P(x_n|y)P(y))$$</center>
+<center>$$P(y|x_1,...,x_n) \propto P(y) \prod^n_{i=1}P(x_i|y)$$</center>
+<center>$$\hat{y} = \underset{y}{argmax}(P(y) \prod^n_{i=1}P(x_i|y))$$</center>
 
 **4. Áp dụng vào bài toán sau**
 
@@ -74,12 +74,12 @@ Có thể hiểu là tổng số class $$c$$ trên tổng toàn bộ các classs
 
 Xác suất có điều kiện được tính như sau (Conditional Probabilities):
 
-$$P(w|c) = \frac{count(w,c) + 1}{count(c) + |V|}$$
+$$P(w|c) = \frac{count(w,c) + \alpha}{count(c) + \alpha * |V|}$$
 
 Cho vào một từ $$w$$, chúng ta đếm số lượng từ $$w$$ xuất hiện trong lớp $$c$$. Chia cho tổng số lượng từ
-thuộc vào lớp $$c$$. Ngoài ra chúng ta sử dụng kỹ thuật normalization để tránh trường hợp $$P(w|c) = 0$$
+thuộc vào lớp $$c$$. Ngoài ra chúng ta sử dụng kỹ thuật **Laplace Smoothing** với $$\alpha = 1$$ để tránh trường hợp $$P(w|c) = 0$$
 bằng cách cộng 1 vào tử và cộng số lượng từ trong từ điển vào mẫu. Nó sẽ không ảnh hưởng tới kết quả cuối
-cùng. Ngoài ra bạn có thể sử dụng hàm $$log$$ để tránh gặp phải giá trị bằng 0.
+cùng. Ngoài ra bạn có thể sử dụng hàm $$log$$ để tránh gặp phải giá trị xác suất bằng 0.
 
 $$P(line|f) = (1+1)/(8+6) = 2/14$$
 
