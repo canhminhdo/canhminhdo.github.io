@@ -68,9 +68,9 @@ $$P(g|line, guitar, jazz, jazz) = p(line|g) P(guitar|g) P(jazz|g) P(jazz|f) P(g)
 
 Xác suất tiền nghiệm được tính như sau (Priors):
 
-$$P(c) = \frac{N_x}{N}$$
+$$P(c) = \frac{N_c}{N}$$
 
-Ta sẽ có kết quả là $$P(f) = 3/4$$ và $$P(g) = 1/4$$.
+Có thể hiểu là tổng số class $$c$$ trên tổng toàn bộ các classs. Ta sẽ có kết quả là $$P(f) = 3/4$$ và $$P(g) = 1/4$$.
 
 Xác suất có điều kiện được tính như sau (Conditional Probabilities):
 
