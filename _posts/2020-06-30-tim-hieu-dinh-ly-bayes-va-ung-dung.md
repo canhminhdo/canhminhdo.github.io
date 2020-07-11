@@ -46,6 +46,8 @@ với đầu vào X ta có công thức sau.
 <center>$$P(y|x_1,...,x_n) \propto P(y) \prod^n_{i=1}P(x_i|y)$$</center>
 <center>$$\hat{y} = \underset{y}{argmax}(P(y) \prod^n_{i=1}P(x_i|y))$$</center>
 
+**Chú ý:** $$\propto$$ là phép tính tỷ lệ (proportion)
+
 **4. Áp dụng vào bài toán sau**
 
 Ta có một tập training set như sau:
