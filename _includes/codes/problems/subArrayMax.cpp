@@ -30,7 +30,6 @@ void findSubArrayMaxWithIndices() {
             best_start = current_start;
             best_end = i;
         }
-        best = max(best, sum);
     }
     cout << best << "\n";
     cout << "start from " << best_start << " to " << best_end << "\n";
