@@ -40,7 +40,7 @@ permalink: /publication/
 
 * [A Divide & Conquer Approach to Eventually Model Checking](#) <br/>
     _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _MDPI (2020) (**prepared**)_
+    _MDPI Journal Mathematics (2020) (**prepared**)_
 
 ### Master Thesis
 
