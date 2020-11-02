@@ -16,4 +16,4 @@ permalink: /cv/
 - **2013 - 2014**: Working at Dotoh Vietnam., JSC
 - **2012 - 2013**: Internship at Langmaster., JSC
 
-[Download My CV](/assets/files/canhminhdo.pdf)
+[Download My CV](/assets/files/cv/canhminhdo.pdf)
