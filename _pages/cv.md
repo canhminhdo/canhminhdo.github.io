@@ -15,3 +15,5 @@ permalink: /cv/
 - **2015 - 2018**: Self-working at Techacademy Co., Ltd
 - **2013 - 2014**: Working at Dotoh Vietnam., JSC
 - **2012 - 2013**: Internship at Langmaster., JSC
+
+[Download My CV](/assets/files/canhminhdo.pdf)
