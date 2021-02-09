@@ -16,34 +16,38 @@ permalink: /publication/
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _2019 International Conference on Advanced Information Technologies (ICAIT)_
 
-* [Parallel Stratified Random Testing for Concurrent Programs](https://qrs20.techconf.org/QRSC2020_FULL/pdfs/QRS-C2020-4QOuHkY3M10ZUl1MoEzYvg/891500a079/891500a079.pdf) <br/>
+* [Parallel Stratified Random Testing for Concurrent Programs](https://ieeexplore.ieee.org/document/9282690) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _20th IEEE International Conference on Software Quality, Reliability, and Security (QRS 2020)_
 * [A Divide & Conquer Approach to Testing Concurrent Programs with JPF](#) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _The 27th Asia-Pacific Software Engineering Conference (APSEC 2020)_
 
+* [A Divide & Conquer Approach to Eventually Model Checking](#) <br/>
+    _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
+    _MDPI Journal Mathematics (2021)_
+
 ### Journal Papers
-* [A Divide & Conquer Approach to Leads-to Model Checking](#) <br/>
+* [A Divide & Conquer Approach to Leads-to Model Checking](https://academic.oup.com/comjnl/advance-article/doi/10.1093/comjnl/bxaa183/6125355) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _The Computer Journal (**accepted**) (**peer reviewed**)_
+    _The Computer Journal (2021)_
 
 ### Papers Under Review
 * [Parallel Specification-based Testing for Concurrent Programs](#) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _Journal of Systems and Software (2020) (**submitted**)_
 
-### Pending Papers
 * [A Support Tool for the L+1-Layer Divide & Conquer Approach to Lead-To Model Checking](#) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _IEEE Access (2020) (**prepared**)_
+    _COMPSAC (2021) (**submitted**)_
 
-* [A Divide & Conquer Approach to Eventually Model Checking](#) <br/>
-    _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _MDPI Journal Mathematics (2020) (**prepared**)_
+### Pending Papers
+* [A scalable parallel technique to leads-to model checking](#) <br/>
+    _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
+    _Not decided yet (2021) (**preparing**)_
+
 
 ### Master Thesis
-
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
     JAIST, 2019<br/>
     [[JaistLibrary]](https://dspace.jaist.ac.jp/dspace/)
