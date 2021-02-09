@@ -19,18 +19,19 @@ permalink: /publication/
 * [Parallel Stratified Random Testing for Concurrent Programs](https://ieeexplore.ieee.org/document/9282690) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _20th IEEE International Conference on Software Quality, Reliability, and Security (QRS 2020)_
+
 * [A Divide & Conquer Approach to Testing Concurrent Programs with JPF](#) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _The 27th Asia-Pacific Software Engineering Conference (APSEC 2020)_
-
-* [A Divide & Conquer Approach to Eventually Model Checking](#) <br/>
-    _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _MDPI Journal Mathematics (2021)_
 
 ### Journal Papers
 * [A Divide & Conquer Approach to Leads-to Model Checking](https://academic.oup.com/comjnl/advance-article/doi/10.1093/comjnl/bxaa183/6125355) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _The Computer Journal (2021)_
+
+* [A Divide & Conquer Approach to Eventually Model Checking](#) <br/>
+    _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
+    _MDPI Journal Mathematics (2021)_
 
 ### Papers Under Review
 * [Parallel Specification-based Testing for Concurrent Programs](#) <br/>
