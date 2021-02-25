@@ -43,9 +43,9 @@ permalink: /publication/
     _COMPSAC (2021) (**submitted**)_
 
 ### Pending Papers
-* [A scalable parallel technique to leads-to model checking](#) <br/>
-    _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _Not decided yet (2021) (**preparing**)_
+* [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
+    _Canh Minh Do, Yati Phyo, Adrán Riesco and Kazuhiro Ogata_<br/>
+    _ESEC/FSE (2021) (**preparing**)_
 
 
 ### Master Thesis
