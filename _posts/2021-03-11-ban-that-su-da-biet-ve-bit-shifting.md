@@ -24,6 +24,7 @@ Khi dịch bit sang bên phải thì bit của dấu sẽ được chèn vào.
 ```
 
 **2. Logic shift**
+
 Khi không phải là số âm. Việc dịch bit sang trái và phải sẽ giống nhau là chèn bit 0 vào.
 Đơn giản hơn so với việc dịch bit của số âm.
 
