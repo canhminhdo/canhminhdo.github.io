@@ -8,7 +8,7 @@ Trong máy tính, mọi kí hiệu, con số đều được biểu diễn dư�
 Vậy làm thế nào để biểu diễn và phân biệt được số dương và số âm trong máy tính.
 Có nhiều cách để biểu diễn số âm trong máy tính, bạn có thể tham khảo [tại đây](https://vi.wikipedia.org/wiki/Bi%E1%BB%83u_di%E1%BB%85n_s%E1%BB%91_%C3%A2m).
 
-Tuy nhiên, các máy tính hiện nay đều sử dụng **phương pháp bù 2**. Vì vậy
+Tuy nhiên, các máy tính hiện nay đều sử dụng **phương pháp bù 2 (Two's complement)**. Vì vậy
 chúng ta sẽ cùng tìm hiểu cách biểu diễn số âm bằng phương pháp bù 2 trong bài viết này nhé.
 
 Giải sử một số được biểu diễn trong máy tính với 8 bit. Thì một bit đầu tiên từ bên phải
