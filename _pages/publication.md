@@ -42,11 +42,11 @@ permalink: /publication/
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _COMPSAC (2021) (**submitted**)_
 
-### Pending Papers
 * [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
-    _Canh Minh Do, Yati Phyo, Adrán Riesco and Kazuhiro Ogata_<br/>
-    _ESEC/FSE (2021) (**preparing**)_
+    _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
+    _ESEC/FSE (2021) (**submitted**)_
 
+### Pending Papers
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
