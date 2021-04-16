@@ -24,6 +24,11 @@ permalink: /publication/
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _The 27th Asia-Pacific Software Engineering Conference (APSEC 2020)_
 
+
+* [A Support Tool for the L+1-Layer Divide & Conquer Approach to Lead-To Model Checking](#) <br/>
+    _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
+    _COMPSAC (2021)_
+
 ### Journal Papers
 * [A Divide & Conquer Approach to Leads-to Model Checking](https://academic.oup.com/comjnl/advance-article/doi/10.1093/comjnl/bxaa183/6125355) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
@@ -38,15 +43,13 @@ permalink: /publication/
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _Journal of Systems and Software (2020) (**submitted**)_
 
-* [A Support Tool for the L+1-Layer Divide & Conquer Approach to Lead-To Model Checking](#) <br/>
-    _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _COMPSAC (2021) (**submitted**)_
-
 * [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
     _ESEC/FSE (2021) (**submitted**)_
 
 ### Pending Papers
+
+- None
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
