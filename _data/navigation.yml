@@ -6,6 +6,8 @@ main:
     url: /project/
   - title: "Publications"
     url: /publication/
+  - title: "Books"
+    url: /book/
   - title: "About"
     url: /about/
   # - title: "Sample Posts"
