@@ -20,7 +20,7 @@ permalink: /publication/
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _20th IEEE International Conference on Software Quality, Reliability, and Security (QRS 2020)_
 
-* [A Divide & Conquer Approach to Testing Concurrent Programs with JPF](#) <br/>
+* [A Divide & Conquer Approach to Testing Concurrent Programs with JPF](https://ieeexplore.ieee.org/abstract/document/9359254) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _The 27th Asia-Pacific Software Engineering Conference (APSEC 2020)_
 
@@ -34,7 +34,7 @@ permalink: /publication/
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _The Computer Journal (2021)_
 
-* [A Divide & Conquer Approach to Eventually Model Checking](#) <br/>
+* [A Divide & Conquer Approach to Eventually Model Checking](https://www.mdpi.com/2227-7390/9/4/368/htm) <br/>
     _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _MDPI Journal Mathematics (2021)_
 
