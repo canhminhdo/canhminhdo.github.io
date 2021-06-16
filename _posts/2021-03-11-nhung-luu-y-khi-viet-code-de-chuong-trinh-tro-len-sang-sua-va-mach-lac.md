@@ -7,7 +7,7 @@ category:
 Việc viết code không những để cho máy tính đọc mà cũng cho lập trình viên đọc code của bạn.
 Chính vì vậy việc viết code một cách có cấu trúc, dễ đọc không những giúp bạn có thể quản lý
 mã nguồn và lỗi tốt mà còn dễ dàng sửa đổi. Sau đây chúng ta cùng xem một vài lưu ý khi viết
-chương của mình
+chương của mình.
 
 **1. Names**
 
@@ -107,7 +107,7 @@ strcpy(p, buf);
 **Use else-ifs for multi-way decisions**\\
 Cách bạn thay đổi thứ tự trong các điều kiện của if-else có thể tạo đoạn code sáng sủa hơn.
 
-**1.4 Function Macros**
+**4 Function Macros**
 
 Macros được sử dụng để tránh overhead của việc gọi tới các function, đây có thể là một lý do
 để bạn có thể cân nhắc việc sử dụng Macros. Tuy nhiên với máy tính có hiệu năng thấp thì việc
@@ -128,7 +128,7 @@ có thể dẫn tới việc biểu thức được chạy hai lần và gây ra
 **Parenthesize the macro body and arguments**\\
 Để tránh thứ tự ưu tiên trong biểu thức bị thay đổi khi sử dụng macros.
 
-**1.5 Magic Numbers**
+**5 Magic Numbers**
 
 **Give name to magic numbers**\\
 Việc sử dụng những số khác 0 hoặc 1 trong code sẽ làm cho người đọc khó hiểu, vì vậy
@@ -162,7 +162,7 @@ name[i] = '\0';
 **Use the language to calculate the size of an object**\\
 Ví dụ nên sử dụng sizeof(int) thay vì 2 hoặc 3.
 
-**1.6 Comments**
+**6 Comments**
 
 **Don't belabor the obvious**\\
 Cách sử dụng tên hàm, tên biến và các vòng lặp có thể cho thấy được ý định của đoạn code bạn muốn viết.
