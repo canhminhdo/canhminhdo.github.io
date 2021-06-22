@@ -29,6 +29,10 @@ permalink: /publication/
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _COMPSAC (2021)_
 
+* [A divide & conquer approach to conditional stable model checking](#) <br/>
+    _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
+    _ICTAC (2021)_
+
 ### Journal Papers
 * [A Divide & Conquer Approach to Leads-to Model Checking](https://academic.oup.com/comjnl/advance-article/doi/10.1093/comjnl/bxaa183/6125355) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
@@ -45,7 +49,7 @@ permalink: /publication/
 
 * [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
-    _ESEC/FSE (2021) (**submitted**)_
+    _TBD (2021)_
 
 ### Pending Papers
 
