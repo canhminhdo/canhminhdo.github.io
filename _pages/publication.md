@@ -49,7 +49,11 @@ permalink: /publication/
 
 * [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
-    _TBD (2021)_
+    _ISSSR (2021)_
+
+* [Graphical Animations of the NS(L)PK Authentication Protocols](#) <br/>
+    _Thet Wai Mon, Dang Duy Bui, Duong Dinh Tran, Canh Minh Do and Kazuhiro Ogata_<br/>
+    _Journal of Visual Language and Computing (2021)_
 
 ### Pending Papers
 
