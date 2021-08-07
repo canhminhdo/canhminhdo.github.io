@@ -186,3 +186,5 @@ comments có thể làm cho người đọc hiểu nhầm.
 Tóm lại, nếu code được viết một cách sáng sủa, mạch lạc và có cấu trúc sẽ giúp bạn quản lý code tốt hơn và tránh
 sai sót, trong khi đó cũng giúp người khác có thể hiểu code của bạn dễ dàng hơn. Đây có thể coi như là một thói
 quen khi bạn viết code, vì vậy hãy tập cho mình có một thói quen tốt ngay từ bây giờ.
+
+**Reference:** The Practice of Programming, Brian Kernighan and Rob Pike.
