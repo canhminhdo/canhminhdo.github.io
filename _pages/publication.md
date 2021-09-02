@@ -18,7 +18,7 @@ permalink: /publication/
 
 * [Parallel Stratified Random Testing for Concurrent Programs](https://ieeexplore.ieee.org/document/9282690) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
-    _20th IEEE International Conference on Software Quality, Reliability, and Security (QRS 2020)_
+    _20th IEEE International Conference on Software Quality, Reliability, and Security Companion (QRS-C 2020)_
 
 * [A Divide & Conquer Approach to Testing Concurrent Programs with JPF](https://ieeexplore.ieee.org/abstract/document/9359254) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
