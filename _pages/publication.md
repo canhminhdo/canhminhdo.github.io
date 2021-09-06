@@ -33,6 +33,10 @@ permalink: /publication/
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _ICTAC (2021)_
 
+* [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
+    _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
+    _ISSSR (2021)_
+
 ### Journal Papers
 * [A Divide & Conquer Approach to Leads-to Model Checking](https://academic.oup.com/comjnl/advance-article/doi/10.1093/comjnl/bxaa183/6125355) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
@@ -47,13 +51,9 @@ permalink: /publication/
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _Journal of Systems and Software (2020) (**submitted**)_
 
-* [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
-    _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
-    _ISSSR (2021)_
-
 * [Graphical Animations of the NS(L)PK Authentication Protocols](#) <br/>
     _Thet Wai Mon, Dang Duy Bui, Duong Dinh Tran, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _Journal of Visual Language and Computing (2021)_
+    _Journal of Visual Language and Computing (2021) (**submitted**)_
 
 ### Pending Papers
 
