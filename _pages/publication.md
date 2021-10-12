@@ -46,18 +46,24 @@ permalink: /publication/
     _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _MDPI Journal Mathematics (2021)_
 
+* [Graphical Animations of the NS(L)PK Authentication Protocols](http://ksiresearch.org/jvlc/journal/JVLC2021N2/paper005.pdf) (Research Note)<br/>
+    _Thet Wai Mon, Dang Duy Bui, Duong Dinh Tran, Canh Minh Do and Kazuhiro Ogata_<br/>
+    _Journal of Visual Language and Computing (2021)_
+
 ### Papers Under Review
 * [Parallel Specification-based Testing for Concurrent Programs](#) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _Journal of Systems and Software (2020) (**submitted**)_
 
-* [Graphical Animations of the NS(L)PK Authentication Protocols](#) <br/>
-    _Thet Wai Mon, Dang Duy Bui, Duong Dinh Tran, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _Journal of Visual Language and Computing (2021) (**submitted**)_
+* [A support tool for the L + 1-layer divide & conquer approach to conditional stable model checking](#) <br/>
+    _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
+    _ICECCS (2021) (**submitted**)_
 
 ### Pending Papers
 
-- None
+* [Parallel Maude-NPA for Cryptographic Protocol Analysis](#) <br/>
+    _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
+    _WRLA (2021)_
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
