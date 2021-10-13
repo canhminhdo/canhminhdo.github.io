@@ -43,3 +43,7 @@ là **\\(1010 + 1100 = 0110\\)**. Rõ ràng **0110** khi ta chuyển sang số t
 chứ không phải là **-10** như chúng ta mong muốn. Đây là một kết quả không chính xác,
 khi chúng ta sử dụng số lượng bit để biểu diễn quá ít.
 
+Dựa vào cách tính toán trên, chúng ta có thể thấy rằng **~(-X) + 1 = X**. Vì vậy,
+ứng dụng trong lập trình nếu ta nghịch đảo các bit của một số âm **-X** thì sẽ nhận
+được một giá trị dương là **X - 1**.
+
