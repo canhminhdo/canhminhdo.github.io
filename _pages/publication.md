@@ -57,13 +57,17 @@ permalink: /publication/
 
 * [A support tool for the L + 1-layer divide & conquer approach to conditional stable model checking](#) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _ICECCS (2021) (**submitted**)_
+    _ICECCS (2022) (**submitted**)_
 
 ### Pending Papers
 
 * [Parallel Maude-NPA for Cryptographic Protocol Analysis](#) <br/>
     _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
-    _WRLA (2021)_
+    _WRLA (2022)_
+
+* [A support tool for the L + 1-layer divide & conquer approach to eventual model checking](#) <br/>
+    _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
+    _COMPSAC (2022)_
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
