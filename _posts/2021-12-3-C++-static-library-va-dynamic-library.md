@@ -8,7 +8,10 @@ Tôi có hội làm việc với C++ thông qua một dự án nhỏ cần phả
 chức năng. Dự án đó sử dụng autotools để quản lý các configuration, make và
 dependencies. Trong quá trình phát triển và build dự án để có thể chạy được trên
 các máy khác nhau, tôi cần phải chọn cách build dự án thông qua static library
-hay dynamic library.
+hoặc dynamic library? Để có thể chạy trên các nền tảng máy khác nhau e.g. x86,
+x86_64, cần phải build các library cho từng nền tảng máy đó vì mỗi nền tảng
+hỗ trợ những tập lệnh khác nhau và build chương trình của mình link cùng với
+các library đó cho các nền tảng tương ứng.
 
 **1. Quá trình build một chương trình C++**
 Trong C/C++ để build một chương trình sẽ trải qua những bước như sau:
@@ -33,7 +36,7 @@ Khi build chương trình bạn có thể tùy chọn là sử dụng static lib
 library. Một một cái sẽ có pros và cons khác nhau.
 
 **2. Static library (.a, .lib)**
-Static library là tập hợp các object files được link cùng với trương trình khi
+Static library là tập hợp các object files được link cùng với chương trình khi
 bạn build một file có thể chạy được. Vì vậy library code sẽ được link vào chương
 trình trong quá trình complie time, vì vậy chương trình được build sẽ chứa nhiều
 files và nặng hơn. Tuy nhiên tốc độ sẽ nhanh hơn vì bạn không phải mất thời gian
@@ -58,13 +61,13 @@ Chúng ta có thể overwrite những mặc định khi build chương trình v�
 
 **CFLAGS** là C complier flags.
 
-**LDFLAGS*** là linker flags, e.g. -L<lib dir> nếu bạn có library không phải standard library
+**LDFLAGS*** là linker flags, e.g. -L\<lib dir> nếu bạn có library không phải standard library
 và nằm ở thư mục đâu đó.
 
-**LIBS** libarary bạn muốn nói cho linkers biết, e.g. -l<library>. Trong trường hợp sử dụng
+**LIBS** libarary bạn muốn nói cho linkers biết, e.g. -l\<library>. Trong trường hợp sử dụng
 static library, bạn nên chỉ đến đúng đường dẫn của libary đó, e.g. /path/to/libary.a
 
-**CPPFLAGS** là C/C++ preprocessor flags, e.g -I<include dir> nếu bạn sử dụng headers file
+**CPPFLAGS** là C/C++ preprocessor flags, e.g -I\<include dir> nếu bạn sử dụng headers file
 của nhưng nonstandard libary nằm ở thư mục đâu đó.
 
 **CXX** là C++ complier command.
