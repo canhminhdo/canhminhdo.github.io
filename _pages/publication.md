@@ -25,15 +25,15 @@ permalink: /publication/
     _The 27th Asia-Pacific Software Engineering Conference (APSEC 2020)_
 
 
-* [A Support Tool for the L+1-Layer Divide & Conquer Approach to Lead-To Model Checking](#) <br/>
+* [A Support Tool for the L+1-Layer Divide & Conquer Approach to Lead-To Model Checking](https://ieeexplore.ieee.org/document/9529394) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _COMPSAC (2021)_
 
-* [A divide & conquer approach to conditional stable model checking](#) <br/>
+* [A divide & conquer approach to conditional stable model checking](https://link.springer.com/chapter/10.1007/978-3-030-85315-0_7) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _ICTAC (2021)_
 
-* [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
+* [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](https://ieeexplore.ieee.org/document/9626419) <br/>
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
     _ISSSR (2021)_
 
