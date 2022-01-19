@@ -61,21 +61,21 @@ permalink: /publication/
 
 * [A support tool for the L + 1-layer divide & conquer approach to conditional stable model checking](#) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _ICECCS (2022) (**submitted**)_
+    _COMPSAC (2022) (**submitted**)_
 
 * [A support tool for the L + 1-layer divide & conquer approach to eventual model checking](#) <br/>
     _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _COMPSAC (2022) (**submitted**)_
 
-### Pending Papers
-
 * [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
     _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
-    _TOSEM (2022)_
+    _ACM TOSEM (2022) (**submitted**)_
+
+### Pending Papers
 
 * [A Parallel Stratified Model Checking Technique/Tool for Conditonal Stable Properties](#) <br/>
     _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
-    _TBA (2022)_
+    _PeerJ (2022)_
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
