@@ -68,7 +68,7 @@ permalink: /publication/
     _COMPSAC (2022) (**submitted**)_
 
 * [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
-    _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
+    _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
     _ACM TOSEM (2022) (**submitted**)_
 
 ### Pending Papers
@@ -80,4 +80,4 @@ permalink: /publication/
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
     JAIST, 2019<br/>
-    [[JaistLibrary]](https://dspace.jaist.ac.jp/dspace/)
+    [[JaistLibrary]](https://dspace.jaist.ac.jp/dspace/handle/10119/17563)
