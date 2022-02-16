@@ -9,9 +9,11 @@ permalink: /publication/
 * [Specification-based Testing with Simulation Relations](http://ksiresearch.org/seke/seke19paper/seke19paper_27.pdf) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _The 31st International Conference on Software Engineering and Knowledge Engineering, SEKE 2019, Lisbon, Portugal, July 10, 2019_<br/>
+
 * [A Divide & Conquer Approach to Testing Concurrent Java Programs with JPF and Maude](https://link.springer.com/chapter/10.1007/978-3-030-41418-4_4)<br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _9th International Workshop, SOFL+MSVL 2019, Shenzhen, China, November 5, 2019_
+
 * [Toward development of a tool supporting a 2-layer divide & conquer approach to leads-to model checking](https://ieeexplore.ieee.org/abstract/document/8920978)<br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _2019 International Conference on Advanced Information Technologies (ICAIT)_
@@ -24,7 +26,6 @@ permalink: /publication/
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _The 27th Asia-Pacific Software Engineering Conference (APSEC 2020)_
 
-
 * [A Support Tool for the L+1-Layer Divide & Conquer Approach to Lead-To Model Checking](https://ieeexplore.ieee.org/document/9529394) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _COMPSAC (2021)_
@@ -36,6 +37,10 @@ permalink: /publication/
 * [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](https://ieeexplore.ieee.org/document/9626419) <br/>
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
     _ISSSR (2021)_
+
+* [Parallel Maude-NPA for Cryptographic Protocol Analysis](#) <br/>
+    _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
+    _WRLA (2022) (**to appear**)_
 
 ### Journal Papers
 * [A Divide & Conquer Approach to Leads-to Model Checking](https://academic.oup.com/comjnl/advance-article/doi/10.1093/comjnl/bxaa183/6125355) <br/>
@@ -55,10 +60,6 @@ permalink: /publication/
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _IEEE Access (2021) (**submitted**)_
 
-* [Parallel Maude-NPA for Cryptographic Protocol Analysis](#) <br/>
-    _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
-    _WRLA (2022) (**submitted**)_
-
 * [A support tool for the L + 1-layer divide & conquer approach to conditional stable model checking](#) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _COMPSAC (2022) (**submitted**)_
@@ -72,10 +73,13 @@ permalink: /publication/
     _ACM TOSEM (2022) (**submitted**)_
 
 ### Pending Papers
-
 * [A Parallel Stratified Model Checking Technique/Tool for Conditonal Stable Properties](#) <br/>
     _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
     _PeerJ (2022)_
+
+* [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
+    _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
+    _TBA (2022) (**to appear**)_
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
