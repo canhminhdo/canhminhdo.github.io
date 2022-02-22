@@ -79,7 +79,7 @@ permalink: /publication/
 
 * [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
     _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
-    _TBA (2022) (**to appear**)_
+    _ACM TOPS (2022)_
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
