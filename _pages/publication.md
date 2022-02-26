@@ -55,10 +55,11 @@ permalink: /publication/
     _Thet Wai Mon, Dang Duy Bui, Duong Dinh Tran, Canh Minh Do and Kazuhiro Ogata_<br/>
     _Journal of Visual Language and Computing (2021)_
 
-### Papers Under Review
 * [Parallel Specification-based Testing for Concurrent Programs](#) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
-    _IEEE Access (2021) (**submitted**)_
+    _IEEE Access (2022) (**to appear**)_
+
+### Papers Under Review
 
 * [A support tool for the L + 1-layer divide & conquer approach to conditional stable model checking](#) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
