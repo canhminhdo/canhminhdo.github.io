@@ -17,7 +17,7 @@ các library đó cho các nền tảng tương ứng.
 Trong C/C++ để build một chương trình sẽ trải qua những bước như sau:
 
 - Processor: source code sẽ được tiền xử lý như là xóa đi các comments,
-expand những include từ headers files, repace các macros bạn định nghĩa
+expand những include từ headers files, replace các macros bạn định nghĩa
 vào những chỗ bạn sử dụng trong source code.
 
 - Complie: preprocessed code sẽ được complie về dạng assembly code, bạn
@@ -25,7 +25,7 @@ có thể đọc được những mã lệnh assembly code này nếu bạn đã
 với assembly.
 
 - Assembler: assembly code sẽ được chuyển về dạng mã máy để có thể chạy được
-trên máy tính của bạn. Bạn có thể ogij đây là các object code.
+trên máy tính của bạn. Bạn có thể gọi đây là các object code.
 
 - Linker: Các object code này sẽ được link với các dependencies hoặc có thể hiểu
 là các library bạn sử dụng trong chương trình, bạn cần link vào thì chương trình

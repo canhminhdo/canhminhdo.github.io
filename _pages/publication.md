@@ -55,9 +55,9 @@ permalink: /publication/
     _Thet Wai Mon, Dang Duy Bui, Duong Dinh Tran, Canh Minh Do and Kazuhiro Ogata_<br/>
     _Journal of Visual Language and Computing (2021)_
 
-* [Parallel Specification-based Testing for Concurrent Programs](#) <br/>
+* [Parallel Specification-based Testing for Concurrent Programs](https://doi.org/10.1109/ACCESS.2022.3155629) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
-    _IEEE Access (2022) (**to appear**)_
+    _IEEE Access (2022)_
 
 ### Papers Under Review
 
@@ -81,6 +81,10 @@ permalink: /publication/
 * [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
     _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
     _ACM TOPS (2022)_
+
+* [A Divide & Conquer Approach to Until and Until Stable Model Checking](#) <br/>
+    _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
+    _SEKE (2022)_
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
