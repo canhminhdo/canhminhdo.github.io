@@ -11,7 +11,7 @@ permalink: /about/
 
 # Who am I
 
-My name is Canh Minh Do, I am the 2nd **Ph.D.** student at **Japan Advanced Institute of Science
+My name is Canh Minh Do, I am the 3rd **Ph.D.** student at **Japan Advanced Institute of Science
 and Technology (JAIST)**. My research interests are mainly in the areas of formal method
 and software verification. Besides, machine learning and deep learning that could be
 applied to verification tasks.
@@ -19,7 +19,7 @@ applied to verification tasks.
 Before I became a Ph.D. student at JAIST, I graduated from JAIST with a master's degree
 in Computer Science. My supervisor is Kazuhiro Ogata who has been leading me through
 the master's degree until now. I would like to express my deep gratitude to him due to
-his endless support without uncondition.
+his endless support without any condition.
 
 I am a motivated person who wants to work hard to solve problems as well as applying the
 state of art technologies to improve our daily life.
