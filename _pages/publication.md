@@ -63,28 +63,28 @@ permalink: /publication/
 
 * [A support tool for the L + 1-layer divide & conquer approach to conditional stable model checking](#) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _COMPSAC (2022) (**submitted**)_
+    _TBA (2022) (**submitted**)_
 
 * [A support tool for the L + 1-layer divide & conquer approach to eventual model checking](#) <br/>
     _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _COMPSAC (2022) (**submitted**)_
+    _TBA (2022) (**submitted**)_
 
 * [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
-    _ACM TOSEM (2022) (**submitted**)_
+    _TBA (2022) (**submitted**)_
 
 * [A Divide & Conquer Approach to Until and Until Stable Model Checking](#) <br/>
     _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
-    _SEKE (2022) (**submitted**)_
+    _TBA (2022) (**submitted**)_
+
+* [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
+    _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
+    _TBA (2022)_
 
 ### Pending Papers
 * [A Parallel Stratified Model Checking Technique/Tool for Conditonal Stable Properties](#) <br/>
     _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
-    _PeerJ (2022)_
-
-* [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
-    _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
-    _ACM TOPS (2022)_
+    _TBA (2022)_
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
