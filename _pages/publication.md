@@ -14,7 +14,7 @@ permalink: /publication/
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _9th International Workshop, SOFL+MSVL 2019, Shenzhen, China, November 5, 2019_
 
-* [Toward development of a tool supporting a 2-layer divide & conquer approach to leads-to model checking](https://ieeexplore.ieee.org/abstract/document/8920978)<br/>
+* [Toward Development of a Tool Supporting a 2-Layer Divide & Conquer Approach to Leads-to Model Checking](https://ieeexplore.ieee.org/abstract/document/8920978)<br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _2019 International Conference on Advanced Information Technologies (ICAIT)_
 
@@ -30,7 +30,7 @@ permalink: /publication/
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _COMPSAC (2021)_
 
-* [A divide & conquer approach to conditional stable model checking](https://link.springer.com/chapter/10.1007/978-3-030-85315-0_7) <br/>
+* [A Divide & Conquer Approach to Conditional Stable Model Checking](https://link.springer.com/chapter/10.1007/978-3-030-85315-0_7) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _ICTAC (2021)_
 
@@ -41,6 +41,10 @@ permalink: /publication/
 * [Parallel Maude-NPA for Cryptographic Protocol Analysis](#) <br/>
     _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
     _WRLA (2022) (**to appear**)_
+
+* [A Divide & Conquer Approach to Until and Until Stable Model Checking](#) <br/>
+    _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
+    _SEKE (2022) (**to appear**)_
 
 ### Journal Papers
 * [A Divide & Conquer Approach to Leads-to Model Checking](https://academic.oup.com/comjnl/advance-article/doi/10.1093/comjnl/bxaa183/6125355) <br/>
@@ -61,20 +65,12 @@ permalink: /publication/
 
 ### Papers Under Review
 
-* [A support tool for the L + 1-layer divide & conquer approach to conditional stable model checking](#) <br/>
+* [A Tool for Model-checking Conditional Stable Properties in a Layered Way](#) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _TBA (2022) (**submitted**)_
 
-* [A support tool for the L + 1-layer divide & conquer approach to eventual model checking](#) <br/>
+* [A Tool for Model Checking Eventual Model Checking in a Stratified Way](#) <br/>
     _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _TBA (2022) (**submitted**)_
-
-* [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
-    _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
-    _TBA (2022) (**submitted**)_
-
-* [A Divide & Conquer Approach to Until and Until Stable Model Checking](#) <br/>
-    _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
     _TBA (2022) (**submitted**)_
 
 * [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
@@ -82,9 +78,13 @@ permalink: /publication/
     _TBA (2022)_
 
 ### Pending Papers
-* [A Parallel Stratified Model Checking Technique/Tool for Conditonal Stable Properties](#) <br/>
+* [A Parallel Technique/Tool for Model Checking Conditional Stable Properties in a Layered Way](#) <br/>
     _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
     _TBA (2022)_
+
+* [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
+    _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
+    _TBA (2022) (**submitted**)_
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
