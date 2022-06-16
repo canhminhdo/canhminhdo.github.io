@@ -46,6 +46,10 @@ permalink: /publication/
     _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
     _SEKE (2022) (**to appear**)_
 
+* [A Tool for Model Checking Eventual Model Checking in a Stratified Way](#) <br/>
+    _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
+    _DSA (2022) (**to appear**)_
+
 ### Journal Papers
 * [A Divide & Conquer Approach to Leads-to Model Checking](https://academic.oup.com/comjnl/advance-article/doi/10.1093/comjnl/bxaa183/6125355) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
@@ -67,10 +71,6 @@ permalink: /publication/
 
 * [A Tool for Model-checking Conditional Stable Properties in a Layered Way](#) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _TBA (2022) (**submitted**)_
-
-* [A Tool for Model Checking Eventual Model Checking in a Stratified Way](#) <br/>
-    _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _TBA (2022) (**submitted**)_
 
 * [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
