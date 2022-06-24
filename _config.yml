@@ -20,7 +20,7 @@ title                    : "Canh's Log Book"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Canh Minh Do"
-description              : "Formal Methods, Software Verification, Computer Science."
+description              : "Computer Science, Software Engineering, Formal Methods."
 url                      : "https://canhminhdo.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
