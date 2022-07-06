@@ -73,17 +73,18 @@ permalink: /publication/
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _TBA (2022) (**submitted**)_
 
+### Pending Papers
+
 * [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
     _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
-    _TBA (2022) (**submitted**)_
-
-### Pending Papers
-* [A Parallel Technique/Tool for Model Checking Conditional Stable Properties in a Layered Way](#) <br/>
-    _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
     _TBA (2022)_
 
-* [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties](#) <br/>
+* [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties (Extended Version)](#) <br/>
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
+    _TBA (2022)_
+
+* [A Parallel Technique/Tool for Model Checking Conditional Stable Properties in a Layered Way](#) <br/>
+    _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
     _TBA (2022)_
 
 ### Master Thesis

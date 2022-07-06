@@ -7,31 +7,35 @@ permalink: /about/
 # Canh Minh Do
 ド　ミン　カン
 <!-- ![Canh Minh Do at Sporting Lisbon Football Stadium in Lisbon City, Portugal](/assets/images/bio-photo.png) -->
-{% include image.html url="/assets/images/bio-photo.png" description="Canh Minh Do at Sporting Lisbon Football Stadium in Lisbon City, Portugal in July, 2019." %}
+{% include image.html url="/assets/images/bio-photo.png"
+description="Canh Minh Do at Sporting Lisbon Football Stadium in Lisbon City, Portugal in July, 2019." %}
 
 # Who am I
 
-My name is Canh Minh Do, I am the 3rd **Ph.D.** student at **Japan Advanced Institute of Science
-and Technology (JAIST)**. My research interests are mainly in the areas of formal methods
-and software verification. Besides, machine learning and deep learning that could be
-applied to verification tasks.
+My name is Canh Minh Do, I am a **Ph.D.** student at **Japan Advanced Institute of Science
+and Technology (JAIST)**. My research interests are mainly in the areas of formal methods,
+such as formal specification, interactive theorem proving and model checking, tools supporting
+formal methods.
 
-Before I became a Ph.D. student at JAIST, I graduated from JAIST with a master's degree
+<!-- Before I became a Ph.D. student at JAIST, I graduated from JAIST with a master's degree
 in Computer Science. My supervisor is Kazuhiro Ogata who has been leading me through
 the master's degree until now. I would like to express my deep gratitude to him due to
-his endless support without any condition.
+his endless support without any condition. -->
 
-I am a motivated person who wants to work hard to solve problems as well as applying the
-state of art technologies to improve our daily life.
+I am a motivated person who wants to work hard to solve problems as well as
+applying technologies to improve our daily life.
 
 # About This Site
 This website was formally built in the Spring of 2020 when I was the 1st year Ph.D. student
 at JAIST. The main purposes of this website are listed below:
-* Discuss about formal methods, software verification as well as machine learning and deep learning.
+* Discuss about formal methods.
 * Present my research projects
 * Record my personal achievements when I start learning something new.
 
-The content of this website is expressed under my personal opinions. Either mistakes or misunderstanding is inevitable, so I am open to receive your comments as well as advices to make the website better as well as improving my knowledge.
+The content of this website is expressed under my personal opinions.
+Either mistakes or misunderstanding is inevitable, so I am open
+to receive your comments as well as advices to make the website better
+as well as improving my knowledge.
 
 # Citations
 If you would like to cite the blog posts in this site or repositories on my Github,
