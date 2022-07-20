@@ -10,7 +10,7 @@ permalink: /cv/
 - **10/2018 - 09/2019**: I joined the 1+1 program between VNU Hanoi and Japan Advanced Institute of Science and Technology (JAIST).
 I received **M.Sc.** degree in computer science at JAIST in Japan.
 - **10/2017 - 09/2018**: I joined the master program in computer science at VNU University of Engineering and Technology in Vietnam.
-- **06/2011 - 12/2012**: I received Diploma in Information System Management (DIMS) at Aprotain Aptech in Vietnam.
+- **06/2011 - 12/2012**: I received Diploma in Information System Management (**DIMS**) at Aptech Computer Education in Vietnam.
 - **10/2009 - 09/2013**: I received **B.Sc.** degree in computer science at National Economic University in Vietnam.
 
 ### Working
