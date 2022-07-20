@@ -12,7 +12,7 @@ description="Canh Minh Do at Sporting Lisbon Football Stadium in Lisbon City, Po
 
 # Who am I
 
-My name is Canh Minh Do, I am a **Ph.D.** student at **Japan Advanced Institute of Science
+My name is Canh Minh Do, I am a **Ph.D.** candidate at **Japan Advanced Institute of Science
 and Technology (JAIST)**. My research interests are mainly in the areas of formal methods,
 such as formal specification, interactive theorem proving and model checking, tools supporting
 formal methods.
