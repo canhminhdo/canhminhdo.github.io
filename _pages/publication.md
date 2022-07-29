@@ -38,9 +38,9 @@ permalink: /publication/
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
     _ISSSR (2021)_
 
-* [Parallel Maude-NPA for Cryptographic Protocol Analysis](#) <br/>
+* [Parallel Maude-NPA for Cryptographic Protocol Analysis](https://link.springer.com/chapter/10.1007/978-3-031-12441-9_13) <br/>
     _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
-    _WRLA (2022) (**to appear**)_
+    _WRLA (2022)_
 
 * [A Divide & Conquer Approach to Until and Until Stable Model Checking](#) <br/>
     _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
