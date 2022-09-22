@@ -12,18 +12,11 @@ description="Canh Minh Do at Sporting Lisbon Football Stadium in Lisbon City, Po
 
 # Who am I
 
-My name is Canh Minh Do, I am a **Ph.D.** candidate at **Japan Advanced Institute of Science
-and Technology (JAIST)**. My research interests are mainly in the areas of formal methods,
+My name is Canh Minh Do, a **Ph.D.** in computer science who is interested in the areas of formal methods,
 such as formal specification, interactive theorem proving and model checking, tools supporting
-formal methods.
+formal methods. My research focuses on mitigating the state space explosion in model checking and improving the running performance of model checking by parallelization. Currently, I have been working on formal verification of quantum systems.
 
-<!-- Before I became a Ph.D. student at JAIST, I graduated from JAIST with a master's degree
-in Computer Science. My supervisor is Kazuhiro Ogata who has been leading me through
-the master's degree until now. I would like to express my deep gratitude to him due to
-his endless support without any condition. -->
-
-I am a motivated person who wants to work hard to solve problems as well as
-applying technologies to improve our daily life.
+Besides, I am also a senior software engineer who would like to apply cutting-edge technologies into improving our daily life.
 
 # About This Site
 This website was formally built in the Spring of 2020 when I was the 1st year Ph.D. student

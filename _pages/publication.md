@@ -69,9 +69,13 @@ permalink: /publication/
 
 ### Papers Under Review
 
-* [A Tool for Model-checking Conditional Stable Properties in a Layered Way](#) <br/>
-    _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _TBA (2022) (**submitted**)_
+* [Sequential and Parallel Technique/Tool for Model Checking Conditional Stable Properties in a Layered Way](#) <br/>
+    _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
+    _TBA (2022)_
+
+* [Hybrid Post-Quantum TLS Formal Specification in Maude-NPA - Toward Its Security Analysis](#) <br/>
+    _Duong Dinh Tran, Canh Minh Do, Santiago Escobar and Kazuhiro Ogata_<br/>
+    _TBA (2022)_
 
 ### Pending Papers
 
@@ -83,9 +87,7 @@ permalink: /publication/
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
     _TBA (2022)_
 
-* [A Parallel Technique/Tool for Model Checking Conditional Stable Properties in a Layered Way](#) <br/>
-    _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
-    _TBA (2022)_
+
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
