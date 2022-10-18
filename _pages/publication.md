@@ -42,7 +42,7 @@ permalink: /publication/
     _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
     _WRLA (2022)_
 
-* [A Divide & Conquer Approach to Until and Until Stable Model Checking](#) <br/>
+* [A Divide & Conquer Approach to Until and Until Stable Model Checking](https://doi.org/10.18293/SEKE2022-058) <br/>
     _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
     _SEKE (2022) (**to appear**)_
 
@@ -77,17 +77,19 @@ permalink: /publication/
     _Duong Dinh Tran, Canh Minh Do, Santiago Escobar and Kazuhiro Ogata_<br/>
     _TBA (2022)_
 
-### Pending Papers
-
 * [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
     _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
     _TBA (2022)_
 
+* [Model checking of the Equivalence of Two Terms in Free Orthomodular Lattices](#) <br/>
+    _Takagi Tsubasa, Canh Minh Do, and Kazuhiro Ogata_<br/>
+    _TBA (2023)_
+
+### Pending Papers
+
 * [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties (Extended Version)](#) <br/>
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
     _TBA (2022)_
-
-
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
