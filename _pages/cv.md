@@ -6,6 +6,7 @@ permalink: /cv/
 ---
 # Curriculum Vitae
 ### Education
+- **10/2022 - present**: Postdoctoral researcher at JAIST in Japan.
 - **10/2019 - 9/2022**: I received **Ph.D.** degree in information technology at JAIST in Japan.
 - **10/2018 - 09/2019**: I received **M.Sc.** degree in information technology at JAIST in Japan from the 1+1 program between VNU University of Engineering and Technology and Japan Advanced Institute of Science and Technology (JAIST).
 
