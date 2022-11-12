@@ -85,13 +85,19 @@ permalink: /publication/
     _Takagi Tsubasa, Canh Minh Do, and Kazuhiro Ogata_<br/>
     _TBA (2023)_
 
-### Pending Papers
-
-* [A Parallel Stratified Model Checking Technique/Tool for Leads-to Properties (Extended Version)](#) <br/>
+* [Optimization Techniques for Model Checking Leads-to Properties in a Stratified Way (Extended Version)](#) <br/>
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
     _TBA (2022)_
+
+### Pending Papers
+
 
 ### Master Thesis
 * An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications<br/>
     JAIST, 2019<br/>
     [[JaistLibrary]](https://dspace.jaist.ac.jp/dspace/handle/10119/17563)
+
+### PhD Thesis
+* Parallelization of Formal Verification Tools<br/>
+    JAIST, 2022<br/>
+    [[JaistLibrary]](#)
