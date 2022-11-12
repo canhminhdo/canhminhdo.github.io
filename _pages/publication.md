@@ -44,15 +44,15 @@ permalink: /publication/
 
 * [A Divide & Conquer Approach to Until and Until Stable Model Checking](https://doi.org/10.18293/SEKE2022-058) <br/>
     _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
-    _SEKE (2022) (**to appear**)_
+    _SEKE (2022)_
 
-* [A Tool for Model Checking Eventual Model Checking in a Stratified Way](#) <br/>
+* [A Tool for Model Checking Eventual Model Checking in a Stratified Way](https://ieeexplore.ieee.org/document/9914554) <br/>
     _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _DSA (2022) (**to appear**)_
+    _DSA (2022)_
 
 * [Hybrid Post-Quantum TLS Formal Specification in Maude-NPA - Toward Its Security Analysis](#) <br/>
     _Duong Dinh Tran, Canh Minh Do, Santiago Escobar and Kazuhiro Ogata_<br/>
-    _FAVPQC (2022)_
+    _FAVPQC (2022) (**to appear**)_
 
 ### Journal Papers
 * [A Divide & Conquer Approach to Leads-to Model Checking](https://academic.oup.com/comjnl/advance-article/doi/10.1093/comjnl/bxaa183/6125355) <br/>
