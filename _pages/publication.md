@@ -50,9 +50,9 @@ permalink: /publication/
     _Moe Nandi Aung, Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _DSA (2022)_
 
-* [Hybrid Post-Quantum TLS Formal Specification in Maude-NPA - Toward Its Security Analysis](#) <br/>
+* [Hybrid Post-Quantum TLS Formal Specification in Maude-NPA - Toward Its Security Analysis](https://ceur-ws.org/Vol-3280/) <br/>
     _Duong Dinh Tran, Canh Minh Do, Santiago Escobar and Kazuhiro Ogata_<br/>
-    _FAVPQC (2022) (**to appear**)_
+    _FAVPQC (2022)_
 
 ### Journal Papers
 * [A Divide & Conquer Approach to Leads-to Model Checking](https://academic.oup.com/comjnl/advance-article/doi/10.1093/comjnl/bxaa183/6125355) <br/>
@@ -71,11 +71,10 @@ permalink: /publication/
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _IEEE Access (2022)_
 
-### Papers Under Review
-
-* [Sequential and Parallel Technique/Tool for Model Checking Conditional Stable Properties in a Layered Way](#) <br/>
+* [Sequential and Parallel Technique/Tool for Model Checking Conditional Stable Properties in a Layered Way](https://ieeexplore.ieee.org/document/9992236) <br/>
     _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
-    _TBA (2022)_
+    _IEEE Access (2022)_
+### Papers Under Review
 
 * [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
     _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
