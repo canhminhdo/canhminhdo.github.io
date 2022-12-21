@@ -99,4 +99,4 @@ permalink: /publication/
 ### PhD Thesis
 * Parallelization of Formal Verification Tools<br/>
     JAIST, 2022<br/>
-    [[JaistLibrary]](#)
+    [[JaistLibrary]](https://dspace.jaist.ac.jp/dspace/handle/10119/18129)
