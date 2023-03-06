@@ -74,19 +74,28 @@ permalink: /publication/
 * [Sequential and Parallel Technique/Tool for Model Checking Conditional Stable Properties in a Layered Way](https://ieeexplore.ieee.org/document/9992236) <br/>
     _Canh Minh Do, Yati Phyo and Kazuhiro Ogata_<br/>
     _IEEE Access (2022)_
+
 ### Papers Under Review
 
 * [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
     _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
     _TBA (2022)_
 
+* [Optimization Techniques for Model Checking Leads-to Properties in a Stratified Way (Extended Version)](#) <br/>
+    _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
+    _TBA (2022)_
+
 * [Model checking of the Equivalence of Two Terms in Free Orthomodular Lattices](#) <br/>
     _Takagi Tsubasa, Canh Minh Do, and Kazuhiro Ogata_<br/>
     _TBA (2023)_
 
-* [Optimization Techniques for Model Checking Leads-to Properties in a Stratified Way (Extended Version)](#) <br/>
-    _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
-    _TBA (2022)_
+* [Hybrid Post-Quantum TLS Formal Analysis in Maude-NPA and Par-Maude-NPA](#) <br/>
+    _Duong Dinh Tran, Canh Minh Do, Santiago Escobar and Kazuhiro Ogata_<br/>
+    _TBA (2023)_
+
+* [Symbolic Model Checking Quantum Circuits in Maude](#) <br/>
+    _Canh Minh Do and Kazuhiro Ogata_<br/>
+    _TBA (2023)_
 
 ### Pending Papers
 
