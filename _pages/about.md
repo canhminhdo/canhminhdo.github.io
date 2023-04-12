@@ -4,15 +4,15 @@ title: ""
 author_profile: true
 permalink: /about/
 ---
-# Canh Minh Do
-ド　ミン　カン
+# Canh Minh Do (ド　ミン　カン)
+Assistant Professor at Japan Advanced Institute of Science and Technology (JAIST)
 <!-- ![Canh Minh Do at Sporting Lisbon Football Stadium in Lisbon City, Portugal](/assets/images/bio-photo.png) -->
 {% include image.html url="/assets/images/bio-photo.png"
 description="Canh Minh Do at Sporting Lisbon Football Stadium in Lisbon City, Portugal in July, 2019." %}
 
 # Who am I
 
-My name is Canh Minh Do, a **Ph.D.** in computer science who is interested in the areas of formal methods,
+My name is Canh Minh Do, a **Ph.D.** in information science who is interested in the areas of formal methods,
 such as formal specification, interactive theorem proving and model checking, tools supporting
 formal methods. My research focuses on mitigating the state space explosion in model checking and improving the running performance of model checking by parallelization. Currently, I have been working on formal verification of quantum systems.
 
