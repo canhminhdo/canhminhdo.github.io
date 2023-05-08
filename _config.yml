@@ -123,6 +123,12 @@ author:
     - label: "Google Scholar"
       icon: "ai ai-google-scholar-square"
       url: "https://scholar.google.com/citations?user=r3QfC_gAAAAJ&hl=en"
+    - label: "Research Map"
+      icon: "fas fa-fw fa-play"
+      url: "https://researchmap.jp/canhminhdo?lang=en"
+    - label: "JAIST Profile"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://fp.jaist.ac.jp/public/Default2.aspx?id=764&l=0"
 
 # Site Footer
 footer:
