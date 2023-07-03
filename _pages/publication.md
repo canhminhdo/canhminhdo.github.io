@@ -83,6 +83,10 @@ permalink: /publication/
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
     _ACM TOSEM (2023)_
 
+* [Automated Quantum Program Verification in a Dynamic Quantum Logic (To Appear)](#) <br/>
+    _Takagi Tsubasa, Canh Minh Do, and Kazuhiro Ogata_<br/>
+    _DaLí (2023)_
+
 ### Papers Under Review
 
 * [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
@@ -90,10 +94,6 @@ permalink: /publication/
     _TBA (2022)_
 
 * [Model checking of the Equivalence of Two Terms in Free Orthomodular Lattices](#) <br/>
-    _Takagi Tsubasa, Canh Minh Do, and Kazuhiro Ogata_<br/>
-    _TBA (2023)_
-
-* [Automated Quantum Program Verification in a Dynamic Quantum Logic](#) <br/>
     _Takagi Tsubasa, Canh Minh Do, and Kazuhiro Ogata_<br/>
     _TBA (2023)_
 
