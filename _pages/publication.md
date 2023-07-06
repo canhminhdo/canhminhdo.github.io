@@ -58,6 +58,10 @@ permalink: /publication/
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _SEKE (2023)_
 
+* [Automated Quantum Program Verification in a Dynamic Quantum Logic (To Appear)](#) <br/>
+    _Takagi Tsubasa, Canh Minh Do, and Kazuhiro Ogata_<br/>
+    _DaLí (2023)_
+
 ### Journal Papers
 * [A Divide & Conquer Approach to Leads-to Model Checking](https://academic.oup.com/comjnl/advance-article/doi/10.1093/comjnl/bxaa183/6125355) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
@@ -83,9 +87,11 @@ permalink: /publication/
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
     _ACM TOSEM (2023)_
 
-* [Automated Quantum Program Verification in a Dynamic Quantum Logic (To Appear)](#) <br/>
-    _Takagi Tsubasa, Canh Minh Do, and Kazuhiro Ogata_<br/>
-    _DaLí (2023)_
+
+* [A Layered and Parallelized Way of Eventual Model Checking (To Appear)](#) <br/>
+    _Yati Phyo, Moe Nandi Aung, Canh Minh Do and Kazuhiro Ogata_<br/>
+    _MPDI Information (2023)_
+
 
 ### Papers Under Review
 
@@ -104,11 +110,6 @@ permalink: /publication/
 * [Symbolic Model Checking Quantum Circuits in Maude (Extended Version)](#) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _TBA (2023)_
-
-* [A Layered and Parallelized Way of Eventual Model Checking](#) <br/>
-    _Yati Phyo, Moe Nandi Aung, Canh Minh Do and Kazuhiro Ogata_<br/>
-    _TBA (2023)_
-
 
 ### Pending Papers
 
