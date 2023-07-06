@@ -88,7 +88,7 @@ permalink: /publication/
     _ACM TOSEM (2023)_
 
 
-* [A Layered and Parallelized Way of Eventual Model Checking (To Appear)](#) <br/>
+* [A Layered and Parallelized Method of Eventual Model Checking](https://doi.org/10.3390/info14070384) <br/>
     _Yati Phyo, Moe Nandi Aung, Canh Minh Do and Kazuhiro Ogata_<br/>
     _MPDI Information (2023)_
 
