@@ -87,11 +87,13 @@ permalink: /publication/
     _Canh Minh Do, Yati Phyo, Adrián Riesco and Kazuhiro Ogata_<br/>
     _ACM TOSEM (2023)_
 
-
 * [A Layered and Parallelized Method of Eventual Model Checking](https://doi.org/10.3390/info14070384) <br/>
     _Yati Phyo, Moe Nandi Aung, Canh Minh Do and Kazuhiro Ogata_<br/>
     _MPDI Information (2023)_
 
+* [Hybrid post-quantum Transport Layer Security Formal Analysis in Maude-NPA and Its Parallel Version)](https://doi.org/10.7717/peerj-cs.1556) <br/>
+    _Duong Dinh Tran, Canh Minh Do, Santiago Escobar and Kazuhiro Ogata_<br/>
+    _PeerJ Computer Science (2023)_
 
 ### Papers Under Review
 
@@ -101,10 +103,6 @@ permalink: /publication/
 
 * [Model checking of the Equivalence of Two Terms in Free Orthomodular Lattices](#) <br/>
     _Takagi Tsubasa, Canh Minh Do, and Kazuhiro Ogata_<br/>
-    _TBA (2023)_
-
-* [Hybrid Post-Quantum TLS Formal Analysis in Maude-NPA and Par-Maude-NPA (Extended Version)](#) <br/>
-    _Duong Dinh Tran, Canh Minh Do, Santiago Escobar and Kazuhiro Ogata_<br/>
     _TBA (2023)_
 
 * [Symbolic Model Checking Quantum Circuits in Maude (Extended Version)](#) <br/>
