@@ -99,13 +99,25 @@ permalink: /publication/
 
 * [Parallel Maude-NPA for Cryptographic Protocol Analysis (Extended Version)](#) <br/>
     _Canh Minh Do, Adrián Riesco, Santiago Escobar and Kazuhiro Ogata_<br/>
-    _TBA (2022)_
+    _TBA (2023)_
 
 * [Model checking of the Equivalence of Two Terms in Free Orthomodular Lattices](#) <br/>
-    _Takagi Tsubasa, Canh Minh Do, and Kazuhiro Ogata_<br/>
+    _Takagi Tsubasa, Canh Minh Do and Kazuhiro Ogata_<br/>
     _TBA (2023)_
 
 * [Symbolic Model Checking Quantum Circuits in Maude (Extended Version)](#) <br/>
+    _Canh Minh Do and Kazuhiro Ogata_<br/>
+    _TBA (2023)_
+
+* [Automated Quantum Protocol Verification Based on Concurrent Dynamic Quantum Logic](#) <br/>
+    _Canh Minh Do, Takagi Tsubasa and Kazuhiro Ogata_<br/>
+    _TBA (2023)_
+
+* [Theoretical Background for Equivalence Checking of Quantum Circuits](#) <br/>
+    _Canh Minh Do and Kazuhiro Ogata_<br/>
+    _TBA (2023)_
+
+* [Symbolic Model Checking Quantum Circuits With Density Operators in Maude](#) <br/>
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _TBA (2023)_
 
@@ -113,6 +125,10 @@ permalink: /publication/
 
 * [A Support Tool for Model Checking Until and Until Stable Properties in a Layered Way](#) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
+    _TBA (2023)_
+
+* [Equivalence Checking of Quantum Circuits Based on Dirac Notation](#) <br/>
+    _Canh Minh Do and Kazuhiro Ogata_<br/>
     _TBA (2023)_
 
 ### Master Thesis
