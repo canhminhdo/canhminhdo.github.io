@@ -58,7 +58,7 @@ permalink: /publication/
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _SEKE (2023)_
 
-* [Automated Quantum Program Verification in a Dynamic Quantum Logic (To Appear)](#) <br/>
+* [Automated Quantum Program Verification in a Dynamic Quantum Logic](https://dali2023.compute.dtu.dk/wp-content/uploads/2023/09/dali2023-preproceedings.pdf) <br/>
     _Takagi Tsubasa, Canh Minh Do, and Kazuhiro Ogata_<br/>
     _DaLí (2023)_
 
@@ -91,7 +91,7 @@ permalink: /publication/
     _Yati Phyo, Moe Nandi Aung, Canh Minh Do and Kazuhiro Ogata_<br/>
     _MPDI Information (2023)_
 
-* [Hybrid post-quantum Transport Layer Security Formal Analysis in Maude-NPA and Its Parallel Version)](https://doi.org/10.7717/peerj-cs.1556) <br/>
+* [Hybrid post-quantum Transport Layer Security Formal Analysis in Maude-NPA and Its Parallel Version](https://doi.org/10.7717/peerj-cs.1556) <br/>
     _Duong Dinh Tran, Canh Minh Do, Santiago Escobar and Kazuhiro Ogata_<br/>
     _PeerJ Computer Science (2023)_
 
@@ -121,14 +121,18 @@ permalink: /publication/
     _Canh Minh Do and Kazuhiro Ogata_<br/>
     _TBA (2023)_
 
+* [Equivalence Checking of Quantum Circuits Based on Dirac Notation](#) <br/>
+    _Canh Minh Do and Kazuhiro Ogata_<br/>
+    _TBA (2023)_
+
 ### Pending Papers
 
 * [A Support Tool for Model Checking Until and Until Stable Properties in a Layered Way](#) <br/>
     _Yati Phyo, Canh Minh Do and Kazuhiro Ogata_<br/>
     _TBA (2023)_
 
-* [Equivalence Checking of Quantum Circuits Based on Dirac Notation](#) <br/>
-    _Canh Minh Do and Kazuhiro Ogata_<br/>
+* [Automated Quantum Protocol Verification Based On Probabilistic Dynamic Quantum Logic](#) <br/>
+    _Canh Minh Do, Takagi Tsubasa and Kazuhiro Ogata_<br/>
     _TBA (2023)_
 
 ### Master Thesis
