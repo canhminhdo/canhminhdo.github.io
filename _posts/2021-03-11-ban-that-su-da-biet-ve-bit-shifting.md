@@ -1,8 +1,9 @@
 ---
+layout: post
 title: Bạn thật sự đã biết về Bit shifting
 date: 2021-03-11 22:24
 category:
-    - bit manipulation
+    - Bit Manipulation
 ---
 Bit shifting là một thao tác dịch bit trong ngôn ngữ lập trình thường hỗ trợ khi làm việc với bit.
 Trong bài trước chúng ta có tìm hiểu cách biểu diễn số âm trong máy tính. Vậy khi dịch bit với

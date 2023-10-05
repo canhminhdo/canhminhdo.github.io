@@ -1,11 +1,13 @@
 ---
-title: \[Sorting series\] Thuật toán sắp xếp Bubble Sort
+layout: post
+title: "[Sorting series] Thuật toán sắp xếp Bubble Sort"
 date: 2020-05-28 21:24
 category:
     - Programming
     - Data Structures and Algorithms
     - Sorting Problem
-tags: [C++]
+tags: 
+    - C++
 ---
 
 Thuật toán sắp xếp **Bubble Sort** (nổi bọt) được thực hiện như sau. Bắt đầu duyệt từ

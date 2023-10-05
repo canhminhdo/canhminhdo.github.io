@@ -1,44 +1,21 @@
 ---
-layout: single
-title: ""
-author_profile: true
-permalink: /about/
+layout: about
+title: About
+permalink: /
+subtitle: Assistant Professor, JAIST, Japan
+
+profile:
+  align: right
+  image: bio-photo.png
+  image_circular: false # crops the image to make it circular
+  address: >
+
+news: true  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: true  # includes social icons at the bottom of the page
 ---
-# Canh Minh Do (ド　ミン　カン)
-Assistant Professor at Japan Advanced Institute of Science and Technology (JAIST)
-<!-- ![Canh Minh Do at Sporting Lisbon Football Stadium in Lisbon City, Portugal](/assets/images/bio-photo.png) -->
-{% include image.html url="/assets/images/bio-photo.png"
-description="Canh Minh Do at Sporting Lisbon Football Stadium in Lisbon City, Portugal in July, 2019." %}
 
-# Who am I
+Hi, I'm Canh, an assistant professor at School of Information Science, <a href='https://jaist.ac.jp/english/'>Japan Advanced Institute of Science and Technology (JAIST)</a>. My primary research interests are in the areas of formal methods, such as formal specification, interactive theorem proving and model checking, and tools supporting formal methods. My research focuses on formal specification and verification of concurrent/distributed systems for both conventional and emerging technologies. I obtained my Ph.D. and M.S. degrees in Information Science, JAIST, advised by Prof. Kazuhiro Ogata.
 
-My name is Canh Minh Do, a **Ph.D.** in information science who is interested in the areas of formal methods,
-such as formal specification, interactive theorem proving and model checking, tools supporting
-formal methods. My research focuses on mitigating the state space explosion in model checking and improving the running performance of model checking by parallelization. Currently, I have been working on formal verification of quantum systems.
-
-Besides, I am also a senior software engineer who would like to apply cutting-edge technologies into improving our daily life.
-
-# About This Site
-This website was formally built in the Spring of 2020 when I was the 1st year Ph.D. student
-at JAIST. The main purposes of this website are listed below:
-* Discuss about formal methods.
-* Present my research projects
-* Record my personal achievements when I start learning something new.
-
-The content of this website is expressed under my personal opinions.
-Either mistakes or misunderstanding is inevitable, so I am open
-to receive your comments as well as advices to make the website better
-as well as improving my knowledge.
-
-# Citations
-If you would like to cite the blog posts in this site or repositories on my Github,
-please use the URLs. I would not change the URLs, unless someday Github does not exist.
-
-# Contact Me
-
-For collaborations and advising, please contact me via my personal [Email](mailto:minhcanh99@gmail.com).
-
-If you have any questions or comments regarding my blog posts, please post your question under the blog
-posts. If you have any questions regarding my Github open source projects, please open an issue ticket in
-the repository. This will be beneficial for all the readers and save my time for not answering duplicated
-questions.
+<b>Research interests:</b> Computer Science, Software Engineering, Formal Methods.

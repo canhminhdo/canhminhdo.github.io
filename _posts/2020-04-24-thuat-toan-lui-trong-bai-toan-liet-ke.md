@@ -1,11 +1,13 @@
 ---
+layout: post
 title: Thuật toán quay lui (backtracking) trong bài toán liệt kê
 date: 2020-04-24 10:57
 category:
     - Programming
     - Data Structures and Algorithms
     - Listing Problem
-tags: [C++]
+tags: 
+    - C++
 ---
 Thuật toán quay lui dùng để liệt kê các cấu hình mà mỗi cấu hình được xây dụng bằng
 cách xây dựng từng phần tử, mỗi phần tử được chọn bằng tất cả các khả năng. Khi chọn

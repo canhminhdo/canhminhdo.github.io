@@ -1,8 +1,9 @@
 ---
+layout: post
 title: Cách biểu diễn số âm trong máy tính
 date: 2021-01-10 17:27
 category:
-    - Bit manipulation
+    - Bit Manipulation
 ---
 Trong máy tính, mọi kí hiệu, con số đều được biểu diễn dưới dạng số nhị phân 0 và 1.
 Vậy làm thế nào để biểu diễn và phân biệt được số dương và số âm trong máy tính.

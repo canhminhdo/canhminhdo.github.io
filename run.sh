@@ -1,1 +1,1 @@
-bundle exec jekyll serve --livereload
+docker-compose up

@@ -1,11 +1,13 @@
 ---
-title: \[Sorting series\] Thuật toán sắp xếp QuickSort
+layout: post
+title: "[Sorting series] Thuật toán sắp xếp QuickSort"
 date: 2020-06-10 23:00
 category:
     - Programming
     - Data Structures and Algorithms
     - Sorting Problem
-tags: [C++]
+tags: 
+    - C++
 ---
 **QuickSort** là một thuật toán sắp xếp hiệu quả được đề xuất bởi **Tony Hoare** năm 1959-1961. Đây là một thuật toán được sử dụng phổ biến trong bài toán sắp xếp.
 Chính vì sự hiệu quả của nó mà tác giả đã đặt tên cho thuật toán là QuickSort.

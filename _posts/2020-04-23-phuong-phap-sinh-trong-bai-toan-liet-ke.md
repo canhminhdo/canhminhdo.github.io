@@ -1,11 +1,13 @@
 ---
+layout: post
 title: Phương pháp sinh trong bài toán liệt kê
 date: 2020-04-23 14:39
 category:
     - Programming
     - Data Structures and Algorithms
     - Listing Problem
-tags: [C++]
+tags:
+    - C++
 ---
 Phương pháp sinh là một kỹ thuật để liệt kê các cấu hình nếu thoả mãn
 hai điều kiện sau:

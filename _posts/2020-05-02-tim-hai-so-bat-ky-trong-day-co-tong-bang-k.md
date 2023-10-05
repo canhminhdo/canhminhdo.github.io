@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Tìm hai số bất kỳ trong dãy số có tổng bằng k
 date: 2020-05-02 11:56
 category:

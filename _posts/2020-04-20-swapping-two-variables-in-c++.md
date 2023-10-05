@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Swapping two variables in C++
 date: 2020-04-20 14:58
 category:
@@ -7,6 +8,8 @@ tags:
     - C++
     - Swapping
 excerpt:
+giscus_comments: true
+# related_posts: true
 ---
 In this post, we consider about how to swap two variables in C++.
 Assumption that we would like to swap two integer variables.

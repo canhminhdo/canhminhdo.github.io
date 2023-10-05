@@ -1,0 +1,101 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Name
+      value: Canh Minh Do
+    - name: Katakana
+      value: カン　ミン　ド
+    - name: Email
+      value: canhdo[at]jaist.ac.jp
+    - name: Phone
+      value: (+81) 0761-51-1308
+    - name: Languages
+      value: Vietnamese (native), English (proficiency), Japanese (beginner)
+
+- title: Research Area
+  type: list
+  contents:
+    - My primary research interests are in the areas of formal methods, such as formal specification, interactive theorem proving and model checking, tools supporting formal methods. My research focuses on formal specification and formal verification of concurrent/distributed systems for both conventional and emerging technologies.
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Information Science
+      institution: Japan Advanced Institute of Science and Technology, Japan
+      year: Oct 2019 - Sept 2022
+      description:
+        - Advised by Prof. Kazuhiro dOgata
+        - "Thesis: <a href='https://dspace.jaist.ac.jp/dspace/handle/10119/18129' target='_blank'>Parallelization for Formal Verification Tools</a>"
+
+    - title: M.Sc. in Information Science
+      institution: Japan Advanced Institute of Science and Technology, Japan
+      year: Oct 2018 - Sept 2019
+      description:
+        - Advised by Prof. Kazuhiro Ogata
+        - "Thesis: <a href='https://dspace.jaist.ac.jp/dspace/handle/10119/17563' target='_blank'>An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications</a>"
+
+    - title: Diploma in Information System Management (DISM)
+      institution: Vietnam Aptech
+      year: Oct 20011 - Dec 2012
+      description:
+
+    - title: B.S. in Computer Science
+      institution: National Economic University, Vietnam
+      year: Oct 2009 - Sept 2013
+      description:
+
+- title: Working Experience
+  type: time_table
+  contents:
+    - title: Assistant Professor
+      institution: Japan Advanced Institute of Science and Technology
+      year: Apr 2023 - Present
+      description:
+
+    - title: Postdoctoral Researcher
+      institution: Japan Advanced Institute of Science and Technology
+      year: Oct 2022 - Mar 2023
+      description:
+
+    - title: Senior Software Engineer
+      institution: Techacademy Vietnam
+      year: Mar 2015 - Sept 2018
+
+    - title: Software Engineer
+      institution: Dotoh Solutions Vietnam
+      year: Sept 2013 - Jul 2014
+      description:
+
+    - title: Internship & Software Engineer
+      institution: Langmaster Vietnam
+      year: Nov 2012 - Jun 2013
+
+- title: Research Grants
+  type: time_table
+  contents:
+    - title: Kakenhi Research Activity Start-up 2023
+      institution: Japan Advanced Institute of Science and Technology
+      year: Oct 2023 - Mar 2024
+      description: 
+        - "Project: A Tableau-based Approach to Model Checking Temporal Properties for Large-scale Systems"
+        - Principal Investigator (PI)
+        - "Budgets 2,200,000 ¥"
+
+    - title: JAIST Research Grant for Fundamental Research 
+      institution: Japan Advanced Institute of Science and Technology
+      year: April 2023 - Mar 2024
+      description:
+        - "Project: An Automated Approach to Verify Quantum Programs Using Dynamic Quantum Logic"
+        - Principal Investigator (PI)
+        - "Budgets 500,000 ¥"
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2022
+      items: 
+        - Oustanding student award from JAIST for completing the doctoral program with excellent academic performance
+    - year: 2013
+      items: 
+        - Top graduating student award from Hanoi communist youth union
+        - Highest GPA gradutating student 2009-2013 in computer science major at National Economic Univeristy

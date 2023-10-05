@@ -1,11 +1,13 @@
 ---
-title: \[Sorting series\] Thuật toán sắp xếp Insertion Sort
+layout: post
+title: "[Sorting series] Thuật toán sắp xếp Insertion Sort"
 date: 2020-05-31 02:18
 category:
     - Programming
     - Data Structures and Algorithms
     - Sorting Problem
-tags: [C++]
+tags: 
+    - C++
 ---
 Trong bài viết này, chúng ta cùng tìm hiểu về thuật toán Insertion Sort.
 Ý tưởng của thuật toán Insertion Sort là tại mỗi bước lặp tìm vị trí để

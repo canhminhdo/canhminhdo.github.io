@@ -1,9 +1,12 @@
 ---
+layout: post
 title: Cách cài đặt PHP script chạy như một service trong Linux
 date: 2020-12-20 11:22
 category:
     - Deployment
-tags: [Linux, PHP]
+tags: 
+    - Linux
+    - PHP
 ---
 Trước khi hướng dẫn deploy một PHP script chạy như một service trong Linux.
 Chúng ta cùng tìm hiểu tại sao chúng ta cần phải làm như vậy thay vì sử dụng `crontab`, `screen`.

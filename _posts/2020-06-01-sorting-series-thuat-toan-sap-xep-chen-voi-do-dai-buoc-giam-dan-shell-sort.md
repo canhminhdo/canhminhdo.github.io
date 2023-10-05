@@ -1,11 +1,13 @@
 ---
-title: \[Sorting series\] Sắp xếp chèn với độ dài bước giảm dần (ShellSort)
+layout: post
+title: "[Sorting series] Sắp xếp chèn với độ dài bước giảm dần (ShellSort)"
 date: 2020-06-01 23:08
 category:
     - Programming
     - Data Structures and Algorithms
     - Sorting Problem
-tags: [C++]
+tags: 
+    - C++
 ---
 Nhược điểm của thuật toán [Insertion Sort]({% post_url 2020-05-31-sorting-series-thuat-toan-sap-xep-insertion-sort %})
 khi ta phải chèn một phần tử khoá vào vị trí gần đầu dãy. Để khắc phục nhược điểm này,

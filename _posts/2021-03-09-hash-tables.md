@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Hash tables
 date: 2021-03-09 00:07
 category:

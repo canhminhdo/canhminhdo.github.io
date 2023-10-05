@@ -1,9 +1,12 @@
 ---
+layout: post
 title: Tìm hiểu về định lý Bayes và ứng dụng
 date: 2020-06-30 11:21
 category:
     - Machine learning
-tags: [Classifier, Bayes]
+tags: 
+    - Classifier
+    - Bayes
 ---
 Định lý Bayes là một định lý toán học để tính xác suất xảy ra của một sự kiện ngẫu nhiên **A**
 khi biết sự kiện liên quan **B** đã xảy ra.

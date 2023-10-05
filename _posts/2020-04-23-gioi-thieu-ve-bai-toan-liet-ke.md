@@ -1,11 +1,13 @@
 ---
+layout: post
 title: Giới thiệu về bài toán liệt kê
 date: 2020-04-23 14:39
 category:
     - Programming
     - Data Structures and Algorithms
     - Listing Problem
-tags: [C++]
+tags: 
+    - C++
 ---
 Trong thực tế có một số bài toán cho trước một tập các đối tượng,
 hỏi có bao nhiêu đối tượng thoả mãn một điều kiện nào đó. Bài toán

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Tìm hiểu kỹ thuật nhánh cận trong bài toán tối ưu
 date: 2020-05-17 10:31
 category:

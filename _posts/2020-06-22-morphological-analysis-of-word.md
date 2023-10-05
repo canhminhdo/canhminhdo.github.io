@@ -1,10 +1,12 @@
 ---
+layout: post
 title: Phân tích hình thái (Morphological Analysis) trong xử lý ngôn ngữ tự nhiên
 date: 2020-06-22 09:27
 category:
     - NLP
     - Morphological Analysis
-tags: [Python]
+tags: 
+    - Python
 ---
 **Phân tích hình thái (Morphological Analysis)** là một quá trình xử lý để cung cấp thông tin về từ
 trong một câu. Đây được coi là bước xử lý đầu tiên trong xử lý ngôn ngữ tự nhiên. Đối với tiếng anh chúng ta có những khâu như sau:

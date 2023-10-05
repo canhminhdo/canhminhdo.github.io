@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Làm thế nào để tạo một mảng ngẫu nhiên từ một mảng cho trước
 date: 2020-05-17 16:43
 category:

@@ -1,11 +1,13 @@
 ---
+layout: post
 title: Tính ổn định của thuật toán sắp xếp (STABILITY)
 date: 2020-06-26 23:20
 category:
     - Programming
     - Data Structures and Algorithms
     - Sorting Problem
-tags: [C++]
+tags: 
+    - C++
 ---
 Một phương pháp sắp xếp được gọi là **ổn định** nếu nó đảm bảo thứ tự ban đầu của các bản ghi mang khoá
 bằng nhau trong danh sách. Ví dụ danh sách sinh viên ban đầu theo thứ tự alphabet, khi sắp xếp theo thứ

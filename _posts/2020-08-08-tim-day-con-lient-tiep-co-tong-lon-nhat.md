@@ -1,10 +1,12 @@
 ---
+layout: post
 title: Tìm dãy con liên tiếp có tổng lớn nhất
 date: 2020-08-08 23:40
 category:
     - Programming
     - Data Structures and Algorithms
-tags: [C++]
+tags: 
+    - C++
 ---
 Dãy con liên tiếp có tổng lớn nhất (maximum subarray problem) là việc tìm ra
 một dãy con chứa các phần tử liên tiếp trong một dãy cho trước thoả mãn tổng

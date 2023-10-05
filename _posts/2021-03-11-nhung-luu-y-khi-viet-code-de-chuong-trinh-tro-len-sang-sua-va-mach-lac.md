@@ -1,8 +1,9 @@
 ---
+layout: post
 title: Những lưu ý khi viết code để chương trình trở lên sáng sủa và mạch lạc
 date: 2021-03-11 22:40
 category:
-    - code style
+    - Code Style
 ---
 Việc viết code không những để cho máy tính đọc mà cũng cho lập trình viên đọc code của bạn.
 Chính vì vậy việc viết code một cách có cấu trúc, dễ đọc không những giúp bạn có thể quản lý

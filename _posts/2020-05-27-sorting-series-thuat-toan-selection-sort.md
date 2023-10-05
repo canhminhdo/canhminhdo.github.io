@@ -1,11 +1,13 @@
 ---
-title: \[Sorting series\] Thuật toán sắp xếp Selection Sort
+layout: post
+title: "[Sorting series] - Thuật toán sắp xếp Selection Sort"
 date: 2020-05-27 21:39
 category:
     - Programming
     - Data Structures and Algorithms
     - Sorting Problem
-tags: [C++]
+tags: 
+    - C++
 ---
 Trong loạn bài về sắp xếp, hôm nay chúng ta cùng tìm hiểu cách thực hiện và cài đặt thuật toán **Selection Sort**.
 Ý tưởng của thuật toán Selection Sort rất đơn giản. Tại mỗi lượt khi sắp xếp ta sẽ chọn phần tử

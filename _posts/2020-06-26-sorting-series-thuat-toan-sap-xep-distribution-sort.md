@@ -1,11 +1,13 @@
 ---
-title: \[Sorting series\] Thuật toán sắp xếp distribution sort
+layout: post
+title: "[Sorting series] Thuật toán sắp xếp distribution sort"
 date: 2020-06-26 23:20
 category:
     - Programming
     - Data Structures and Algorithms
     - Sorting Problem
-tags: [C++]
+tags: 
+    - C++
 ---
 Trong bài viết này, chúng ta cùng tìm hiểu một thuật toán sắp xếp đặc biệt
 khi biết các giá trị trong mảng sắp xếp nằm trong [0, m). Khi đó ta sẽ khởi

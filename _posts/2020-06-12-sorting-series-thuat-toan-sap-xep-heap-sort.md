@@ -1,11 +1,13 @@
 ---
-title: \[Sorting series\] Thuật toán sắp xếp HeapSort
+layout: post
+title: "[Sorting series] Thuật toán sắp xếp HeapSort"
 date: 2020-06-12 23:06
 category:
     - Programming
     - Data Structures and Algorithms
     - Sorting Problem
-tags: [C++]
+tags: 
+    - C++
 ---
 HeapSort không những là một thuật toán sắp xếp hiệu quả mà còn xây dựng một
 cấu trúc dữ liệu quan trọng để biểu diễn hàng đợi có độ ưu tiên.

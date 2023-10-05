@@ -1,9 +1,11 @@
 ---
+layout: post
 title: Ý nghĩa các biến môi trường PATH, CLASSPATH và JAVA_HOME khi cài đặt và sử dụng Java
 date: 2020-09-10 11:53
 category:
     - Java Configuration
-tags: [Java]
+tags: 
+    - Java
 ---
 Khi bạn cài đặt và sử dụng Java trong các dự án của mình, có 3 biến môi trường quan trọng cần phải lưu ý là **PATH**, **CLASSPATH** và **JAVA_HOME**. Ý nghĩa của mỗi biến môi trường phục vụ những mục đích khác nhau.
 
