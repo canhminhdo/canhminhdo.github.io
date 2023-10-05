@@ -1,5 +1,5 @@
 # My Blog
-This blog is powered by Jekyll with al-folio theme.
+This blog is powered by [Jekyll](https://jekyllrb.com/) with [al-folio](https://github.com/alshedivat/al-folio) theme.
 
 ## How to install
 * Make sure you installed **docker**
