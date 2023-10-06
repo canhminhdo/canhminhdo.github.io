@@ -11,6 +11,8 @@
       value: (+81) 0761-51-1308
     - name: Languages
       value: Vietnamese (native), English (proficiency), Japanese (beginner)
+    - name: KAKENHI
+      value: "<a href='https://nrid.nii.ac.jp/en/nrid/1000000981143/' target='_blank'>https://nrid.nii.ac.jp/en/nrid/1000000981143/</a>"
 
 - title: Research Area
   type: list
@@ -80,6 +82,7 @@
         - "Project: A Tableau-based Approach to Model Checking Temporal Properties for Large-scale Systems"
         - Principal Investigator (PI)
         - "Budgets 2,200,000 ¥"
+        - "<a href='https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-23K19959/' target='_blank'>JSPS KAKENHI Grant Number 23K19959</a>"
 
     - title: JAIST Research Grant for Fundamental Research 
       institution: Japan Advanced Institute of Science and Technology
