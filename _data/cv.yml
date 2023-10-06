@@ -11,8 +11,8 @@
       value: (+81) 0761-51-1308
     - name: Languages
       value: Vietnamese (native), English (proficiency), Japanese (beginner)
-    - name: KAKENHI
-      value: "<a href='https://nrid.nii.ac.jp/en/nrid/1000000981143/' target='_blank'>https://nrid.nii.ac.jp/en/nrid/1000000981143/</a>"
+    # - name: KAKENHI
+    #   value: "<a href='https://nrid.nii.ac.jp/en/nrid/1000000981143/' target='_blank'>https://nrid.nii.ac.jp/en/nrid/1000000981143/</a>"
 
 - title: Research Area
   type: list
