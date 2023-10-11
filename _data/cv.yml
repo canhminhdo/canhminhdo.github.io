@@ -12,7 +12,7 @@
     - name: Languages
       value: Vietnamese (native), English (proficiency), Japanese (beginner)
     # - name: KAKENHI
-    #   value: "<a href='https://nrid.nii.ac.jp/en/nrid/1000000981143/' target='_blank'>https://nrid.nii.ac.jp/en/nrid/1000000981143/</a>"
+    #   value: "<a href='https://nrid.nii.ac.jp/en/nrid/1000000981143/'>https://nrid.nii.ac.jp/en/nrid/1000000981143/</a>"
 
 - title: Research Area
   type: list
@@ -27,14 +27,14 @@
       year: Oct 2019 - Sept 2022
       description:
         - Advised by Prof. Kazuhiro Ogata
-        - "Thesis: <a href='https://dspace.jaist.ac.jp/dspace/handle/10119/18129' target='_blank'>Parallelization for Formal Verification Tools</a>"
+        - "Thesis: <a href='https://dspace.jaist.ac.jp/dspace/handle/10119/18129'>Parallelization for Formal Verification Tools</a>"
 
     - title: M.Sc. in Information Science
       institution: Japan Advanced Institute of Science and Technology, Japan
       year: Oct 2018 - Sept 2019
       description:
         - Advised by Prof. Kazuhiro Ogata
-        - "Thesis: <a href='https://dspace.jaist.ac.jp/dspace/handle/10119/17563' target='_blank'>An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications</a>"
+        - "Thesis: <a href='https://dspace.jaist.ac.jp/dspace/handle/10119/17563'>An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications</a>"
 
     - title: Diploma in Information System Management (DISM)
       institution: Vietnam Aptech
@@ -82,7 +82,7 @@
         - "Project: A Tableau-based Approach to Model Checking Temporal Properties for Large-scale Systems"
         - Principal Investigator (PI)
         - "Budgets 2,200,000 ¥"
-        - "<a href='https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-23K19959/' target='_blank'>JSPS KAKENHI Grant Number JP23K19959</a>"
+        - "<a href='https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-23K19959/'>JSPS KAKENHI Grant Number JP23K19959</a>"
 
     - title: JAIST Research Grant for Fundamental Research 
       institution: Japan Advanced Institute of Science and Technology
