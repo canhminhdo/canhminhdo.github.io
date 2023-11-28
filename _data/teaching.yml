@@ -1,0 +1,57 @@
+# JAIST Class Schedule
+# Term 1-1: April 12 - June 7
+# Term 1-2: June 12 - August 2
+# Term 2-1: October 11 - December 5
+# Term 2-2: December 7 - February 9
+
+- title: Courses
+  type: time_table
+  contents:
+    - title: "<a href='https://www.jaist.ac.jp/~ogata/lecture/i217e/'>i217e Functional Programming</a>"
+      institution: Japan Advanced Institute of Science and Technology, Japan
+      year: Comming soon
+      description:
+        - "Co-lecturer with <a href='https://www.jaist.ac.jp/~ogata/'>Prof. Kazuhiro Ogata</a>"
+        - FY2024 ~ Term 2-1
+    
+    - title: "<a href='https://www.jaist.ac.jp/~ogata/lecture/i116/'>i116 Fundamentals of Programming</a>"
+      institution: Japan Advanced Institute of Science and Technology, Japan
+      year: Comming soon
+      description:
+        - "Co-lecturer with <a href='https://www.jaist.ac.jp/~ogata/'>Prof. Kazuhiro Ogata</a>"
+        - FY2024 ~ Term 1-2
+    
+    - title: "<a href='https://www.jaist.ac.jp/~ogata/lecture/i217/'>i217 Functional Programming</a>"
+      institution: Japan Advanced Institute of Science and Technology, Japan
+      year: Comming soon
+      description:
+        - "Co-lecturer with <a href='https://www.jaist.ac.jp/~ogata/'>Prof. Kazuhiro Ogata</a>"
+        - FY2024 ~ Term 1-2
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: "<a href='https://www.jaist.ac.jp/~ogata/lecture/i219/'>i219E Software Design Methodology</a>"
+      institution: Japan Advanced Institute of Science and Technology
+      year: Dec 2020 - Feb 2021
+      description:
+        - Teaching assistant of graduate students
+        - "Taught by <a href='https://www.jaist.ac.jp/~ogata/'>Prof. Kazuhiro Ogata</a>"
+        - FY2020 ~ Term 2-2
+
+    - title: "<a href='https://www.jaist.ac.jp/~ogata/lecture/i217e/'>i217e Functional Programming</a>"
+      institution: Japan Advanced Institute of Science and Technology
+      year: Jun 2020 - Aug 2020
+      description:
+        - Teaching assistant of graduate students
+        - "Taught by <a href='https://www.jaist.ac.jp/~ogata/'>Prof. Kazuhiro Ogata</a>"
+        - FY2020 ~ Term 1-2
+
+    - title: "<a href='https://www.jaist.ac.jp/~ogata/lecture/i219/'>i219E Software Design Methodology</a>"
+      institution: Japan Advanced Institute of Science and Technology
+      year: Dec 2019 - Feb 2020
+      description:
+        - Teaching assistant of graduate students
+        - "Taught by <a href='https://www.jaist.ac.jp/~ogata/'>Prof. Kazuhiro Ogata</a>"
+        - FY2019 ~ Term 2-2
+    
