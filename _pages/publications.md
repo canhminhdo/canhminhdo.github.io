@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: 
+description:
 nav: true
 nav_order: 4
 ---
@@ -32,7 +32,7 @@ nav_order: 4
 </div>
 
 <div class="publications">
-<h2>Papers Under Preparing</h2>
+<h2>Papers Under Preparation</h2>
 <span class="badge font-weight-bold danger-color-dark align-middle" style="width: 110px;">
     Conference <span class="badge badge-danger">{% bibliography_count -f {{ site.scholar.bibliography_prepare }} --query @inproceedings %}</span>
 </span>
