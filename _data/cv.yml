@@ -75,13 +75,22 @@
 - title: Research Grants
   type: time_table
   contents:
+    - title: Kakenhi for Early-Career Scientists
+      institution: Japan Advanced Institute of Science and Technology
+      year: April 2024 - Mar 2027
+      description: 
+        - "Project: Automated Formal Verification of Quantum Protocols for the Quantum Era"
+        - Principal Investigator (PI)
+        - "Budgets 2,730,000 ¥ (Direct 2,100,000 ¥ and Indirect 630,000 ¥)"
+        - "<a href='https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K20757/'>JSPS KAKENHI Grant Number JP24K20757</a>"
+
     - title: Kakenhi Research Activity Start-up 2023
       institution: Japan Advanced Institute of Science and Technology
       year: July 2023 - Mar 2025
       description: 
         - "Project: A Tableau-based Approach to Model Checking Temporal Properties for Large-scale Systems"
         - Principal Investigator (PI)
-        - "Budgets 2,200,000 ¥"
+        - "Budgets 2,860,000 ¥ (Direct 2,200,000 ¥ and Indirect 660,000 ¥)"
         - "<a href='https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-23K19959/'>JSPS KAKENHI Grant Number JP23K19959</a>"
 
     - title: JAIST Research Grant for Fundamental Research 
@@ -97,7 +106,7 @@
   contents:
     - year: 2022
       items: 
-        - Oustanding student award from JAIST for completing the doctoral program with excellent academic performance
+        - Outstanding student award from JAIST for completing the doctoral program with excellent academic performance
     - year: 2013
       items: 
         - Top graduating student award from Hanoi communist youth union
