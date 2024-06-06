@@ -16,7 +16,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am Canh, an assistant professor at the School of Information Science, <a href='https://jaist.ac.jp/english/'>Japan Advanced Institute of Science and Technology (JAIST)</a>. My primary research interests are in the areas of formal methods, such as formal specification, interactive theorem proving and model checking, and tools supporting formal methods. My research focuses on formal specification and verification of concurrent/distributed systems for both conventional and emerging technologies. I obtained my Ph.D. and M.S. degrees in Information Science from JAIST, advised by <a href='https://www.jaist.ac.jp/~ogata/'>Prof. Kazuhiro Ogata</a>.
+Hi, I am Canh, an assistant professor at the School of Information Science, <a href='https://jaist.ac.jp/english/'>Japan Advanced Institute of Science and Technology (JAIST)</a>. My primary research interests are in the areas of formal methods, such as formal specification, interactive theorem proving and model checking, and tools supporting formal methods. My research focuses on formal specification and verification of concurrent/distributed systems for both conventional and emerging technologies. I obtained my Ph.D. and M.S. degrees in Information Science from JAIST, advised by <a href='https://www.jaist.ac.jp/~ogata/'>Prof. Kazuhiro Ogata</a>.
 
 <b>Research interests:</b> Computer Science, Software Engineering, Formal Methods.
 
