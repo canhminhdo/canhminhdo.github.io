@@ -5,6 +5,6 @@ description: Automated Quantum Protocol Verification based on Dynamic Quantum Lo
 img:
 importance: 3
 category: research
-related_publications: TsubasaDali23
+related_publications: TsubasaDali23, Canh23PDQL
 ---
 
