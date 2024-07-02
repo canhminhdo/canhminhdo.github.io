@@ -21,3 +21,6 @@ Hi, I am Canh, an assistant professor at the School of Information Science, <a h
 <b>Research interests:</b> Computer Science, Software Engineering, Formal Methods.
 
 <b>Scientific activities:</b> Member of the program committee of <a href='https://favpqc2023.gitlab.io/'>FAVPQC 2023</a>, <a href='https://wrla2024.gitlab.io/'>WRLA 2024</a>, and <a href='https://icfem2024.info/'>ICFEM 2024</a>.
+
+<b>Invited talks:</b>
+- "Automated Quantum Protocol Verification Based on Concurrent Dynamic Quantum Logic" at La Trobe-Kyushu Joint Seminar on Mathematics for Industry (07/02/2024 \- via Zoom \- [slides](assets/pdf/slides/invited-talks/2024-CDQL-slides.pdf)).
