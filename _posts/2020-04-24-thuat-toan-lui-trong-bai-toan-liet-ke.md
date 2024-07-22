@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Thuật toán quay lui (backtracking) trong bài toán liệt kê
+redirect_from:
+    - /thuat-toan-lui-trong-bai-toan-liet-ke
 date: 2020-04-24 10:57
 category:
     - Programming

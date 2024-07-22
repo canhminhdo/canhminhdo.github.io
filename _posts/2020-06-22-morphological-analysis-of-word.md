@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Phân tích hình thái (Morphological Analysis) trong xử lý ngôn ngữ tự nhiên
+redirect_from:
+    - /morphological-analysis-of-word
 date: 2020-06-22 09:27
 category:
     - NLP

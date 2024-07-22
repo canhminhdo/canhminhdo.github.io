@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Sorting series] - Thuật toán sắp xếp Selection Sort"
+redirect_from:
+    - /sorting-series-thuat-toan-selection-sort
 date: 2020-05-27 21:39
 category:
     - Programming

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "[Sorting series] Thuật toán sắp xếp distribution sort"
+redirect_from:
+    - /sorting-series-thuat-toan-sap-xep-distribution-sort
 date: 2020-06-26 23:20
 category:
     - Programming

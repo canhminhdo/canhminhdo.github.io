@@ -2,6 +2,8 @@
 layout: post
 title: Tính ổn định của thuật toán sắp xếp (STABILITY)
 date: 2020-06-26 23:20
+redirect_from:
+    - /tinh-on-dinh-cua-thuat-toan-sap-xep
 category:
     - Programming
     - Data Structures and Algorithms

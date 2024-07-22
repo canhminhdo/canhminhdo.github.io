@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Tìm hai số bất kỳ trong dãy số có tổng bằng k
+redirect_from:
+    - /tim-hai-so-bat-ky-trong-day-co-tong-bang-k
 date: 2020-05-02 11:56
 category:
     - Programming

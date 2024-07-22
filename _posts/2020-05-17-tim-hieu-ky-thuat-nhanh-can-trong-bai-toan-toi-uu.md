@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Tìm hiểu kỹ thuật nhánh cận trong bài toán tối ưu
+redirect_from:
+    - /tim-hieu-ky-thuat-nhanh-can-trong-bai-toan-toi-uu
 date: 2020-05-17 10:31
 category:
     - Programming

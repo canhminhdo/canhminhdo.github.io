@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Ý nghĩa các biến môi trường PATH, CLASSPATH và JAVA_HOME khi cài đặt và sử dụng Java
+redirect_from:
+    - /Y-nghia-cac-bien-moi-truong-PATH-CLASSPATH-JAVA_HOME-khi-cai-dat-Java
 date: 2020-09-10 11:53
 category:
     - Java Configuration

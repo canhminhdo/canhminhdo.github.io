@@ -1,6 +1,8 @@
 ---
 layout: post
 title: C++ static library và dynamic library
+redirect_from:
+    - /C++-static-library-va-dynamic-library
 date: 2021-12-03 15:20
 category:
     - C++

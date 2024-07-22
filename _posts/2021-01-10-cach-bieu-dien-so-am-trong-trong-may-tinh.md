@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Cách biểu diễn số âm trong máy tính
+redirect_from:
+    - /cach-bieu-dien-so-am-trong-trong-may-tinh
 date: 2021-01-10 17:27
 category:
     - Bit Manipulation

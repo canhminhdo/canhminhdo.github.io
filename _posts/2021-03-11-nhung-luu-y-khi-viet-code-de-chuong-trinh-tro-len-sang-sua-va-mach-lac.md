@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Những lưu ý khi viết code để chương trình trở lên sáng sủa và mạch lạc
+redirect_from:
+    - /nhung-luu-y-khi-viet-code-de-chuong-trinh-tro-len-sang-sua-va-mach-lac
 date: 2021-03-11 22:40
 category:
     - Code Style

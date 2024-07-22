@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Cách cài đặt PHP script chạy như một service trong Linux
+redirect_from:
+    - /cach-cai-dat-php-script-chay-nhu-mot-service-trong-linux
 date: 2020-12-20 11:22
 category:
     - Deployment

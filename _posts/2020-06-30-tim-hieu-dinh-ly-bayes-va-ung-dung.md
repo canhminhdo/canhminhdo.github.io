@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Tìm hiểu về định lý Bayes và ứng dụng
+redirect_from:
+    - /tim-hieu-dinh-ly-bayes-va-ung-dung
 date: 2020-06-30 11:21
 category:
     - Machine learning

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Giới thiệu về bài toán liệt kê
+redirect_from:
+    - /gioi-thieu-ve-bai-toan-liet-ke
 date: 2020-04-23 14:39
 category:
     - Programming

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Swapping two variables in C++
+redirect_from:
+    - /swapping-two-variables-in-c++
 date: 2020-04-20 14:58
 category:
     - Programming

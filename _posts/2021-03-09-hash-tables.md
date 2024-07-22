@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Hash tables
+redirect_from:
+    - /hash-tables
 date: 2021-03-09 00:07
 category:
     - Hashing

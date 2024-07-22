@@ -1,6 +1,8 @@
 ---
 layout: post
 title: C++ template code
+redirect_from:
+    - /c++-template-code
 date: 2020-08-09 00:18
 category:
     - Programming
