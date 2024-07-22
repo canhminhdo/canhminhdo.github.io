@@ -2,7 +2,7 @@
 layout: post
 title: Tìm dãy con liên tiếp có tổng lớn nhất
 redirect_from:
-    - /tim-day-con-lient-tiep-co-tong-lon-nhat
+    - /tim-day-con-lient-tiep-co-tong-lon-nhat/
 date: 2020-08-08 23:40
 category:
     - Programming

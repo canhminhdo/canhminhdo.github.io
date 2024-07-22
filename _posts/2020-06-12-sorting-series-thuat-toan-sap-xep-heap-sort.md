@@ -2,7 +2,7 @@
 layout: post
 title: "[Sorting series] Thuật toán sắp xếp HeapSort"
 redirect_from:
-    - /sorting-series-thuat-toan-sap-xep-heap-sort
+    - /sorting-series-thuat-toan-sap-xep-heap-sort/
 date: 2020-06-12 23:06
 category:
     - Programming

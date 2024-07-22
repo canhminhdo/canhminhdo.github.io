@@ -2,7 +2,7 @@
 layout: post
 title: Phương pháp sinh trong bài toán liệt kê
 redirect_from:
-    - /phuong-phap-sinh-trong-bai-toan-liet-ke
+    - /phuong-phap-sinh-trong-bai-toan-liet-ke/
 date: 2020-04-23 14:39
 category:
     - Programming

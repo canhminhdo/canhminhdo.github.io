@@ -2,7 +2,7 @@
 layout: post
 title: "[Sorting series] Thuật toán sắp xếp Insertion Sort"
 redirect_from:
-    - /sorting-series-thuat-toan-sap-xep-insertion-sort
+    - /sorting-series-thuat-toan-sap-xep-insertion-sort/
 date: 2020-05-31 02:18
 category:
     - Programming

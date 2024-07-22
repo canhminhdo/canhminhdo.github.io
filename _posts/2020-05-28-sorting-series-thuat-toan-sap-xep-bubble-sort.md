@@ -2,7 +2,7 @@
 layout: post
 title: "[Sorting series] Thuật toán sắp xếp Bubble Sort"
 redirect_from:
-    - /sorting-series-thuat-toan-sap-xep-bubble-sort
+    - /sorting-series-thuat-toan-sap-xep-bubble-sort/
 date: 2020-05-28 21:24
 category:
     - Programming

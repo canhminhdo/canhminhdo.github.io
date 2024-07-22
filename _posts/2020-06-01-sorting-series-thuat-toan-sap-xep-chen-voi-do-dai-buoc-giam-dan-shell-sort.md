@@ -2,7 +2,7 @@
 layout: post
 title: "[Sorting series] Sắp xếp chèn với độ dài bước giảm dần (ShellSort)"
 redirect_from:
-    - /sorting-series-thuat-toan-sap-xep-chen-voi-do-dai-buoc-giam-dan-shell-sort
+    - /sorting-series-thuat-toan-sap-xep-chen-voi-do-dai-buoc-giam-dan-shell-sort/
 date: 2020-06-01 23:08
 category:
     - Programming

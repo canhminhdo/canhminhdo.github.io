@@ -2,7 +2,7 @@
 layout: post
 title: "[Sorting series] Thuật toán sắp xếp QuickSort"
 redirect_from:
-    - /sorting-series-thuat-toan-quick-sort
+    - /sorting-series-thuat-toan-quick-sort/
 date: 2020-06-10 23:00
 category:
     - Programming

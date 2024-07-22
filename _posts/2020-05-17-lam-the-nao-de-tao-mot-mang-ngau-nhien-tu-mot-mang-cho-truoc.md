@@ -2,7 +2,7 @@
 layout: post
 title: Làm thế nào để tạo một mảng ngẫu nhiên từ một mảng cho trước
 redirect_from:
-    - /lam-the-nao-de-tao-mot-mang-ngau-nhien-tu-mot-mang-cho-truoc
+    - /lam-the-nao-de-tao-mot-mang-ngau-nhien-tu-mot-mang-cho-truoc/
 date: 2020-05-17 16:43
 category:
     - Programming

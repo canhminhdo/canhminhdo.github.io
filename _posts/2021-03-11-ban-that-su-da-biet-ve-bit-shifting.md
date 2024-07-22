@@ -2,7 +2,7 @@
 layout: post
 title: Bạn thật sự đã biết về Bit shifting
 redirect_from:
-    - /ban-that-su-da-biet-ve-bit-shifting
+    - /ban-that-su-da-biet-ve-bit-shifting/
 date: 2021-03-11 22:24
 category:
     - Bit Manipulation
