@@ -83,7 +83,7 @@
       description:
         - "Project: Logical Foundation and Formal Verification of Quantum-resistant Security Protocols"
         - Co-Investigator (Co-I) working with Prof. Kazuhiro Ogata (PI)
-        - "Budget: 20,000,000¥"
+        - "Budget: ¥20,930,000 (Direct ¥16,100,000 and Indirect ¥4,830,000)"
 
     - title: JAIST Research Grant FY2024 for Fundamental Research 
       institution: Japan Advanced Institute of Science and Technology
@@ -91,7 +91,7 @@
       description:
         - "Project: Equivalence Checking of Quantum Circuits Based on Dirac Notation"
         - Principal Investigator (PI)
-        - "Budget: 600,000¥"
+        - "Budget: ¥600,000"
 
     - title: KAKENHI Early-Career Scientists
       institution: Japan Advanced Institute of Science and Technology
@@ -99,7 +99,7 @@
       description: 
         - "Project: Automated Formal Verification of Quantum Protocols for the Quantum Era"
         - Principal Investigator (PI)
-        - "Budget: 2,730,000¥ (Direct 2,100,000¥ and Indirect 630,000¥)"
+        - "Budget: ¥2,730,000 (Direct ¥2,100,000 and Indirect ¥630,000)"
         - "<a href='https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-24K20757/'>JSPS KAKENHI Grant Number JP24K20757</a>"
 
     - title: KAKENHI Research Activity Start-up 2023
@@ -108,7 +108,7 @@
       description: 
         - "Project: A Tableau-based Approach to Model Checking Temporal Properties for Large-scale Systems"
         - Principal Investigator (PI)
-        - "Budget: 2,860,000¥ (Direct 2,200,000¥ and Indirect 660,000¥)"
+        - "Budget: ¥2,860,000 (Direct ¥2,200,000 and Indirect ¥660,000)"
         - "<a href='https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-23K19959/'>JSPS KAKENHI Grant Number JP23K19959</a>"
 
     - title: JAIST Research Grant FY2023 for Fundamental Research 
@@ -117,7 +117,7 @@
       description:
         - "Project: An Automated Approach to Verify Quantum Programs Using Dynamic Quantum Logic"
         - Principal Investigator (PI)
-        - "Budget: 500,000¥"
+        - "Budget: ¥500,000"
 
 - title: Honors and Awards
   type: time_table
