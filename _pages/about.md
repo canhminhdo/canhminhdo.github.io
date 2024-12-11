@@ -6,7 +6,7 @@ subtitle: Assistant Professor, JAIST, Japan
 
 profile:
   align: right
-  image: bio-photo.png
+  image: bio-photo.jpg
   image_circular: false # crops the image to make it circular
   address: >
 
