@@ -263,6 +263,7 @@
 --- pdf= {papers/2023-dali.pdf},
 @InProceedings{TsubasaDali23,
 abbr         = {DaLí},
+bibtex_show  = {true},
 author="Takagi, Tsubasa
 and Do, Canh Minh
 and Ogata, Kazuhiro",
@@ -282,6 +283,7 @@ isbn="978-3-031-51777-8"
 
 @inproceedings{Canh23Equiv,
   abbr         = {FAVPQC},
+  bibtex_show  = {true},
   author       = {Minh Do, Canh and Kazuhiro Ogata},
   title        = {Theoretical Foundation for Equivalence Checking of Quantum Circuits},
   booktitle    = {The 2nd International Workshop on Formal Analysis and Verification of Post-Quantum Cryptographic Protocols (collocated at ICFEM 2023)},
@@ -291,6 +293,7 @@ isbn="978-3-031-51777-8"
 
 @inproceedings{Canh23PDQL,
   abbr         = {FAVPQC},
+  bibtex_show  = {true},
   author       = {Minh Do, Canh and Takagi, Tsubasa and Kazuhiro Ogata},
   title        = {Automated Quantum Program Verification in Probabilistic Dynamic Quantum Logic},
   booktitle    = {The 2nd International Workshop on Formal Analysis and Verification of Post-Quantum Cryptographic Protocols (collocated at ICFEM 2023)},
@@ -300,6 +303,7 @@ isbn="978-3-031-51777-8"
 
 @inproceedings{Canh23SMC,
   abbr         = {FAVPQC},
+  bibtex_show  = {true},
   author       = {Minh Do, Canh and Kazuhiro Ogata},
   title        = {Symbolic Model Checking Quantum Circuits With Density Operators in Maude},
   booktitle    = {The 2nd International Workshop on Formal Analysis and Verification of Post-Quantum Cryptographic Protocols (collocated at ICFEM 2023)},
@@ -309,6 +313,7 @@ isbn="978-3-031-51777-8"
 
 @inproceedings{Tsubasa23FOM,
   abbr         = {FAVPQC},
+  bibtex_show  = {true},
   author       = {Takagi, Tsubasa and Minh Do, Canh and Kazuhiro Ogata},
   title        = {Reachability Analysis of the Equivalence of Two Terms in Free Orthomodular Lattices},
   booktitle    = {The 2nd International Workshop on Formal Analysis and Verification of Post-Quantum Cryptographic Protocols (collocated at ICFEM 2023)},
@@ -328,6 +333,7 @@ isbn="978-3-031-51777-8"
 
 @inproceedings{Canh24DCA,
   abbr      = {ICFEM},
+  bibtex_show  = {true},
   author    = {Minh Do, Canh and Takagi, Tsubasa and Kazuhiro Ogata},
   title     = {A Tableau-based Approach to Model Checking Linear Temporal Properties},
   booktitle = {The 25th International Conference on Formal Engineering Methods},
@@ -434,7 +440,7 @@ isbn="978-3-031-51777-8"
 }
 
 @article{CanhTosem23,
-  abbr         = {{ACM} TOSEM},
+  abbr         = {ACM TOSEM},
   bibtex_show  = {true},
   author = {Do, Canh Minh and Phyo, Yati and Riesco, Adri\'{a}n and Ogata, Kazuhiro},
   title = {Optimization Techniques for Model Checking Leads-to Properties in a Stratified Way},
@@ -502,4 +508,22 @@ isbn="978-3-031-51777-8"
   url          = {https://doi.org/10.7717/peerj-cs.2098},
   doi          = {10.7717/peerj-cs.2098},
   year         = {2024}
+}
+
+@article{CanhTosem24,
+abbr         = {ACM TOSEM},
+bibtex_show  = {true},
+author = {Do, Canh Minh and Takagi, Tsubasa and Ogata, Kazuhiro},
+title = {Automated Quantum Protocol Verification Based on Concurrent Dynamic Quantum Logic},
+year = {2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3708475},
+doi = {10.1145/3708475},
+abstract = {While constructing practical quantum computers by big companies remains a challenge, the application of quantum communication and cryptography has made remarkable progress. Therefore, it is crucial to verify quantum protocols before they can be trusted in safety and security-critical applications. We have proposed Basic Dynamic Quantum Logic (BDQL) to formalize and verify sequential models of quantum protocols with a support tool developed in Maude. However, BDQL does not support concurrency in its formalization. This paper introduces Concurrent Dynamic Quantum Logic (CDQL), an extension of BDQL, to formalize and verify concurrent models of quantum protocols. CDQL is more expressive than BDQL by considering concurrent behavior and communication among participants in quantum protocols. Since CDQL is a conservative extension of BDQL, we extend the syntax of BDQL to CDQL and make a transformation from CDQL to BDQL without interrupting the semantics of BDQL. We also extend the implementation of BDQL to support CDQL, making a new support tool in Maude. The new support tool is equipped with a lazy rewriting strategy to make the verification process significantly faster. Several quantum communication protocols are successfully formalized and verified in BDQL/CDQL, demonstrating the effectiveness of our automated approach and tool in verifying quantum protocols.},
+note = {Just Accepted},
+journal = {ACM Transactions on Software Engineering and Methodology},
+month = {dec},
+keywords = {Concurrent Dynamic Quantum Logic, Parallel Composition, Quantum Protocols, Maude}
 }
