@@ -43,7 +43,7 @@
       year: Oct 2011 - Dec 2012
       description:
 
-    - title: B.Sc. in Computer Science
+    - title: B.S. in Computer Science
       institution: National Economic University, Vietnam
       year: Oct 2009 - Sep 2013
       description:
@@ -154,4 +154,4 @@
     - year: Oct 2013
       items: 
         - Top Graduating Student Award from Hanoi City Youth Union
-        - Highest GPA Gradutating Student in Computer Science at National Economic Univeristy
+        # - Highest GPA Gradutating Student in Computer Science at National Economic Univeristy
