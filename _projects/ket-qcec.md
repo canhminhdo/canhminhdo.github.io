@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Equiv-check
-description: Equivalence Checking of Quantum Circuits
+title: ket-qcec
+description: Equivalence Checking of Quantum Circuits Based on Dirac notation
 img: 
 importance: 3
 category: research
