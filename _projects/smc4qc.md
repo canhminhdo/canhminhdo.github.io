@@ -1,6 +1,6 @@
 ---
 layout: page
-title: QTC-Maude
+title: smc4qc
 description: Symbolic Model Checking Quantum Circuits in Maude
 img: 
 importance: 3
