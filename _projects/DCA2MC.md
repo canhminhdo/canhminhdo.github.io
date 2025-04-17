@@ -1,7 +1,7 @@
 ---
 layout: page
 title: dca2mc
-description: A Divide & Conquer Approach to LTL Model Checking
+description: A Divide & Conquer Approach to Model Checking Linear Temporal Properties
 img: 
 redirect: 
 importance: 2
