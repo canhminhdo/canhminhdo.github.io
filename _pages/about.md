@@ -20,4 +20,15 @@ Hi, I am Canh, an assistant professor at the School of Information Science, <a h
 
 <b>Research interests:</b> Computer Science, Software Engineering, Formal Methods.
 
-<b>Scientific activities:</b> Member of the program committee of <a href='https://favpqc2023.gitlab.io/'>FAVPQC 2023</a>, <a href='https://wrla2024.gitlab.io/'>WRLA 2024</a>, and <a href='https://icfem2024.info/'>ICFEM 2024</a>.
+<b>Scientific activities:</b> 
+<ul>
+  <li>Member of the program committee of 
+    <a href='https://favpqc2023.gitlab.io/'>FAVPQC 2023</a>, 
+    <a href='https://wrla2024.gitlab.io/'>WRLA 2024</a>, and 
+    <a href='https://icfem2024.info/'>ICFEM 2024</a>.
+  </li>
+  <li>Collaboration as a reviewer at 
+    <a href='https://www.sciencedirect.com/journal/journal-of-systems-and-software'>JSS 2021</a> and
+    <a href='https://www.sciencedirect.com/journal/journal-of-logical-and-algebraic-methods-in-programming'>JLAMP 2025</a>.
+  </li>
+</ul>
