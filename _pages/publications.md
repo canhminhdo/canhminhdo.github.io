@@ -20,7 +20,8 @@ nav_order: 4
 {% bibliography -f {{ site.scholar.bibliography }} %}
 </div>
 
-<!-- <div class="publications">
+{% comment %} 
+<div class="publications">
 <h2>Papers Under Review</h2>
 <span class="badge font-weight-bold danger-color-dark align-middle" style="width: 110px;">
     Conference <span class="badge badge-danger">{% bibliography_count -f {{ site.scholar.bibliography_review }} --query @inproceedings %}</span>
@@ -40,5 +41,6 @@ nav_order: 4
     Journal <span class="badge badge-primary">{% bibliography_count -f {{ site.scholar.bibliography_prepare }} --query @article %}</span>
 </span>
 {% bibliography -f {{ site.scholar.bibliography_prepare }} %}
-</div> -->
+</div> 
+{% endcomment %}
 
