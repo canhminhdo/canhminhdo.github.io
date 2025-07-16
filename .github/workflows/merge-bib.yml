@@ -1,0 +1,28 @@
+name: Merge bib files
+
+on:
+  push:
+    paths:
+      - '_bibliography/conferences.bib'
+      - '_bibliography/journals.bib'
+
+jobs:
+  merge-bib:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Merge .bib files
+      run: |
+        cat _bibliography/conferences.bib _bibliography/journals.bib > _bibliography/papers.bib
+
+    - name: Commit merged file
+      run: |
+        git config user.name "canhminhdo"
+        git config user.email "minhcanh99@gmail.com"
+        git add _bibliography/papers.bib
+        git commit -m "Auto-merge bib files"
+        git push
+      # Prevent errors if no changes to commit:
+      continue-on-error: true
