@@ -1,4 +1,4 @@
-name: Merge bib files
+name: Merge .bib files and trigger GitHub Pages rebuild
 
 on:
   push:
@@ -17,12 +17,15 @@ jobs:
       run: |
         cat _bibliography/conferences.bib _bibliography/journals.bib > _bibliography/papers.bib
 
-    - name: Commit merged file
+    - name: Touch rebuild trigger file
+        run: echo "trigger: $(date)" > .trigger-rebuild
+
+    - name: Commit merged bib and trigger file
       run: |
         git config user.name "canhminhdo"
         git config user.email "minhcanh99@gmail.com"
-        git add _bibliography/papers.bib
-        git commit -m "Auto-merge bib files"
+        git add _bibliography/papers.bib .trigger-rebuild
+        git commit -m "Auto-merge bib files and trigger GitHub Pages rebuild"
         git push
       # Prevent errors if no changes to commit:
       continue-on-error: true

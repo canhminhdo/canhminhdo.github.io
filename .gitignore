@@ -39,3 +39,5 @@ _site
 Gemfile.lock
 vendor
 
+# trigger rebuild when bibliography files are merged
+.trigger-rebuild
