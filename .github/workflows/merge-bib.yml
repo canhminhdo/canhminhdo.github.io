@@ -18,7 +18,8 @@ jobs:
         cat _bibliography/conferences.bib _bibliography/journals.bib > _bibliography/papers.bib
 
     - name: Touch rebuild trigger file
-        run: echo "trigger: $(date)" > .trigger-rebuild
+      run: |
+        echo "trigger: $(date)" > .trigger-rebuild
 
     - name: Commit merged bib and trigger file
       run: |
