@@ -5,6 +5,7 @@ on:
     paths:
       - '_bibliography/conferences.bib'
       - '_bibliography/journals.bib'
+    workflow_dispatch:
 
 jobs:
   merge-bib:
