@@ -171,10 +171,13 @@ keywords = {Concurrent Dynamic Quantum Logic, Parallel Composition, Quantum Prot
 
 @article{CanhTDSC24,
   abbr         = {IEEE TDSC},
-  author       = {Minh Do, Canh and Adrián Riesco and Santiago Escobar and Kazuhiro Ogata},
-  title        = {Parallel Maude-NPA for Cryptographic Protocol Analysis (To Appear)},
-  note         = {Just Accepted},
-  journal      = {IEEE Transactions on Dependable and Secure Computing},
+  author={Do, Canh Minh and Riesco, Adrián and Escobar, Santiago and Ogata, Kazuhiro},
+  journal={IEEE Transactions on Dependable and Secure Computing}, 
+  title={Parallel Maude-NPA for Cryptographic Protocol Analysis}, 
   publisher    = {IEEE},
-  year         = {2025}
-}
+  year={2025},
+  volume={},
+  number={},
+  pages={1-18},
+  abstract={Maude-NPA is a formal verification tool for analyzing cryptographic protocols in the Dolev-Yao strand space model modulo an equational theory defining the cryptographic primitives. It starts from an attack state to find counterexamples or conclude that the attack concerned cannot be conducted by performing a backward narrowing reachability analysis. Although Maude-NPA is a powerful analyzer, its running performance can be improved by taking advantage of parallel and/or distributed computing when dealing with complex protocols whose state space is huge. This paper describes a parallel version of Maude-NPA in which the backward narrowing and the transition subsumption at each layer in Maude-NPA are conducted in parallel. A tool supporting the parallel version has been implemented in Maude with a master-worker model using meta-interpreters. We report on some experiments of various kinds of protocols that demonstrate that the tool can increase the running performance of Maude-NPA by 52% on average for complex case studies in which the number of states located at each layer is considerably large.},
+  doi={10.1109/TDSC.2025.3589584}}
