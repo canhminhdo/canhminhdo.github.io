@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We are greatly honored to welcome [Professor Mingsheng Ying](https://profiles.uts.edu.au/Mingsheng.Ying) from the University of Technology Sydney to visit our research group at JAIST.
+We warmly welcome [Professor Mingsheng Ying](https://profiles.uts.edu.au/Mingsheng.Ying) from the University of Technology Sydney for his visit to our research group at JAIST.
