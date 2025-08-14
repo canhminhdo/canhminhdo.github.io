@@ -22,12 +22,12 @@ Hi, I am Canh, an assistant professor at the School of Information Science, <a h
 
 <b>Scientific activities:</b> 
 <ul>
-  <li>Member of the program committee of 
+  <li>Member of the program committee for 
     <a href='https://favpqc2023.gitlab.io/'>FAVPQC 2023</a>, 
     <a href='https://wrla2024.gitlab.io/'>WRLA 2024</a>, and 
     <a href='https://icfem2024.info/'>ICFEM 2024</a>.
   </li>
-  <li>Collaboration as a reviewer at 
+  <li>Reviewer of academic journals for 
     <a href='https://www.sciencedirect.com/journal/journal-of-systems-and-software'>JSS 2021</a> and
     <a href='https://www.sciencedirect.com/journal/journal-of-logical-and-algebraic-methods-in-programming'>JLAMP 2025</a>.
   </li>
