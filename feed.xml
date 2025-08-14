@@ -1,37 +1,180 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://canhminhdo.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://canhminhdo.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-08-08T00:23:29+00:00</updated><id>https://canhminhdo.github.io/feed.xml</id><title type="html">blank</title><subtitle>Computer Science, Software Engineering, Formal Methods. </subtitle><entry><title type="html">Lvalues and Rvalues in C++</title><link href="https://canhminhdo.github.io/blog/2023/lvalues-and-rvalues-in-c++/" rel="alternate" type="text/html" title="Lvalues and Rvalues in C++"/><published>2023-01-01T15:42:00+00:00</published><updated>2023-01-01T15:42:00+00:00</updated><id>https://canhminhdo.github.io/blog/2023/lvalues-and-rvalues-in-c++</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2023/lvalues-and-rvalues-in-c++/"><![CDATA[<p>Lvalues và Rvalues là khái niệm quan trọng trong C++ để có thể hiểu được những chức năng mới được giới thiệu từ C++11. Trong C++, một lvalue được trỏ tới một vị trí cụ thể trong bộ nhớ. Còn một rvalue không được trỏ tới đâu cả. Rvalues là tạm thời và tồn tại trong thời gian ngắn, trong khi đó lvalues có thể tồn tại lâu dài miễn là biến đó vẫn tồn tại. Nếu bạn nghĩ lvalues và một nơi chứa thì rvalues là thứ được chứa trong đó. Không có nơi chứa thì những thứ đó sẽ không tồn tại.</p> <p>Hãy cùng đi vào một ví dụ cụ thể sau:</p> <pre><code class="language-C++">int x = 8888; // ok
-</code></pre> <p>Trong ví dụ này <code class="language-plaintext highlighter-rouge">8888</code> là một rvalue, một hằng số đơn thuần và không có một địa chỉ bộ nhớ cụ thể nào ngoài việc được lưu trữ ở trong thanh ghi tạm thời khi chương trình đang chạy. Biến <code class="language-plaintext highlighter-rouge">x</code> có một giá trị bộ nhớ cụ thể và được gán giá trị <code class="language-plaintext highlighter-rouge">8888</code>, vì vậy <code class="language-plaintext highlighter-rouge">x</code> là một rvalue. Trong C++ thì toán tử gán yêu cầu toán hạng bên trái là một lvalue, trong khi đó toàn hạng bên phải có thể là lvalue hoặc rvalue.</p> <pre><code class="language-C++">int* y = &amp;x; // ok
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://canhminhdo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://canhminhdo.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-14T04:57:45+00:00</updated><id>https://canhminhdo.github.io/feed.xml</id><title type="html">blank</title><subtitle>Computer Science, Software Engineering, Formal Methods.
+</subtitle><entry><title type="html">Lvalues and Rvalues in C++</title><link href="https://canhminhdo.github.io/blog/2023/lvalues-and-rvalues-in-c++/" rel="alternate" type="text/html" title="Lvalues and Rvalues in C++" /><published>2023-01-01T15:42:00+00:00</published><updated>2023-01-01T15:42:00+00:00</updated><id>https://canhminhdo.github.io/blog/2023/lvalues-and-rvalues-in-c++</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2023/lvalues-and-rvalues-in-c++/"><![CDATA[<p>Lvalues và Rvalues là khái niệm quan trọng trong C++ để có thể hiểu được những chức năng mới được giới thiệu từ C++11. Trong C++, một lvalue được trỏ tới một vị trí cụ thể trong bộ nhớ. Còn một rvalue không được trỏ tới đâu cả. Rvalues là tạm thời và tồn tại trong thời gian ngắn, trong khi đó lvalues có thể tồn tại lâu dài miễn là biến đó vẫn tồn tại. Nếu bạn nghĩ lvalues và một nơi chứa thì rvalues là thứ được chứa trong đó. Không có nơi chứa thì những thứ đó sẽ không tồn tại.</p>
+
+<p>Hãy cùng đi vào một ví dụ cụ thể sau:</p>
+
+<pre><code class="language-C++">int x = 8888; // ok
+</code></pre>
+
+<p>Trong ví dụ này <code class="language-plaintext highlighter-rouge">8888</code> là một rvalue, một hằng số đơn thuần và không có một địa chỉ bộ nhớ cụ thể nào ngoài việc được lưu trữ ở trong thanh ghi tạm thời khi chương trình đang chạy. Biến <code class="language-plaintext highlighter-rouge">x</code> có một giá trị bộ nhớ cụ thể và được gán giá trị <code class="language-plaintext highlighter-rouge">8888</code>, vì vậy <code class="language-plaintext highlighter-rouge">x</code> là một rvalue. Trong C++ thì toán tử gán yêu cầu toán hạng bên trái là một lvalue, trong khi đó toàn hạng bên phải có thể là lvalue hoặc rvalue.</p>
+
+<pre><code class="language-C++">int* y = &amp;x; // ok
 666 = x; // error!
-</code></pre> <p>Một vài ví dụ trên cho bạn hình dung rằng chúng ta không thể sử dụng một rvalue cho toán hạng ở bên trái.</p> <h3 id="functions-trả-về-lvalues-và-rvalues">Functions trả về lvalues và rvalues</h3> <p>Nếu functions trả về rvalues và được sử dụng trong phép gán bên tay trái là không hợp lệ như sau:</p> <pre><code class="language-C+">int setValue() {
+</code></pre>
+<p>Một vài ví dụ trên cho bạn hình dung rằng chúng ta không thể sử dụng một rvalue cho toán hạng ở bên trái.</p>
+
+<h3 id="functions-trả-về-lvalues-và-rvalues">Functions trả về lvalues và rvalues</h3>
+
+<p>Nếu functions trả về rvalues và được sử dụng trong phép gán bên tay trái là không hợp lệ như sau:</p>
+
+<pre><code class="language-C+">int setValue() {
     return 6;
 }
 setValue() = 3; // error!
-</code></pre> <p>Tuy nhiên nếu functions trả về lvalues, chúng ta có thể sử dụng trong phép gán như sau:</p> <pre><code class="language-C++">int global = 100;
+</code></pre>
+
+<p>Tuy nhiên nếu functions trả về lvalues, chúng ta có thể sử dụng trong phép gán như sau:</p>
+
+<pre><code class="language-C++">int global = 100;
 int&amp; setGlobal() {
     return global;
 }
 setGlobal() = 400; // OK
-</code></pre> <p>Một tham chiếu (<code class="language-plaintext highlighter-rouge">reference</code>) trỏ tới một địa chỉ bộ nhớ cụ thể đã tồn lại. Vì vậy nó cũng được coi là lvalue. Chú ý rằng <code class="language-plaintext highlighter-rouge">&amp;</code> sử dụng trong kiểu giá trị trả về của hàm ở trên không phải là toán tử lấy về địa chỉ, nó được sử dụng để định nghĩa giá trị trả về là một <code class="language-plaintext highlighter-rouge">lvalue reference</code> (chúng ta sẽ tìm hiểm trong phần dưới).</p> <h3 id="chuyển-lvalues-sang-rvalues">Chuyển lvalues sang rvalues</h3> <p>Một lvalue có thể được chuyển thành rvalue. Ví dụ toán tử <code class="language-plaintext highlighter-rouge">+</code> trong C++ yêu cầu hai toán hạng là rvalues. Tuy nhiên hãy xem ví dụ sau:</p> <pre><code class="language-C++">int x = 1;
+</code></pre>
+
+<p>Một tham chiếu (<code class="language-plaintext highlighter-rouge">reference</code>) trỏ tới một địa chỉ bộ nhớ cụ thể đã tồn lại. Vì vậy nó cũng được coi là lvalue. Chú ý rằng <code class="language-plaintext highlighter-rouge">&amp;</code> sử dụng trong kiểu giá trị trả về của hàm ở trên không phải là toán tử lấy về địa chỉ, nó được sử dụng để định nghĩa giá trị trả về là một <code class="language-plaintext highlighter-rouge">lvalue reference</code> (chúng ta sẽ tìm hiểm trong phần dưới).</p>
+
+<h3 id="chuyển-lvalues-sang-rvalues">Chuyển lvalues sang rvalues</h3>
+
+<p>Một lvalue có thể được chuyển thành rvalue. Ví dụ toán tử <code class="language-plaintext highlighter-rouge">+</code> trong C++ yêu cầu hai toán hạng là rvalues. Tuy nhiên hãy xem ví dụ sau:</p>
+
+<pre><code class="language-C++">int x = 1;
 int y = 2;
 int z = x + y; // ok
-</code></pre> <p>Rõ ràng <code class="language-plaintext highlighter-rouge">x</code> và <code class="language-plaintext highlighter-rouge">y</code> là lvalues, nhưng toán tử <code class="language-plaintext highlighter-rouge">+</code> mong muốn rvalues. C++ sẽ ngầm chuyển đổi lvalues sang rvalues cho chúng ta.</p> <h3 id="lvalue-reference">Lvalue reference</h3> <p>Liệu rvalues có thể được chuyển thành lvalues? Câu trả lời là không.</p> <pre><code class="language-C++">int x = 10;
+</code></pre>
+
+<p>Rõ ràng <code class="language-plaintext highlighter-rouge">x</code> và <code class="language-plaintext highlighter-rouge">y</code> là lvalues, nhưng toán tử <code class="language-plaintext highlighter-rouge">+</code> mong muốn rvalues. C++ sẽ ngầm chuyển đổi lvalues sang rvalues cho chúng ta.</p>
+
+<h3 id="lvalue-reference">Lvalue reference</h3>
+
+<p>Liệu rvalues có thể được chuyển thành lvalues? Câu trả lời là không.</p>
+
+<pre><code class="language-C++">int x = 10;
 int&amp; xref = x;
 xref++; // x is now 11
-</code></pre> <p>Chúng ta đang khai báo <code class="language-plaintext highlighter-rouge">xref</code> là một biến tham chiếu tới <code class="language-plaintext highlighter-rouge">x</code> và được gọi là <code class="language-plaintext highlighter-rouge">lvalue reference</code>. Giờ chúng ta có thể thay đổi giá trị <code class="language-plaintext highlighter-rouge">x</code> thông qua <code class="language-plaintext highlighter-rouge">xref</code>. Nếu chúng ta gán <code class="language-plaintext highlighter-rouge">10</code> tới <code class="language-plaintext highlighter-rouge">xref</code> như ví dụ dưới liệu có hợp lệ không?</p> <pre><code class="language-C++">int&amp; xref = 10; // will it work?
-</code></pre> <p>Toán hạng bên phải là một giá trị tạm thời và cần phải được lưu trữ ở đâu đó trong một lvalue để có thể tham chiếu tới. Nhưng <code class="language-plaintext highlighter-rouge">10</code> là một giá trị cụ thể và không có một địa chỉ cụ thể trong bộ nhớ. Vì vậy ta không thể làm như vậy. Tương tự như trong ví dụ sau:</p> <pre><code class="language-C++">void func(int&amp; x) {}
+</code></pre>
+
+<p>Chúng ta đang khai báo <code class="language-plaintext highlighter-rouge">xref</code> là một biến tham chiếu tới <code class="language-plaintext highlighter-rouge">x</code> và được gọi là <code class="language-plaintext highlighter-rouge">lvalue reference</code>. Giờ chúng ta có thể thay đổi giá trị <code class="language-plaintext highlighter-rouge">x</code> thông qua <code class="language-plaintext highlighter-rouge">xref</code>.
+Nếu chúng ta gán <code class="language-plaintext highlighter-rouge">10</code> tới <code class="language-plaintext highlighter-rouge">xref</code> như ví dụ dưới liệu có hợp lệ không?</p>
+
+<pre><code class="language-C++">int&amp; xref = 10; // will it work?
+</code></pre>
+
+<p>Toán hạng bên phải là một giá trị tạm thời và cần phải được lưu trữ ở đâu đó trong một lvalue để có thể tham chiếu tới. Nhưng <code class="language-plaintext highlighter-rouge">10</code> là một giá trị cụ thể và không có một địa chỉ cụ thể trong bộ nhớ. Vì vậy ta không thể làm như vậy. Tương tự như trong ví dụ sau:</p>
+
+<pre><code class="language-C++">void func(int&amp; x) {}
 int main() {
     func(10); // error
 }
-</code></pre> <h3 id="const-lvalue-reference-có-thể-giải-quyết-được">Const lvalue reference có thể giải quyết được</h3> <p>Tuy nhiên, chúng ta có thể sử dụng một <code class="language-plaintext highlighter-rouge">const lvalue</code> để gắn một rvalue như sau:</p> <pre><code class="language-C++">const int&amp; ref = 10; // ok
-</code></pre> <p>Và ví dụ sau cũng hoàn toàn hợp lệ:</p> <pre><code class="language-C++">void func(const int&amp; x) {}
+</code></pre>
+
+<h3 id="const-lvalue-reference-có-thể-giải-quyết-được">Const lvalue reference có thể giải quyết được</h3>
+
+<p>Tuy nhiên, chúng ta có thể sử dụng một <code class="language-plaintext highlighter-rouge">const lvalue</code> để gắn một rvalue như sau:</p>
+
+<pre><code class="language-C++">const int&amp; ref = 10; // ok
+</code></pre>
+
+<p>Và ví dụ sau cũng hoàn toàn hợp lệ:</p>
+
+<pre><code class="language-C++">void func(const int&amp; x) {}
 int main() {
     func(10); // OK
 }
-</code></pre> <p>Giá trị <code class="language-plaintext highlighter-rouge">10</code> sẽ hết hạn ngay lập tức, vì vậy một <code class="language-plaintext highlighter-rouge">reference</code> tới nó là không có ý nghĩa gì. Tuy nhiên chúng ta có thể tạo biến <code class="language-plaintext highlighter-rouge">const lvalue reference</code> với giá trị trỏ đến không thể bị thay đổi. Để có thể làm vậy C++ compiler sẽ tạo một <code class="language-plaintext highlighter-rouge">hidden variable</code> để lưu trữ giá trị <code class="language-plaintext highlighter-rouge">10</code> và gắn <code class="language-plaintext highlighter-rouge">hidden variable</code> tới biến tham chiếu như sau.</p> <pre><code class="language-C++">const int&amp; ref = 10;
+</code></pre>
+
+<p>Giá trị <code class="language-plaintext highlighter-rouge">10</code> sẽ hết hạn ngay lập tức, vì vậy một <code class="language-plaintext highlighter-rouge">reference</code> tới nó là không có ý nghĩa gì. Tuy nhiên chúng ta có thể tạo biến <code class="language-plaintext highlighter-rouge">const lvalue reference</code> với giá trị trỏ đến không thể bị thay đổi. Để có thể làm vậy C++ compiler sẽ tạo một <code class="language-plaintext highlighter-rouge">hidden variable</code> để lưu trữ giá trị <code class="language-plaintext highlighter-rouge">10</code> và gắn <code class="language-plaintext highlighter-rouge">hidden variable</code> tới biến tham chiếu như sau.</p>
+
+<pre><code class="language-C++">const int&amp; ref = 10;
 
 // would translate to
 int __internal_unique_name = 10;
 const int&amp; ref = __internal_unique_name;
-</code></pre> <p>Bây giờ mọi thử trở dễ hiểu hơn khi biến tham chiếu trỏ tới một vị trí bộ nhớ cụ thể và chúng ta có thể dụng như bình thường nhưng không được sửa đổi nó.</p> <h3 id="kết-luận">Kết luận</h3> <p>Hiểu được ý nghĩa của lvalues và rvalues giúp chúng ta hiểu được những khái niệm mới như rvalue references, move semantics và perfect forwarding trong các bài viết tới.</p>]]></content><author><name></name></author><category term="[&quot;C++&quot;]"/><summary type="html"><![CDATA[Lvalues và Rvalues là khái niệm quan trọng trong C++ để có thể hiểu được những chức năng mới được giới thiệu từ C++11. Trong C++, một lvalue được trỏ tới một vị trí cụ thể trong bộ nhớ. Còn một rvalue không được trỏ tới đâu cả. Rvalues là tạm thời và tồn tại trong thời gian ngắn, trong khi đó lvalues có thể tồn tại lâu dài miễn là biến đó vẫn tồn tại. Nếu bạn nghĩ lvalues và một nơi chứa thì rvalues là thứ được chứa trong đó. Không có nơi chứa thì những thứ đó sẽ không tồn tại.]]></summary></entry><entry><title type="html">C++ static library và dynamic library</title><link href="https://canhminhdo.github.io/blog/2021/C++-static-library-va-dynamic-library/" rel="alternate" type="text/html" title="C++ static library và dynamic library"/><published>2021-12-03T15:20:00+00:00</published><updated>2021-12-03T15:20:00+00:00</updated><id>https://canhminhdo.github.io/blog/2021/C++-static-library-va-dynamic-library</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2021/C++-static-library-va-dynamic-library/"><![CDATA[<p>Tôi có hội làm việc với C++ thông qua một dự án nhỏ cần phải thêm mới một vài chức năng. Dự án đó sử dụng autotools để quản lý các configuration, make và dependencies. Trong quá trình phát triển và build dự án để có thể chạy được trên các máy khác nhau, tôi cần phải chọn cách build dự án thông qua static library hoặc dynamic library? Để có thể chạy trên các nền tảng máy khác nhau e.g. x86, x86_64, cần phải build các library cho từng nền tảng máy đó vì mỗi nền tảng hỗ trợ những tập lệnh khác nhau và build chương trình của mình link cùng với các library đó cho các nền tảng tương ứng.</p> <p><strong>1. Quá trình build một chương trình C++</strong> Trong C/C++ để build một chương trình sẽ trải qua những bước như sau:</p> <ul> <li> <p>Processor: source code sẽ được tiền xử lý như là xóa đi các comments, expand những include từ headers files, replace các macros bạn định nghĩa vào những chỗ bạn sử dụng trong source code.</p> </li> <li> <p>Complie: preprocessed code sẽ được complie về dạng assembly code, bạn có thể đọc được những mã lệnh assembly code này nếu bạn đã từng lập trình với assembly.</p> </li> <li> <p>Assembler: assembly code sẽ được chuyển về dạng mã máy để có thể chạy được trên máy tính của bạn. Bạn có thể gọi đây là các object code.</p> </li> <li> <p>Linker: Các object code này sẽ được link với các dependencies hoặc có thể hiểu là các library bạn sử dụng trong chương trình, bạn cần link vào thì chương trình mới có thể chạy được, ngoài ra thì chương trình của bạn sẽ không hiểu nó là cái gì, ngoài một interface được chứa trong file <strong>.h</strong>.</p> </li> </ul> <p>Khi build chương trình bạn có thể tùy chọn là sử dụng static library hay dynamic library. Một một cái sẽ có pros và cons khác nhau.</p> <p><strong>2. Static library (.a, .lib)</strong> Static library là tập hợp các object files được link cùng với chương trình khi bạn build một file có thể chạy được. Vì vậy library code sẽ được link vào chương trình trong quá trình complie time, vì vậy chương trình được build sẽ chứa nhiều files và nặng hơn. Tuy nhiên tốc độ sẽ nhanh hơn vì bạn không phải mất thời gian để load library trong khi run-time. Một điểm đặc biệt chú ý là khi bạn muốn thay đổi static libraries bạn phải build lại toàn bộ chương trình.</p> <p><strong>3. Dynamic library (.so, .dll, .dylib)</strong> Trái ngược với static library, dynamic library sẽ được link vào trong chương trình trong khi run-time, vì vậy kích thước của chương trình được build ra sẽ nhỏ hơn và đặc biệt là bạn không cần phải complie lại chương trình khi thay đổi version của các library đó. Nhược điểm là sẽ làm chậm quá trình run time vì phải đợi để load những dynamic library vào chương trình khi chạy.</p> <p>Khi sử dụng dynamic library bạn cần chú ý biến environment <strong>LD_LIBRARY_PATH</strong> sẽ được linker sử dụng để tìm kiếm các dynamic library.</p> <p><strong>4. Một vài flags cần phải nắm khi build chương trình C++</strong> Chúng ta có thể overwrite những mặc định khi build chương trình với những flag như sau:</p> <p><strong>CC</strong> là C complider command.</p> <p><strong>CFLAGS</strong> là C complier flags.</p> <p><strong>LDFLAGS</strong>* là linker flags, e.g. -L&lt;lib dir&gt; nếu bạn có library không phải standard library và nằm ở thư mục đâu đó.</p> <p><strong>LIBS</strong> libarary bạn muốn nói cho linkers biết, e.g. -l&lt;library&gt;. Trong trường hợp sử dụng static library, bạn nên chỉ đến đúng đường dẫn của libary đó, e.g. /path/to/libary.a</p> <p><strong>CPPFLAGS</strong> là C/C++ preprocessor flags, e.g -I&lt;include dir&gt; nếu bạn sử dụng headers file của nhưng nonstandard libary nằm ở thư mục đâu đó.</p> <p><strong>CXX</strong> là C++ complier command.</p> <p><strong>CXXFLAGS</strong> là C++ complier flags.</p> <p>Dưới đây là câu lệnh mình sử dụng để configure cho dự án của mình trước khi complie bằng câu lệnh make.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>../configure \
+</code></pre>
+
+<p>Bây giờ mọi thử trở dễ hiểu hơn khi biến tham chiếu trỏ tới một vị trí bộ nhớ cụ thể và chúng ta có thể dụng như bình thường nhưng không được sửa đổi nó.</p>
+
+<h3 id="kết-luận">Kết luận</h3>
+<p>Hiểu được ý nghĩa của lvalues và rvalues giúp chúng ta hiểu được những khái niệm mới như rvalue references, move semantics và perfect forwarding trong các bài viết tới.</p>]]></content><author><name></name></author><category term="[&quot;C++&quot;]" /><summary type="html"><![CDATA[Lvalues và Rvalues là khái niệm quan trọng trong C++ để có thể hiểu được những chức năng mới được giới thiệu từ C++11. Trong C++, một lvalue được trỏ tới một vị trí cụ thể trong bộ nhớ. Còn một rvalue không được trỏ tới đâu cả. Rvalues là tạm thời và tồn tại trong thời gian ngắn, trong khi đó lvalues có thể tồn tại lâu dài miễn là biến đó vẫn tồn tại. Nếu bạn nghĩ lvalues và một nơi chứa thì rvalues là thứ được chứa trong đó. Không có nơi chứa thì những thứ đó sẽ không tồn tại.]]></summary></entry><entry><title type="html">C++ static library và dynamic library</title><link href="https://canhminhdo.github.io/blog/2021/C++-static-library-va-dynamic-library/" rel="alternate" type="text/html" title="C++ static library và dynamic library" /><published>2021-12-03T15:20:00+00:00</published><updated>2021-12-03T15:20:00+00:00</updated><id>https://canhminhdo.github.io/blog/2021/C++-static-library-va-dynamic-library</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2021/C++-static-library-va-dynamic-library/"><![CDATA[<p>Tôi có hội làm việc với C++ thông qua một dự án nhỏ cần phải thêm mới một vài
+chức năng. Dự án đó sử dụng autotools để quản lý các configuration, make và
+dependencies. Trong quá trình phát triển và build dự án để có thể chạy được trên
+các máy khác nhau, tôi cần phải chọn cách build dự án thông qua static library
+hoặc dynamic library? Để có thể chạy trên các nền tảng máy khác nhau e.g. x86,
+x86_64, cần phải build các library cho từng nền tảng máy đó vì mỗi nền tảng
+hỗ trợ những tập lệnh khác nhau và build chương trình của mình link cùng với
+các library đó cho các nền tảng tương ứng.</p>
+
+<p><strong>1. Quá trình build một chương trình C++</strong>
+Trong C/C++ để build một chương trình sẽ trải qua những bước như sau:</p>
+
+<ul>
+  <li>
+    <p>Processor: source code sẽ được tiền xử lý như là xóa đi các comments,
+expand những include từ headers files, replace các macros bạn định nghĩa
+vào những chỗ bạn sử dụng trong source code.</p>
+  </li>
+  <li>
+    <p>Complie: preprocessed code sẽ được complie về dạng assembly code, bạn
+có thể đọc được những mã lệnh assembly code này nếu bạn đã từng lập trình
+với assembly.</p>
+  </li>
+  <li>
+    <p>Assembler: assembly code sẽ được chuyển về dạng mã máy để có thể chạy được
+trên máy tính của bạn. Bạn có thể gọi đây là các object code.</p>
+  </li>
+  <li>
+    <p>Linker: Các object code này sẽ được link với các dependencies hoặc có thể hiểu
+là các library bạn sử dụng trong chương trình, bạn cần link vào thì chương trình
+mới có thể chạy được, ngoài ra thì chương trình của bạn sẽ không hiểu nó là cái
+gì, ngoài một interface được chứa trong file <strong>.h</strong>.</p>
+  </li>
+</ul>
+
+<p>Khi build chương trình bạn có thể tùy chọn là sử dụng static library hay dynamic
+library. Một một cái sẽ có pros và cons khác nhau.</p>
+
+<p><strong>2. Static library (.a, .lib)</strong>
+Static library là tập hợp các object files được link cùng với chương trình khi
+bạn build một file có thể chạy được. Vì vậy library code sẽ được link vào chương
+trình trong quá trình complie time, vì vậy chương trình được build sẽ chứa nhiều
+files và nặng hơn. Tuy nhiên tốc độ sẽ nhanh hơn vì bạn không phải mất thời gian
+để load library trong khi run-time. Một điểm đặc biệt chú ý là khi bạn muốn thay
+đổi static libraries bạn phải build lại toàn bộ chương trình.</p>
+
+<p><strong>3. Dynamic library (.so, .dll, .dylib)</strong>
+Trái ngược với static library, dynamic library sẽ được link vào trong chương trình
+trong khi run-time, vì vậy kích thước của chương trình được build ra sẽ nhỏ hơn và
+đặc biệt là bạn không cần phải complie lại chương trình khi thay đổi version của các
+library đó. Nhược điểm là sẽ làm chậm quá trình run time vì phải đợi để load những
+dynamic library vào chương trình khi chạy.</p>
+
+<p>Khi sử dụng dynamic library bạn cần chú ý biến environment <strong>LD_LIBRARY_PATH</strong> sẽ
+được linker sử dụng để tìm kiếm các dynamic library.</p>
+
+<p><strong>4. Một vài flags cần phải nắm khi build chương trình C++</strong>
+Chúng ta có thể overwrite những mặc định khi build chương trình với những flag như sau:</p>
+
+<p><strong>CC</strong> là C complider command.</p>
+
+<p><strong>CFLAGS</strong> là C complier flags.</p>
+
+<p><strong>LDFLAGS</strong>* là linker flags, e.g. -L&lt;lib dir&gt; nếu bạn có library không phải standard library
+và nằm ở thư mục đâu đó.</p>
+
+<p><strong>LIBS</strong> libarary bạn muốn nói cho linkers biết, e.g. -l&lt;library&gt;. Trong trường hợp sử dụng
+static library, bạn nên chỉ đến đúng đường dẫn của libary đó, e.g. /path/to/libary.a</p>
+
+<p><strong>CPPFLAGS</strong> là C/C++ preprocessor flags, e.g -I&lt;include dir&gt; nếu bạn sử dụng headers file
+của nhưng nonstandard libary nằm ở thư mục đâu đó.</p>
+
+<p><strong>CXX</strong> là C++ complier command.</p>
+
+<p><strong>CXXFLAGS</strong> là C++ complier flags.</p>
+
+<p>Dưới đây là câu lệnh mình sử dụng để configure cho dự án của mình trước khi complie bằng
+câu lệnh make.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>../configure \
 --with-yices2=yes \
 --with-cvc4=no \
 FLEX=/opt/local/bin/flex \
@@ -46,12 +189,36 @@ YICES2_LIB="/Users/Darwin64/lib/libyices.a" \
 TECLA_LIBS="/Users/Darwin64/lib/libtecla.a /Users/Darwin64/lib/libtecla_r.a -lcurses" \
 GMP_LIBS="/Users/Darwin64/lib/libgmpxx.a /Users/Darwin64/lib/libgmp.a" \
 --prefix="${CWD}/dist"
-</code></pre></div></div>]]></content><author><name></name></author><category term="[&quot;C++&quot;]"/><summary type="html"><![CDATA[Tôi có hội làm việc với C++ thông qua một dự án nhỏ cần phải thêm mới một vài chức năng. Dự án đó sử dụng autotools để quản lý các configuration, make và dependencies. Trong quá trình phát triển và build dự án để có thể chạy được trên các máy khác nhau, tôi cần phải chọn cách build dự án thông qua static library hoặc dynamic library? Để có thể chạy trên các nền tảng máy khác nhau e.g. x86, x86_64, cần phải build các library cho từng nền tảng máy đó vì mỗi nền tảng hỗ trợ những tập lệnh khác nhau và build chương trình của mình link cùng với các library đó cho các nền tảng tương ứng.]]></summary></entry><entry><title type="html">Những lưu ý khi viết code để chương trình trở lên sáng sủa và mạch lạc</title><link href="https://canhminhdo.github.io/blog/2021/nhung-luu-y-khi-viet-code-de-chuong-trinh-tro-len-sang-sua-va-mach-lac/" rel="alternate" type="text/html" title="Những lưu ý khi viết code để chương trình trở lên sáng sủa và mạch lạc"/><published>2021-03-11T22:40:00+00:00</published><updated>2021-03-11T22:40:00+00:00</updated><id>https://canhminhdo.github.io/blog/2021/nhung-luu-y-khi-viet-code-de-chuong-trinh-tro-len-sang-sua-va-mach-lac</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2021/nhung-luu-y-khi-viet-code-de-chuong-trinh-tro-len-sang-sua-va-mach-lac/"><![CDATA[<p>Việc viết code không những để cho máy tính đọc mà cũng cho lập trình viên đọc code của bạn. Chính vì vậy việc viết code một cách có cấu trúc, dễ đọc không những giúp bạn có thể quản lý mã nguồn và lỗi tốt mà còn dễ dàng sửa đổi. Sau đây chúng ta cùng xem một vài lưu ý khi viết chương của mình.</p> <p><strong>1. Names</strong></p> <p><strong>Use descriptive names for globals, short names for locals</strong><br/> Tên có thể là của variables hay functions, bạn nên đặt tên có chứa thông tin, ngắn gọn, dễ nhớ và có thể phát âm được nếu có thể. Thường sẽ đặt tên theo tiếng anh vì vậy nên chú ý điểm này. Có thể mô tả cho globals với một tên dài để gợi nhớ cho bạn khi viết code. Nhưng hãy dùng tên ngắn cho locals. Vì trong một function, bạn có thể dùng một tên ngắn là đủ, ví dụ như sử dụng <strong>n</strong> là đủ, <strong>npoints</strong> là tốt, <strong>numberOfPoints</strong> là quá mức. Bạn thường được khuyến khích đặt tên dài bất chấp trong các hoàn cảnh nào, đó là một sai lầm vì sự rõ ràng thường sử dụng ngắn gọn.</p> <pre><code class="language-C++">for (theElementIndex = 0; theElementIndex &lt; numberOfElements; theElementIndex++)
+</code></pre></div></div>]]></content><author><name></name></author><category term="[&quot;C++&quot;]" /><summary type="html"><![CDATA[Tôi có hội làm việc với C++ thông qua một dự án nhỏ cần phải thêm mới một vài chức năng. Dự án đó sử dụng autotools để quản lý các configuration, make và dependencies. Trong quá trình phát triển và build dự án để có thể chạy được trên các máy khác nhau, tôi cần phải chọn cách build dự án thông qua static library hoặc dynamic library? Để có thể chạy trên các nền tảng máy khác nhau e.g. x86, x86_64, cần phải build các library cho từng nền tảng máy đó vì mỗi nền tảng hỗ trợ những tập lệnh khác nhau và build chương trình của mình link cùng với các library đó cho các nền tảng tương ứng.]]></summary></entry><entry><title type="html">Những lưu ý khi viết code để chương trình trở lên sáng sủa và mạch lạc</title><link href="https://canhminhdo.github.io/blog/2021/nhung-luu-y-khi-viet-code-de-chuong-trinh-tro-len-sang-sua-va-mach-lac/" rel="alternate" type="text/html" title="Những lưu ý khi viết code để chương trình trở lên sáng sủa và mạch lạc" /><published>2021-03-11T22:40:00+00:00</published><updated>2021-03-11T22:40:00+00:00</updated><id>https://canhminhdo.github.io/blog/2021/nhung-luu-y-khi-viet-code-de-chuong-trinh-tro-len-sang-sua-va-mach-lac</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2021/nhung-luu-y-khi-viet-code-de-chuong-trinh-tro-len-sang-sua-va-mach-lac/"><![CDATA[<p>Việc viết code không những để cho máy tính đọc mà cũng cho lập trình viên đọc code của bạn.
+Chính vì vậy việc viết code một cách có cấu trúc, dễ đọc không những giúp bạn có thể quản lý
+mã nguồn và lỗi tốt mà còn dễ dàng sửa đổi. Sau đây chúng ta cùng xem một vài lưu ý khi viết
+chương của mình.</p>
+
+<p><strong>1. Names</strong></p>
+
+<p><strong>Use descriptive names for globals, short names for locals</strong><br />
+Tên có thể là của variables hay functions, bạn nên đặt tên có chứa thông tin, ngắn gọn, dễ nhớ
+và có thể phát âm được nếu có thể. Thường sẽ đặt tên theo tiếng anh vì vậy nên chú ý điểm này.
+Có thể mô tả cho globals với một tên dài để gợi nhớ cho bạn khi viết code. Nhưng hãy dùng tên
+ngắn cho locals. Vì trong một function, bạn có thể dùng một tên ngắn là đủ, ví dụ như sử dụng
+<strong>n</strong> là đủ, <strong>npoints</strong> là tốt, <strong>numberOfPoints</strong> là quá mức. Bạn thường được khuyến khích
+đặt tên dài bất chấp trong các hoàn cảnh nào, đó là một sai lầm vì sự rõ ràng thường sử dụng
+ngắn gọn.</p>
+
+<pre><code class="language-C++">for (theElementIndex = 0; theElementIndex &lt; numberOfElements; theElementIndex++)
     elementArray[theElementIndex] = theElementIndex;
 
 for (i = 0; i &lt; nelems; i++)
     elem[i] = i;
-</code></pre> <p>Hằng số (<strong>CONSTANT</strong>) thường đặt tên với tất cả chữ HOA, còn <strong>Globals</strong> thì bắt đầu bằng chữ Hoa.</p> <p><strong>Be consistent</strong><br/> Bên cạnh tránh viết tên quá dài, việc chú ý đến context trong scope đó. Như ví dụ sau, khi không cần phải đề cập tên với Queue vì tên của class đã đề cập về điều đó.</p> <pre><code class="language-Java">class UserQueue {
+</code></pre>
+
+<p>Hằng số (<strong>CONSTANT</strong>) thường đặt tên với tất cả chữ HOA, còn <strong>Globals</strong> thì bắt đầu bằng chữ Hoa.</p>
+
+<p><strong>Be consistent</strong><br />
+Bên cạnh tránh viết tên quá dài, việc chú ý đến context trong scope đó. Như ví dụ sau, khi không
+cần phải đề cập tên với Queue vì tên của class đã đề cập về điều đó.</p>
+
+<pre><code class="language-Java">class UserQueue {
     int noOfItemsInQ, frontOfTheQueue, queueCapacity;
     public int numOfUsersInQueue();
 }
@@ -62,7 +229,50 @@ class UserQueue {
     public int nUsers();
 }
 queue.capacity;
-</code></pre> <p><strong>Use active names for functions</strong><br/> Tên của function nên sử dụng active verbs, có thể theo sau là nouns, ví dụ như là <strong>getTime()</strong> Nếu hàm trả về true or false thì nên đặt tên như là <strong>isOctal()</strong> không phải <strong>checkOctal()</strong>.</p> <p><strong>Be accurate</strong><br/> Tên của hàm hoặc biến phải phản ánh đúng những gì chức năng của hàm và biến đó thể hiện.</p> <p><strong>2. Expressions and Statements</strong></p> <p><strong>Indent to show structure</strong><br/> Việc dùng indentation một cách nhất quán là mức thấp nhất để chương trình trở lên có cấu trúc</p> <p><strong>Use the natural form for expressions</strong><br/> Sử dụng những expressions mà bạn có thể đọc chúng lớn được.</p> <p><strong>Parenthesize to resolve ambiguity</strong><br/> Các toán tử có thể có độ ưu tiên khác nhau nên việc sử dụng dấu ngoặc đơn sẽ tránh được sự nhập nhằng trong biểu thức mà bạn không chắc chắn thứ tự thực hiện của các toán tử.</p> <p><strong>Break up complex expressions</strong><br/> Nếu một expressions chứa quá nhiều toán tử và phức tạp thì bạn nên chuyển thành những đoạn code đơn giản hơn mặc dù nó sẽ không được ngắn gọn, nhưng sẽ cho người đọc đoạn code đó dễ hiểu hơn.</p> <p><strong>Be clear</strong><br/> Mục tiêu nên là viết code thật sáng sủa, dễ hiểu, chứ không phải viết code thể hiện mình là thông minh.</p> <p><strong>Be careful with side effects</strong><br/> Những toán tử như là ++, – có side effect, bên cạnh trả về giá trị của biến còn thay đổi giá trị của biến đó. Thứ tự của việc thay đổi giá trị của biến và giá trị trả về sẽ ảnh hưởng tới kết quả của biểu thức.</p> <p><strong>3. Consistency and Idioms</strong></p> <p><strong>Use a consistent indentation and brace style</strong><br/> Mỗi người sẽ có một thói quen sử dụng indentation và brace khác nhau, nhưng quan trọng hơn hết là khi đã sử dụng thì phải sử dụng nó một cách nhất quán.</p> <p><strong>Use idioms for consistency</strong><br/> Để tạo được sự thống nhất trong cách viết code, chúng ta có thể sử dụng những đoạn code được sử dụng phổ biến trong các tài liệu cũng như thực tế.</p> <pre><code class="language-C++">for (i = 0; i &lt; n; i ++)
+</code></pre>
+
+<p><strong>Use active names for functions</strong><br />
+Tên của function nên sử dụng active verbs, có thể theo sau là nouns, ví dụ như là <strong>getTime()</strong>
+Nếu hàm trả về true or false thì nên đặt tên như là <strong>isOctal()</strong> không phải <strong>checkOctal()</strong>.</p>
+
+<p><strong>Be accurate</strong><br />
+Tên của hàm hoặc biến phải phản ánh đúng những gì chức năng của hàm và biến đó thể hiện.</p>
+
+<p><strong>2. Expressions and Statements</strong></p>
+
+<p><strong>Indent to show structure</strong><br />
+Việc dùng indentation một cách nhất quán là mức thấp nhất để chương trình trở lên có cấu trúc</p>
+
+<p><strong>Use the natural form for expressions</strong><br />
+Sử dụng những expressions mà bạn có thể đọc chúng lớn được.</p>
+
+<p><strong>Parenthesize to resolve ambiguity</strong><br />
+Các toán tử có thể có độ ưu tiên khác nhau nên việc sử dụng dấu ngoặc đơn sẽ tránh được sự nhập
+nhằng trong biểu thức mà bạn không chắc chắn thứ tự thực hiện của các toán tử.</p>
+
+<p><strong>Break up complex expressions</strong><br />
+Nếu một expressions chứa quá nhiều toán tử và phức tạp thì bạn nên chuyển thành những đoạn code
+đơn giản hơn mặc dù nó sẽ không được ngắn gọn, nhưng sẽ cho người đọc đoạn code đó dễ hiểu hơn.</p>
+
+<p><strong>Be clear</strong><br />
+Mục tiêu nên là viết code thật sáng sủa, dễ hiểu, chứ không phải viết code thể hiện mình là thông minh.</p>
+
+<p><strong>Be careful with side effects</strong><br />
+Những toán tử như là ++, – có side effect, bên cạnh trả về giá trị của biến còn thay đổi giá trị
+của biến đó. Thứ tự của việc thay đổi giá trị của biến và giá trị trả về sẽ ảnh hưởng tới kết
+quả của biểu thức.</p>
+
+<p><strong>3. Consistency and Idioms</strong></p>
+
+<p><strong>Use a consistent indentation and brace style</strong><br />
+Mỗi người sẽ có một thói quen sử dụng indentation và brace khác nhau, nhưng quan trọng hơn hết là
+khi đã sử dụng thì phải sử dụng nó một cách nhất quán.</p>
+
+<p><strong>Use idioms for consistency</strong><br />
+Để tạo được sự thống nhất trong cách viết code, chúng ta có thể sử dụng những đoạn code được
+sử dụng phổ biến trong các tài liệu cũng như thực tế.</p>
+
+<pre><code class="language-C++">for (i = 0; i &lt; n; i ++)
     array[i] = 1;
 
 for (p = list; p != NULL; p = p-&gt;next) {}
@@ -74,35 +284,143 @@ while ((c = getchar()) != EOF)
 
 p = malloc(strlen(buf) + 1);
 strcpy(p, buf);
-</code></pre> <p><strong>Use else-ifs for multi-way decisions</strong><br/> Cách bạn thay đổi thứ tự trong các điều kiện của if-else có thể tạo đoạn code sáng sủa hơn.</p> <p><strong>4 Function Macros</strong></p> <p>Macros được sử dụng để tránh overhead của việc gọi tới các function, đây có thể là một lý do để bạn có thể cân nhắc việc sử dụng Macros. Tuy nhiên với máy tính có hiệu năng thấp thì việc gọi function có thể expensive, nhưng với khả năng của những máy tính hiện tại thì nó là không cần thiết.</p> <p><strong>Avoid function macros</strong><br/> Việc sử dụng macros có thể dẫn tới những bug rất khó thấy ví dụ sau</p> <pre><code class="language-C++">#define isupper(c) ((c) &gt;= 'A' &amp;&amp; (c) &lt;= 'Z')
+</code></pre>
+
+<p><strong>Use else-ifs for multi-way decisions</strong><br />
+Cách bạn thay đổi thứ tự trong các điều kiện của if-else có thể tạo đoạn code sáng sủa hơn.</p>
+
+<p><strong>4 Function Macros</strong></p>
+
+<p>Macros được sử dụng để tránh overhead của việc gọi tới các function, đây có thể là một lý do
+để bạn có thể cân nhắc việc sử dụng Macros. Tuy nhiên với máy tính có hiệu năng thấp thì việc
+gọi function có thể expensive, nhưng với khả năng của những máy tính hiện tại thì nó là không
+cần thiết.</p>
+
+<p><strong>Avoid function macros</strong><br />
+Việc sử dụng macros có thể dẫn tới những bug rất khó thấy ví dụ sau</p>
+
+<pre><code class="language-C++">#define isupper(c) ((c) &gt;= 'A' &amp;&amp; (c) &lt;= 'Z')
 while (isupper(c = getchar()))
-</code></pre> <p>Có thể thấy rằng c xuất hiện hai lần trong biểu thức của macro và việc gọi ở câu lệnh thứ hai có thể dẫn tới việc biểu thức được chạy hai lần và gây ra side effect.</p> <p><strong>Parenthesize the macro body and arguments</strong><br/> Để tránh thứ tự ưu tiên trong biểu thức bị thay đổi khi sử dụng macros.</p> <p><strong>5 Magic Numbers</strong></p> <p><strong>Give name to magic numbers</strong><br/> Việc sử dụng những số khác 0 hoặc 1 trong code sẽ làm cho người đọc khó hiểu, vì vậy hãy sử dụng tên để gán cho những số đang sử dụng.</p> <pre><code class="language-C++">enum {
+</code></pre>
+
+<p>Có thể thấy rằng c xuất hiện hai lần trong biểu thức của macro và việc gọi ở câu lệnh thứ hai
+có thể dẫn tới việc biểu thức được chạy hai lần và gây ra side effect.</p>
+
+<p><strong>Parenthesize the macro body and arguments</strong><br />
+Để tránh thứ tự ưu tiên trong biểu thức bị thay đổi khi sử dụng macros.</p>
+
+<p><strong>5 Magic Numbers</strong></p>
+
+<p><strong>Give name to magic numbers</strong><br />
+Việc sử dụng những số khác 0 hoặc 1 trong code sẽ làm cho người đọc khó hiểu, vì vậy
+hãy sử dụng tên để gán cho những số đang sử dụng.</p>
+
+<pre><code class="language-C++">enum {
     MINROW = 1,
     MINCOL = 1,
     MAXROW = 24,
     MAXCOL = 80
 }
-</code></pre> <p><strong>Define numbers as constants, not macros</strong><br/> Trong lập trình C bạn thường sử dụng <strong>#define</strong> cho các magic numbers. Tuy nhiên nó là điều không nên khi macros sẽ thay đổi lexical structure của chương trình, vì vậy nên sử dụng theo một cách phù hợp hơn bằng hằng số.</p> <p><strong>Use character constants, not integers</strong></p> <pre><code class="language-C++">if (c &gt;= 65 &amp;&amp; c &lt;= 90) {} // should not
+</code></pre>
+
+<p><strong>Define numbers as constants, not macros</strong><br />
+Trong lập trình C bạn thường sử dụng <strong>#define</strong> cho các magic numbers. Tuy nhiên nó là điều không
+nên khi macros sẽ thay đổi lexical structure của chương trình, vì vậy nên sử dụng theo một cách phù
+hợp hơn bằng hằng số.</p>
+
+<p><strong>Use character constants, not integers</strong></p>
+
+<pre><code class="language-C++">if (c &gt;= 65 &amp;&amp; c &lt;= 90) {} // should not
 if (c &gt;= 'A' &amp;&amp; c &lt;= 'Z') {}
 
 name[i] = 0; // should not
 name[i] = '\0';
-</code></pre> <hr/> <p><strong>Use the language to calculate the size of an object</strong><br/> Ví dụ nên sử dụng sizeof(int) thay vì 2 hoặc 3.</p> <p><strong>6 Comments</strong></p> <p><strong>Don’t belabor the obvious</strong><br/> Cách sử dụng tên hàm, tên biến và các vòng lặp có thể cho thấy được ý định của đoạn code bạn muốn viết. Vì vậy không nên lạm dụng comments những đoạn code có thể hiểu được dễ dàng.</p> <p><strong>Comment functions and global data</strong><br/> Việc comment cho functions có thể giúp người đọc nhanh chóng biết được nhiệm vụ của function đó, giá trị trả về. Comment cho global data sẽ giúp ta gợi nhớ lại mục đích của nó trong toàn bộ chương trình.</p> <p><strong>Don’t comment bad code, rewrite it</strong><br/> Nếu phải comments mọi thứ thì đoạn code đó chắc chắn cần phải thay đổi.</p> <p><strong>Don’t contradict the code</strong><br/> Tránh việc code và comments không thể hiện giống nhau. Hay xảy ra khi việc bạn thay đổi function đó và quên không cập nhật comments trước đó.</p> <p><strong>Clarify, don’t confuse</strong><br/> Comments là giúp người đọc dễ hiểu hơn cho đoạn code khó. Vì vậy tránh tạo thêm rào cản cho người đọc bằng những comments có thể làm cho người đọc hiểu nhầm.</p> <p>Tóm lại, nếu code được viết một cách sáng sủa, mạch lạc và có cấu trúc sẽ giúp bạn quản lý code tốt hơn và tránh sai sót, trong khi đó cũng giúp người khác có thể hiểu code của bạn dễ dàng hơn. Đây có thể coi như là một thói quen khi bạn viết code, vì vậy hãy tập cho mình có một thói quen tốt ngay từ bây giờ.</p> <p><strong>Reference:</strong> The Practice of Programming, Brian Kernighan and Rob Pike.</p>]]></content><author><name></name></author><category term="[&quot;Code Style&quot;]"/><summary type="html"><![CDATA[Việc viết code không những để cho máy tính đọc mà cũng cho lập trình viên đọc code của bạn. Chính vì vậy việc viết code một cách có cấu trúc, dễ đọc không những giúp bạn có thể quản lý mã nguồn và lỗi tốt mà còn dễ dàng sửa đổi. Sau đây chúng ta cùng xem một vài lưu ý khi viết chương của mình.]]></summary></entry><entry><title type="html">Bạn thật sự đã biết về Bit shifting</title><link href="https://canhminhdo.github.io/blog/2021/ban-that-su-da-biet-ve-bit-shifting/" rel="alternate" type="text/html" title="Bạn thật sự đã biết về Bit shifting"/><published>2021-03-11T22:24:00+00:00</published><updated>2021-03-11T22:24:00+00:00</updated><id>https://canhminhdo.github.io/blog/2021/ban-that-su-da-biet-ve-bit-shifting</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2021/ban-that-su-da-biet-ve-bit-shifting/"><![CDATA[<p>Bit shifting là một thao tác dịch bit trong ngôn ngữ lập trình thường hỗ trợ khi làm việc với bit. Trong bài trước chúng ta có tìm hiểu cách biểu diễn số âm trong máy tính. Vậy khi dịch bit với số âm và số dương liệu khác nhau như thế nào? Chúng ta sẽ cùng tìm hiểu trong bài viết này. Như đã biết việc dịch bit sẽ có dịch bit sang trái hoặc phải một số lượng bit nhất định. Cách dịch bit đối với số âm là khác đối với số tự nhiên, vì vậy chúng ta có hai cách dịch bit như sau: (Cũng không biết dịch sang tiếng việt như thế nào)</p> <p><strong>1. Arithmetic shift</strong></p> <p>Được sử dụng để dịch bit cho số âm. Khi dịch bit sang bên trái thì bit 0 sẽ được chèn vào. Khi dịch bit sang bên phải thì bit của dấu sẽ được chèn vào.</p> <pre><code class="language-pseudocode">// dich bit sang trái 2
+</code></pre>
+<hr />
+
+<p><strong>Use the language to calculate the size of an object</strong><br />
+Ví dụ nên sử dụng sizeof(int) thay vì 2 hoặc 3.</p>
+
+<p><strong>6 Comments</strong></p>
+
+<p><strong>Don’t belabor the obvious</strong><br />
+Cách sử dụng tên hàm, tên biến và các vòng lặp có thể cho thấy được ý định của đoạn code bạn muốn viết.
+Vì vậy không nên lạm dụng comments những đoạn code có thể hiểu được dễ dàng.</p>
+
+<p><strong>Comment functions and global data</strong><br />
+Việc comment cho functions có thể giúp người đọc nhanh chóng biết được nhiệm vụ của function đó, giá trị trả về.
+Comment cho global data sẽ giúp ta gợi nhớ lại mục đích của nó trong toàn bộ chương trình.</p>
+
+<p><strong>Don’t comment bad code, rewrite it</strong><br />
+Nếu phải comments mọi thứ thì đoạn code đó chắc chắn cần phải thay đổi.</p>
+
+<p><strong>Don’t contradict the code</strong><br />
+Tránh việc code và comments không thể hiện giống nhau. Hay xảy ra khi việc bạn thay đổi function đó và quên không
+cập nhật comments trước đó.</p>
+
+<p><strong>Clarify, don’t confuse</strong><br />
+Comments là giúp người đọc dễ hiểu hơn cho đoạn code khó. Vì vậy tránh tạo thêm rào cản cho người đọc bằng những
+comments có thể làm cho người đọc hiểu nhầm.</p>
+
+<p>Tóm lại, nếu code được viết một cách sáng sủa, mạch lạc và có cấu trúc sẽ giúp bạn quản lý code tốt hơn và tránh
+sai sót, trong khi đó cũng giúp người khác có thể hiểu code của bạn dễ dàng hơn. Đây có thể coi như là một thói
+quen khi bạn viết code, vì vậy hãy tập cho mình có một thói quen tốt ngay từ bây giờ.</p>
+
+<p><strong>Reference:</strong> The Practice of Programming, Brian Kernighan and Rob Pike.</p>]]></content><author><name></name></author><category term="[&quot;Code Style&quot;]" /><summary type="html"><![CDATA[Việc viết code không những để cho máy tính đọc mà cũng cho lập trình viên đọc code của bạn. Chính vì vậy việc viết code một cách có cấu trúc, dễ đọc không những giúp bạn có thể quản lý mã nguồn và lỗi tốt mà còn dễ dàng sửa đổi. Sau đây chúng ta cùng xem một vài lưu ý khi viết chương của mình.]]></summary></entry><entry><title type="html">Bạn thật sự đã biết về Bit shifting</title><link href="https://canhminhdo.github.io/blog/2021/ban-that-su-da-biet-ve-bit-shifting/" rel="alternate" type="text/html" title="Bạn thật sự đã biết về Bit shifting" /><published>2021-03-11T22:24:00+00:00</published><updated>2021-03-11T22:24:00+00:00</updated><id>https://canhminhdo.github.io/blog/2021/ban-that-su-da-biet-ve-bit-shifting</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2021/ban-that-su-da-biet-ve-bit-shifting/"><![CDATA[<p>Bit shifting là một thao tác dịch bit trong ngôn ngữ lập trình thường hỗ trợ khi làm việc với bit.
+Trong bài trước chúng ta có tìm hiểu cách biểu diễn số âm trong máy tính. Vậy khi dịch bit với
+số âm và số dương liệu khác nhau như thế nào? Chúng ta sẽ cùng tìm hiểu trong bài viết này.
+Như đã biết việc dịch bit sẽ có dịch bit sang trái hoặc phải một số lượng bit nhất định.
+Cách dịch bit đối với số âm là khác đối với số tự nhiên, vì vậy chúng ta có hai cách dịch bit
+như sau: (Cũng không biết dịch sang tiếng việt như thế nào)</p>
+
+<p><strong>1. Arithmetic shift</strong></p>
+
+<p>Được sử dụng để dịch bit cho số âm. Khi dịch bit sang bên trái thì bit 0 sẽ được chèn vào.
+Khi dịch bit sang bên phải thì bit của dấu sẽ được chèn vào.</p>
+
+<pre><code class="language-pseudocode">// dich bit sang trái 2
 10010111 -&gt; 01011100
 // dịch bit sang phải 2
 10010111 -&gt; 11100101
-</code></pre> <p><strong>2. Logic shift</strong></p> <p>Khi không phải là số âm. Việc dịch bit sang trái và phải sẽ giống nhau là chèn bit 0 vào. Đơn giản hơn so với việc dịch bit của số âm.</p> <pre><code class="language-pseudocode">// dich bit sang trái 2
+</code></pre>
+
+<p><strong>2. Logic shift</strong></p>
+
+<p>Khi không phải là số âm. Việc dịch bit sang trái và phải sẽ giống nhau là chèn bit 0 vào.
+Đơn giản hơn so với việc dịch bit của số âm.</p>
+
+<pre><code class="language-pseudocode">// dich bit sang trái 2
 010010111 -&gt; 001011100
 // dịch bit sang phải 2
 01010111 -&gt; 00
 010101
-</code></pre>]]></content><author><name></name></author><category term="[&quot;Bit Manipulation&quot;]"/><summary type="html"><![CDATA[Bit shifting là một thao tác dịch bit trong ngôn ngữ lập trình thường hỗ trợ khi làm việc với bit. Trong bài trước chúng ta có tìm hiểu cách biểu diễn số âm trong máy tính. Vậy khi dịch bit với số âm và số dương liệu khác nhau như thế nào? Chúng ta sẽ cùng tìm hiểu trong bài viết này. Như đã biết việc dịch bit sẽ có dịch bit sang trái hoặc phải một số lượng bit nhất định. Cách dịch bit đối với số âm là khác đối với số tự nhiên, vì vậy chúng ta có hai cách dịch bit như sau: (Cũng không biết dịch sang tiếng việt như thế nào)]]></summary></entry><entry><title type="html">Hash tables</title><link href="https://canhminhdo.github.io/blog/2021/hash-tables/" rel="alternate" type="text/html" title="Hash tables"/><published>2021-03-09T00:07:00+00:00</published><updated>2021-03-09T00:07:00+00:00</updated><id>https://canhminhdo.github.io/blog/2021/hash-tables</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2021/hash-tables/"><![CDATA[<p><strong>Hash tables</strong> là một cấu trúc dữ liệu hiệu quả cho việc lưu trữ và truy vấn dữ liệu. Ý tưởng là đưa vào một giá trị <strong>key</strong>, sử dụng một <strong>hash function</strong> để sinh ra một <strong>hash value</strong> năm trong một vùng integer cho trước, ví dụ <strong>NHASH</strong> là size của một hash table. Một hash function tốt khi phân phối được đồng đều tất cả các keys vào các vị trí hash value (<strong>bucket</strong>), có thể là một chuỗi các phần tử có cùng hash value. Trong trường hợp tốt nhất thì việc cập nhật và truy vấn là O(1), trong trường hợp xấu nhất thì sẽ là O(N), khi N phần tử được chèn vào duy nhất một bucket.</p> <p><img src="/assets/images/hash-table.png" alt="Hash tables"/></p> <p>Một hash table là một mảng của danh sách các phần tử, kiểu của phần tử là giống nhau danh sách đó. Có thể khai báo như sau:</p> <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+</code></pre>]]></content><author><name></name></author><category term="[&quot;Bit Manipulation&quot;]" /><summary type="html"><![CDATA[Bit shifting là một thao tác dịch bit trong ngôn ngữ lập trình thường hỗ trợ khi làm việc với bit. Trong bài trước chúng ta có tìm hiểu cách biểu diễn số âm trong máy tính. Vậy khi dịch bit với số âm và số dương liệu khác nhau như thế nào? Chúng ta sẽ cùng tìm hiểu trong bài viết này. Như đã biết việc dịch bit sẽ có dịch bit sang trái hoặc phải một số lượng bit nhất định. Cách dịch bit đối với số âm là khác đối với số tự nhiên, vì vậy chúng ta có hai cách dịch bit như sau: (Cũng không biết dịch sang tiếng việt như thế nào)]]></summary></entry><entry><title type="html">Hash tables</title><link href="https://canhminhdo.github.io/blog/2021/hash-tables/" rel="alternate" type="text/html" title="Hash tables" /><published>2021-03-09T00:07:00+00:00</published><updated>2021-03-09T00:07:00+00:00</updated><id>https://canhminhdo.github.io/blog/2021/hash-tables</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2021/hash-tables/"><![CDATA[<p><strong>Hash tables</strong> là một cấu trúc dữ liệu hiệu quả cho việc lưu trữ và truy vấn dữ liệu.
+Ý tưởng là đưa vào một giá trị <strong>key</strong>, sử dụng một <strong>hash function</strong> để sinh ra một <strong>hash value</strong>
+năm trong một vùng integer cho trước, ví dụ <strong>NHASH</strong> là size của một hash table. Một hash function
+tốt khi phân phối được đồng đều tất cả các keys vào các vị trí hash value (<strong>bucket</strong>), có thể
+là một chuỗi các phần tử có cùng hash value. Trong trường hợp tốt nhất thì việc cập nhật và truy vấn
+là O(1), trong trường hợp xấu nhất thì sẽ là O(N), khi N phần tử được chèn vào duy nhất một bucket.</p>
+
+<p><img src="/assets/images/hash-table.png" alt="Hash tables" /></p>
+
+<p>Một hash table là một mảng của danh sách các phần tử, kiểu của phần tử là giống nhau danh sách đó.
+Có thể khai báo như sau:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
     <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">value</span><span class="p">;</span>
     <span class="n">Nameval</span> <span class="o">*</span><span class="n">next</span><span class="p">;</span> <span class="cm">/* in chain */</span>
 <span class="p">}</span> <span class="n">Nameval</span><span class="p">;</span>
 <span class="n">Nameval</span> <span class="o">*</span><span class="n">symtab</span><span class="p">[</span><span class="n">NHASH</span><span class="p">];</span> <span class="cm">/* a symbol table */</span>
-</code></pre></div></div> <p>Một hash function thì sẽ tính toán hash value như thế nào? Một function hash lý tưởng cần phải nhanh và phân phối dữ dự đồng đều vào các bucket. Một trong những thuật toán hashing cho string phổ biến để sinh một hash value bằng cách lặp qua các ký tự trong chuỗi nhân giá trị hash với một số nguyên tố và cộng với giá trị của ký tự đó. Cuối cùng trả về modulo của kích thước hash table. Trong thực nghiệm thì giá trị nguyên tố sử dụng đưa lại kết quả tốt là 31 và 37.</p> <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">enum</span> <span class="p">{</span> <span class="n">MULTIPLER</span> <span class="o">=</span> <span class="mi">31</span> <span class="p">};</span>
+</code></pre></div></div>
+
+<p>Một hash function thì sẽ tính toán hash value như thế nào? Một function hash lý tưởng cần phải
+nhanh và phân phối dữ dự đồng đều vào các bucket. Một trong những thuật toán hashing cho string
+phổ biến để sinh một hash value bằng cách lặp qua các ký tự trong chuỗi nhân giá trị hash với
+một số nguyên tố và cộng với giá trị của ký tự đó. Cuối cùng trả về modulo của kích thước hash table.
+Trong thực nghiệm thì giá trị nguyên tố sử dụng đưa lại kết quả tốt là 31 và 37.</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">enum</span> <span class="p">{</span> <span class="n">MULTIPLER</span> <span class="o">=</span> <span class="mi">31</span> <span class="p">};</span>
 <span class="cm">/* hash: compute hash value of string */</span>
 <span class="kt">unsigned</span> <span class="kt">int</span> <span class="nf">hash</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">str</span><span class="p">)</span> <span class="p">{</span>
     <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">h</span><span class="p">;</span>
@@ -113,7 +431,104 @@ name[i] = '\0';
         <span class="n">h</span> <span class="o">=</span> <span class="n">MULTIPLIER</span> <span class="o">*</span> <span class="n">h</span> <span class="o">+</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
     <span class="k">return</span> <span class="n">h</span> <span class="o">%</span> <span class="n">NHASH</span>
 <span class="p">}</span>
-</code></pre></div></div> <p>Bởi vì dữ liệu không được phân phối đều, trong khi đó hash function có những share factor như là MULTIPLIER và NHASH. Khi MULTIPLER là một số nguyên tốt, thì chúng ta nên chọn NHASH cũng là một số nguyên để đảm bảo dữ liệu có thể được phân bố tốt hơn. Nhiều bạn có thể đặt câu hỏi tại sao sử dụng số nguyên tốt mà không phải một số nào khác. Đặc điểm của số nguyên tốt là duy nhất và chỉ chia hết cho 1 và chính nó. Vì vậy khi nhân hay chia một số cho số nguyên tốt, chúng ta có cơ hội cao hơn để nhận về một số có thể là duy nhất (uniqueness).</p> <p>Một điểm đáng chú ý của hashing trong bài báo của Gerard Holzmann về <a href="https://en.wikipedia.org/wiki/Bitstate_hashing">bit state hashing</a>. Thay vì sử dụng hash table với một danh sách tại mỗi bucket. Holzmann sử dụng một mảng siêu lớn để chứa thông tin về một trạng thái của một state trong một chương trình concurrent programs. Đưa vào một state, sử dụng hash function để trả về một vị trí trong mảng siêu lớn. Nếu giá trị tại mảng đó là 0, nghĩa là state đó chưa được thăm, ngược lại là đã được thăm. Việc xung đột là không thể tránh khỏi và hệ thống sẽ bỏ qua vì đây là cách làm xấp xỉ. Vì vậy cần phải thiết kế hash function cẩn thận để việc xung đột xảy ra ở mức thấp. Holzmann đã sử dụng <strong>cyclic redundancy check</strong> một hàm có thể sinh ra một hash value với sự kết hợp của toàn bộ dữ liệu.</p>]]></content><author><name></name></author><category term="[&quot;Hashing&quot;]"/><summary type="html"><![CDATA[Hash tables là một cấu trúc dữ liệu hiệu quả cho việc lưu trữ và truy vấn dữ liệu. Ý tưởng là đưa vào một giá trị key, sử dụng một hash function để sinh ra một hash value năm trong một vùng integer cho trước, ví dụ NHASH là size của một hash table. Một hash function tốt khi phân phối được đồng đều tất cả các keys vào các vị trí hash value (bucket), có thể là một chuỗi các phần tử có cùng hash value. Trong trường hợp tốt nhất thì việc cập nhật và truy vấn là O(1), trong trường hợp xấu nhất thì sẽ là O(N), khi N phần tử được chèn vào duy nhất một bucket.]]></summary></entry><entry><title type="html">Cách biểu diễn số âm trong máy tính</title><link href="https://canhminhdo.github.io/blog/2021/cach-bieu-dien-so-am-trong-trong-may-tinh/" rel="alternate" type="text/html" title="Cách biểu diễn số âm trong máy tính"/><published>2021-01-10T17:27:00+00:00</published><updated>2021-01-10T17:27:00+00:00</updated><id>https://canhminhdo.github.io/blog/2021/cach-bieu-dien-so-am-trong-trong-may-tinh</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2021/cach-bieu-dien-so-am-trong-trong-may-tinh/"><![CDATA[<p>Trong máy tính, mọi kí hiệu, con số đều được biểu diễn dưới dạng số nhị phân 0 và 1. Vậy làm thế nào để biểu diễn và phân biệt được số dương và số âm trong máy tính. Có nhiều cách để biểu diễn số âm trong máy tính, bạn có thể tham khảo <a href="https://vi.wikipedia.org/wiki/Bi%E1%BB%83u_di%E1%BB%85n_s%E1%BB%91_%C3%A2m">tại đây</a>.</p> <p>Tuy nhiên, các máy tính hiện nay đều sử dụng <strong>phương pháp bù 2 (Two’s complement)</strong>. Vì vậy chúng ta sẽ cùng tìm hiểu cách biểu diễn số âm bằng phương pháp bù 2 trong bài viết này nhé.</p> <p>Giải sử một số được biểu diễn trong máy tính với 8 bit. Thì một bit đầu tiên từ bên phải sẽ được sử dụng làm bit dấu, các bit còn lại sẽ được sử dụng để thể hiện giá trị của nó. Ví dụ số 5 biểu diễn theo hệ nhị phân, thì chúng ta sẽ có <strong>0000 0101</strong>. Giờ thì làm thế nào có thể biểu diễn số -5 theo hệ nhị phân. Chúng ta có thể đoán được là bit đầu tiên sẽ là 1, vậy các bit còn lại sẽ là những bit như thế nào.</p> <p>Biểu diễn số <strong>-5</strong> bằng phương pháp bù 2, chúng ta thực hiện theo các bước sau:</p> <ul> <li>Bước 1: Lấy biểu số nhị phân của 5 là <strong>0000 0101</strong>, ở trên đã có.</li> <li>Bước 2: Đảo tất cả các bit của 5, ta sẽ có <strong>1111 1010</strong></li> <li>Bước 3: Cộng giá trị vừa nhận được với <strong>1</strong>, ta có <strong>1111 1011</strong></li> </ul> <p>Vậy với phương pháp bù 2, số <strong>-5</strong> được biểu diễn ở hệ nhị phân trong máy tính là <strong>1111 1011</strong>, có thể thấy rằng bit đầu tiên của số âm luôn là <strong>1</strong>.</p> <p>Từ một số nhị phân biểu diễn số âm, làm thế nào có thể biết được giá trị thập phân của nó. Chúng ta sẽ làm theo chiều ngược lại một cách dễ dàng như sau.</p> <p>Ví dụ chúng ta muốn biết <strong>1111 1011</strong> là số thập phân gì?</p> <ul> <li>Bước 1: Đảo tất cả các bit của số nhị phân đó, ta có <strong>0000 0100</strong></li> <li>Bước 2: Cộng kết quả vừa có với <strong>1</strong>, chúng ta sẽ có <strong>0000 0101</strong></li> <li>Bước 3: Tính toán ra số dương bình thường ở hệ cơ số 2 ta có giá trị <strong>\(2^2 + 2^1 = 5\)</strong></li> <li>Bước 4: Thêm dấu - vào trước giá trị vừa tìm, ta có được kết quả là <strong>-5</strong></li> </ul> <p>Đến đây ta có thể dễ dàng chuyển đổi từ một số âm sang số nhị phân và ngược lại. Có một chú ý khi bạn thao tác trên số nhị phân biểu diễn cho số âm là hiện tượng <strong>tràn số</strong>. Ví dụ, khi chúng ta chỉ sử dụng 4 bit để biểu diễn một số. Và ta có số -6 và -4 được biểu diễn sang hệ nhị phân lần lượt là <strong>1010</strong>, số <strong>1100</strong>. Nếu ta cộng hai số sẽ có kết quả là <strong>\(1010 + 1100 = 0110\)</strong>. Rõ ràng <strong>0110</strong> khi ta chuyển sang số thập phân là <strong>6</strong>, chứ không phải là <strong>-10</strong> như chúng ta mong muốn. Đây là một kết quả không chính xác, khi chúng ta sử dụng số lượng bit để biểu diễn quá ít.</p> <p>Dựa vào cách tính toán trên, chúng ta có thể thấy rằng <strong>~(-X) + 1 = X</strong>. Vì vậy, ứng dụng trong lập trình nếu ta nghịch đảo các bit của một số âm <strong>-X</strong> thì sẽ nhận được một giá trị dương là <strong>X - 1</strong>.</p>]]></content><author><name></name></author><category term="[&quot;Bit Manipulation&quot;]"/><summary type="html"><![CDATA[Trong máy tính, mọi kí hiệu, con số đều được biểu diễn dưới dạng số nhị phân 0 và 1. Vậy làm thế nào để biểu diễn và phân biệt được số dương và số âm trong máy tính. Có nhiều cách để biểu diễn số âm trong máy tính, bạn có thể tham khảo tại đây.]]></summary></entry><entry><title type="html">Cách cài đặt PHP script chạy như một service trong Linux</title><link href="https://canhminhdo.github.io/blog/2020/cach-cai-dat-php-script-chay-nhu-mot-service-trong-linux/" rel="alternate" type="text/html" title="Cách cài đặt PHP script chạy như một service trong Linux"/><published>2020-12-20T11:22:00+00:00</published><updated>2020-12-20T11:22:00+00:00</updated><id>https://canhminhdo.github.io/blog/2020/cach-cai-dat-php-script-chay-nhu-mot-service-trong-linux</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2020/cach-cai-dat-php-script-chay-nhu-mot-service-trong-linux/"><![CDATA[<p>Trước khi hướng dẫn deploy một PHP script chạy như một service trong Linux. Chúng ta cùng tìm hiểu tại sao chúng ta cần phải làm như vậy thay vì sử dụng <code class="language-plaintext highlighter-rouge">crontab</code>, <code class="language-plaintext highlighter-rouge">screen</code>.</p> <p>Việc chạy PHP script như một service trong Linux, thực chất là viết một đoạn bash script để chạy chương trình của bạn với <code class="language-plaintext highlighter-rouge">nohup</code>, sẽ có một vài ưu điểm bạn có thể cân nhắc:</p> <ul> <li><code class="language-plaintext highlighter-rouge">nohup</code> được sử dụng cho tiến trình ngầm khi tiến trình đó không sử dụng đầu vào từ user chẳng hạn như những batch job.</li> <li><code class="language-plaintext highlighter-rouge">nohub</code> sẽ chạy trên một tiến trình độc lập, bạn có thể dễ dàng <code class="language-plaintext highlighter-rouge">start</code>, <code class="language-plaintext highlighter-rouge">stop</code>, <code class="language-plaintext highlighter-rouge">status</code> và <code class="language-plaintext highlighter-rouge">restart</code></li> <li>Tránh những trường hợp không may ấn tổ hợp phím để dừng một tiến trình trong <code class="language-plaintext highlighter-rouge">screen</code> như <code class="language-plaintext highlighter-rouge">Ctrl' + </code>C`</li> <li>Thông tin log sẽ được viết xuống một file được chỉ định, dễ dàng cho việc kiểm tra lỗi.</li> <li>Hoạt động hiệu quả và tốn ít bộ nhớ.</li> </ul> <p>Dưới đây là cách deploy một PHP script chạy như một service trong Linux. Bạn cần có quyền của root để có thể làm điều này.</p> <ol> <li> <p>Đầu tiên bạn tạo một file dưới thư mục <strong>/etc/init.d</strong> bằng trình soạn thảo bạn quen thuộc như vi hoặc emacs. Ví dụ mình tạo một file là <strong>import_test_case</strong> thì sẽ tạo như sau <strong>vi /etc/init.d/import_test_case</strong>.</p> </li> <li> <p>Thay đổi một vài thông tin trong file bash script ở bên dưới. Như là SERVICE_NAME, PATH_TO_PROJECT, PATH_TO_LOG, COMMAND để script biết được tên của service, vị trí của dự án, vị trí để viết file log, command sẽ thực hiện.</p> </li> <li> <p>Cho phép file bạn vừa tạo có thể chạy bằng lệnh <strong>sudo chmod +x /etc/init.d/import_test_case</strong></p> </li> <li> <p>Một vài lệnh bạn có thể kiểm tra với service mới bạn định sử dụng</p> </li> </ol> <ul> <li>chạy service bằng lệnh <strong>service import_test_case start</strong></li> <li>dừng service bằng lệnh <strong>service import_test_case stop</strong></li> <li>khởi động lại service bằng lệnh <strong>service import_test_case restart</strong></li> <li>kiểm tra trạng thái của service bằng lệnh <strong>service import_test_case status</strong></li> </ul> <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/sh</span>
+</code></pre></div></div>
+
+<p>Bởi vì dữ liệu không được phân phối đều, trong khi đó hash function có những share factor như là
+MULTIPLIER và NHASH. Khi MULTIPLER là một số nguyên tốt, thì chúng ta nên chọn NHASH cũng là một
+số nguyên để đảm bảo dữ liệu có thể được phân bố tốt hơn. Nhiều bạn có thể đặt câu hỏi tại sao sử
+dụng số nguyên tốt mà không phải một số nào khác. Đặc điểm của số nguyên tốt là duy nhất và chỉ chia
+hết cho 1 và chính nó. Vì vậy khi nhân hay chia một số cho số nguyên tốt, chúng ta có cơ hội cao
+hơn để nhận về một số có thể là duy nhất (uniqueness).</p>
+
+<p>Một điểm đáng chú ý của hashing trong bài báo của Gerard Holzmann về <a href="https://en.wikipedia.org/wiki/Bitstate_hashing">bit state hashing</a>.
+Thay vì sử dụng hash table với một danh sách tại mỗi bucket. Holzmann sử dụng một mảng siêu lớn
+để chứa thông tin về một trạng thái của một state trong một chương trình concurrent programs.
+Đưa vào một state, sử dụng hash function để trả về một vị trí trong mảng siêu lớn. Nếu giá trị
+tại mảng đó là 0, nghĩa là state đó chưa được thăm, ngược lại là đã được thăm. Việc xung đột
+là không thể tránh khỏi và hệ thống sẽ bỏ qua vì đây là cách làm xấp xỉ. Vì vậy cần phải thiết
+kế hash function cẩn thận để việc xung đột xảy ra ở mức thấp. Holzmann đã sử dụng <strong>cyclic redundancy check</strong>
+một hàm có thể sinh ra một hash value với sự kết hợp của toàn bộ dữ liệu.</p>]]></content><author><name></name></author><category term="[&quot;Hashing&quot;]" /><summary type="html"><![CDATA[Hash tables là một cấu trúc dữ liệu hiệu quả cho việc lưu trữ và truy vấn dữ liệu. Ý tưởng là đưa vào một giá trị key, sử dụng một hash function để sinh ra một hash value năm trong một vùng integer cho trước, ví dụ NHASH là size của một hash table. Một hash function tốt khi phân phối được đồng đều tất cả các keys vào các vị trí hash value (bucket), có thể là một chuỗi các phần tử có cùng hash value. Trong trường hợp tốt nhất thì việc cập nhật và truy vấn là O(1), trong trường hợp xấu nhất thì sẽ là O(N), khi N phần tử được chèn vào duy nhất một bucket.]]></summary></entry><entry><title type="html">Cách biểu diễn số âm trong máy tính</title><link href="https://canhminhdo.github.io/blog/2021/cach-bieu-dien-so-am-trong-trong-may-tinh/" rel="alternate" type="text/html" title="Cách biểu diễn số âm trong máy tính" /><published>2021-01-10T17:27:00+00:00</published><updated>2021-01-10T17:27:00+00:00</updated><id>https://canhminhdo.github.io/blog/2021/cach-bieu-dien-so-am-trong-trong-may-tinh</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2021/cach-bieu-dien-so-am-trong-trong-may-tinh/"><![CDATA[<p>Trong máy tính, mọi kí hiệu, con số đều được biểu diễn dưới dạng số nhị phân 0 và 1.
+Vậy làm thế nào để biểu diễn và phân biệt được số dương và số âm trong máy tính.
+Có nhiều cách để biểu diễn số âm trong máy tính, bạn có thể tham khảo <a href="https://vi.wikipedia.org/wiki/Bi%E1%BB%83u_di%E1%BB%85n_s%E1%BB%91_%C3%A2m">tại đây</a>.</p>
+
+<p>Tuy nhiên, các máy tính hiện nay đều sử dụng <strong>phương pháp bù 2 (Two’s complement)</strong>. Vì vậy
+chúng ta sẽ cùng tìm hiểu cách biểu diễn số âm bằng phương pháp bù 2 trong bài viết này nhé.</p>
+
+<p>Giải sử một số được biểu diễn trong máy tính với 8 bit. Thì một bit đầu tiên từ bên phải
+sẽ được sử dụng làm bit dấu, các bit còn lại sẽ được sử dụng để thể hiện giá trị của nó.
+Ví dụ số 5 biểu diễn theo hệ nhị phân, thì chúng ta sẽ có <strong>0000 0101</strong>. Giờ thì làm thế
+nào có thể biểu diễn số -5 theo hệ nhị phân. Chúng ta có thể đoán được là bit đầu tiên sẽ
+là 1, vậy các bit còn lại sẽ là những bit như thế nào.</p>
+
+<p>Biểu diễn số <strong>-5</strong> bằng phương pháp bù 2, chúng ta thực hiện theo các bước sau:</p>
+<ul>
+  <li>Bước 1: Lấy biểu số nhị phân của 5 là <strong>0000 0101</strong>, ở trên đã có.</li>
+  <li>Bước 2: Đảo tất cả các bit của 5, ta sẽ có <strong>1111 1010</strong></li>
+  <li>Bước 3: Cộng giá trị vừa nhận được với <strong>1</strong>, ta có <strong>1111 1011</strong></li>
+</ul>
+
+<p>Vậy với phương pháp bù 2, số <strong>-5</strong> được biểu diễn ở hệ nhị phân trong máy tính là <strong>1111 1011</strong>,
+có thể thấy rằng bit đầu tiên của số âm luôn là <strong>1</strong>.</p>
+
+<p>Từ một số nhị phân biểu diễn số âm, làm thế nào có thể biết được giá trị thập phân của nó.
+Chúng ta sẽ làm theo chiều ngược lại một cách dễ dàng như sau.</p>
+
+<p>Ví dụ chúng ta muốn biết <strong>1111 1011</strong> là số thập phân gì?</p>
+
+<ul>
+  <li>Bước 1: Đảo tất cả các bit của số nhị phân đó, ta có <strong>0000 0100</strong></li>
+  <li>Bước 2: Cộng kết quả vừa có với <strong>1</strong>, chúng ta sẽ có <strong>0000 0101</strong></li>
+  <li>Bước 3: Tính toán ra số dương bình thường ở hệ cơ số 2 ta có giá trị <strong>\(2^2 + 2^1 = 5\)</strong></li>
+  <li>Bước 4: Thêm dấu - vào trước giá trị vừa tìm, ta có được kết quả là <strong>-5</strong></li>
+</ul>
+
+<p>Đến đây ta có thể dễ dàng chuyển đổi từ một số âm sang số nhị phân và ngược lại.
+Có một chú ý khi bạn thao tác trên số nhị phân biểu diễn cho số âm là hiện tượng
+<strong>tràn số</strong>. Ví dụ, khi chúng ta chỉ sử dụng 4 bit để biểu diễn một số. Và ta có số -6 và -4
+được biểu diễn sang hệ nhị phân lần lượt là <strong>1010</strong>, số <strong>1100</strong>. Nếu ta cộng hai số sẽ có kết quả
+là <strong>\(1010 + 1100 = 0110\)</strong>. Rõ ràng <strong>0110</strong> khi ta chuyển sang số thập phân là <strong>6</strong>,
+chứ không phải là <strong>-10</strong> như chúng ta mong muốn. Đây là một kết quả không chính xác,
+khi chúng ta sử dụng số lượng bit để biểu diễn quá ít.</p>
+
+<p>Dựa vào cách tính toán trên, chúng ta có thể thấy rằng <strong>~(-X) + 1 = X</strong>. Vì vậy,
+ứng dụng trong lập trình nếu ta nghịch đảo các bit của một số âm <strong>-X</strong> thì sẽ nhận
+được một giá trị dương là <strong>X - 1</strong>.</p>]]></content><author><name></name></author><category term="[&quot;Bit Manipulation&quot;]" /><summary type="html"><![CDATA[Trong máy tính, mọi kí hiệu, con số đều được biểu diễn dưới dạng số nhị phân 0 và 1. Vậy làm thế nào để biểu diễn và phân biệt được số dương và số âm trong máy tính. Có nhiều cách để biểu diễn số âm trong máy tính, bạn có thể tham khảo tại đây.]]></summary></entry><entry><title type="html">Cách cài đặt PHP script chạy như một service trong Linux</title><link href="https://canhminhdo.github.io/blog/2020/cach-cai-dat-php-script-chay-nhu-mot-service-trong-linux/" rel="alternate" type="text/html" title="Cách cài đặt PHP script chạy như một service trong Linux" /><published>2020-12-20T11:22:00+00:00</published><updated>2020-12-20T11:22:00+00:00</updated><id>https://canhminhdo.github.io/blog/2020/cach-cai-dat-php-script-chay-nhu-mot-service-trong-linux</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2020/cach-cai-dat-php-script-chay-nhu-mot-service-trong-linux/"><![CDATA[<p>Trước khi hướng dẫn deploy một PHP script chạy như một service trong Linux.
+Chúng ta cùng tìm hiểu tại sao chúng ta cần phải làm như vậy thay vì sử dụng <code class="language-plaintext highlighter-rouge">crontab</code>, <code class="language-plaintext highlighter-rouge">screen</code>.</p>
+
+<p>Việc chạy PHP script như một service trong Linux, thực chất là viết một đoạn bash script để chạy chương trình của bạn với <code class="language-plaintext highlighter-rouge">nohup</code>, sẽ có một vài ưu điểm bạn có thể cân nhắc:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">nohup</code> được sử dụng cho tiến trình ngầm khi tiến trình đó không sử dụng đầu vào từ user chẳng hạn như những batch job.</li>
+  <li><code class="language-plaintext highlighter-rouge">nohub</code> sẽ chạy trên một tiến trình độc lập, bạn có thể dễ dàng <code class="language-plaintext highlighter-rouge">start</code>, <code class="language-plaintext highlighter-rouge">stop</code>, <code class="language-plaintext highlighter-rouge">status</code> và <code class="language-plaintext highlighter-rouge">restart</code></li>
+  <li>Tránh những trường hợp không may ấn tổ hợp phím để dừng một tiến trình trong <code class="language-plaintext highlighter-rouge">screen</code> như <code class="language-plaintext highlighter-rouge">Ctrl' + </code>C`</li>
+  <li>Thông tin log sẽ được viết xuống một file được chỉ định, dễ dàng cho việc kiểm tra lỗi.</li>
+  <li>Hoạt động hiệu quả và tốn ít bộ nhớ.</li>
+</ul>
+
+<p>Dưới đây là cách deploy một PHP script chạy như một service trong Linux.
+Bạn cần có quyền của root để có thể làm điều này.</p>
+<ol>
+  <li>
+    <p>Đầu tiên bạn tạo một file dưới thư mục <strong>/etc/init.d</strong> bằng trình soạn thảo bạn quen thuộc như vi hoặc emacs. Ví dụ mình tạo một file là <strong>import_test_case</strong> thì sẽ tạo như sau <strong>vi /etc/init.d/import_test_case</strong>.</p>
+  </li>
+  <li>
+    <p>Thay đổi một vài thông tin trong file bash script ở bên dưới. Như là SERVICE_NAME, PATH_TO_PROJECT, PATH_TO_LOG, COMMAND để script biết được tên của service, vị trí của dự án, vị trí để viết file log, command sẽ thực hiện.</p>
+  </li>
+  <li>
+    <p>Cho phép file bạn vừa tạo có thể chạy bằng lệnh <strong>sudo chmod +x /etc/init.d/import_test_case</strong></p>
+  </li>
+  <li>
+    <p>Một vài lệnh bạn có thể kiểm tra với service mới bạn định sử dụng</p>
+  </li>
+</ol>
+
+<ul>
+  <li>chạy service bằng lệnh <strong>service import_test_case start</strong></li>
+  <li>dừng service bằng lệnh <strong>service import_test_case stop</strong></li>
+  <li>khởi động lại service bằng lệnh <strong>service import_test_case restart</strong></li>
+  <li>kiểm tra trạng thái của service bằng lệnh <strong>service import_test_case status</strong></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/sh</span>
 <span class="nv">SERVICE_NAME</span><span class="o">=</span>import_test_case_dev
 <span class="nv">WORKER_ID</span><span class="o">=</span><span class="nv">$2</span>
 <span class="nv">PROJECT_NAME</span><span class="o">=</span>dev.manage-test.com
@@ -168,10 +583,29 @@ name[i] = '\0';
             </span><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$SERVICE_NAME</span><span class="s2"> is not running ..."</span>
         <span class="k">fi</span>
     <span class="p">;;</span>
-<span class="k">esac</span></code></pre></figure>]]></content><author><name></name></author><category term="[&quot;Deployment&quot;]"/><category term="Linux"/><category term="PHP"/><summary type="html"><![CDATA[Trước khi hướng dẫn deploy một PHP script chạy như một service trong Linux. Chúng ta cùng tìm hiểu tại sao chúng ta cần phải làm như vậy thay vì sử dụng crontab, screen.]]></summary></entry><entry><title type="html">Ý nghĩa các biến môi trường PATH, CLASSPATH và JAVA_HOME khi cài đặt và sử dụng Java</title><link href="https://canhminhdo.github.io/blog/2020/Y-nghia-cac-bien-moi-truong-PATH-CLASSPATH-JAVA_HOME-khi-cai-dat-Java/" rel="alternate" type="text/html" title="Ý nghĩa các biến môi trường PATH, CLASSPATH và JAVA_HOME khi cài đặt và sử dụng Java"/><published>2020-09-10T11:53:00+00:00</published><updated>2020-09-10T11:53:00+00:00</updated><id>https://canhminhdo.github.io/blog/2020/Y-nghia-cac-bien-moi-truong-PATH-CLASSPATH-JAVA_HOME-khi-cai-dat-Java</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2020/Y-nghia-cac-bien-moi-truong-PATH-CLASSPATH-JAVA_HOME-khi-cai-dat-Java/"><![CDATA[<p>Khi bạn cài đặt và sử dụng Java trong các dự án của mình, có 3 biến môi trường quan trọng cần phải lưu ý là <strong>PATH</strong>, <strong>CLASSPATH</strong> và <strong>JAVA_HOME</strong>. Ý nghĩa của mỗi biến môi trường phục vụ những mục đích khác nhau.</p> <p><strong>JAVA_HOME</strong> là biến môi trường chỉ tới thư mục bạn cài đặt JDK, nhiều ứng dụng viết bằng Java yêu cầu sử dụng biến <strong>JAVA_HOME</strong> này để biết được nơi cài đặt của Java, ví dụ như Apache Tomcat.</p> <figure class="highlight"><pre><code class="language-pseudocode" data-lang="pseudocode">--- for csh shell
-setenv JAVA_HOME /work/$USER/ogatalab/Applications/Java/jdk1.8.0_261</code></pre></figure> <p><strong>PATH</strong> là biến môi trường cho bạn có thể sử dụng những câu lệnh của Java ở bất kỳ đâu, như là <strong>java</strong>, <strong>javac</strong>. Thường sẽ được trỏ tới thư mục bin nằm dưới thư mục cài đặt của jdk.</p> <figure class="highlight"><pre><code class="language-pseudocode" data-lang="pseudocode">--- for csh shell
-setenv PATH $JAVA_HOME/bin:$PATH</code></pre></figure> <p><strong>CLASSPATH</strong> là biến môi trường cho phép Java Runtime Environment (JRE) tìm kiếm các classes files và những tài nguyên khác như <strong>jar</strong>, <strong>zip</strong> files để chạy chương trình. Ngoài ra bạn có thể sử dụng <strong>wild cards (*)</strong> để chỉ định tất cả các <strong>jar</strong> files trong một thư mục sẽ được tìm kiếm. Ví dụ như <code class="language-plaintext highlighter-rouge">mydir/*</code>, chương trình java sẽ tìm kiếm được tất cả các <strong>jar</strong> files có trong thư mục <strong>mydir</strong>.</p> <figure class="highlight"><pre><code class="language-pseudocode" data-lang="pseudocode">--- for csh shell
-setenv CLASSPATH "/work/$USER/ogatalab/Applications/jpf-core/build/*":/work/$USER/ogatalab/Applications/jpf-core/build/annotations:/work/$USER/ogatalab/Applications/jpf-core/build/classes:/work/$USER/ogatalab/Applications/jpf-core/build/main:/work/$USER/ogatalab/Applications/jpf-core/build/peers</code></pre></figure> <p><strong>Chú ý:</strong> Khi sử dụng <strong>java</strong> command line, nếu bạn sử dụng <strong>-classpath</strong> hoặc <strong>-cp</strong> thì classpath mới sẽ được sử dụng thay vì <strong>CLASSPATH</strong>.</p> <p>Ngoài ra bạn có thể tham khảo thêm về biến môi trường <strong>JRE_HOME</strong>, có thể được yêu cầu từ những ứng dụng Java khác.</p>]]></content><author><name></name></author><category term="[&quot;Java Configuration&quot;]"/><category term="Java"/><summary type="html"><![CDATA[Khi bạn cài đặt và sử dụng Java trong các dự án của mình, có 3 biến môi trường quan trọng cần phải lưu ý là PATH, CLASSPATH và JAVA_HOME. Ý nghĩa của mỗi biến môi trường phục vụ những mục đích khác nhau.]]></summary></entry><entry><title type="html">C++ template code</title><link href="https://canhminhdo.github.io/blog/2020/c++-template-code/" rel="alternate" type="text/html" title="C++ template code"/><published>2020-08-09T00:18:00+00:00</published><updated>2020-08-09T00:18:00+00:00</updated><id>https://canhminhdo.github.io/blog/2020/c++-template-code</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2020/c++-template-code/"><![CDATA[<p>C++ template code as reference. We are updating …</p> <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">// automatically include all standard libraries at one time</span>
+<span class="k">esac</span></code></pre></figure>]]></content><author><name></name></author><category term="[&quot;Deployment&quot;]" /><category term="Linux" /><category term="PHP" /><summary type="html"><![CDATA[Trước khi hướng dẫn deploy một PHP script chạy như một service trong Linux. Chúng ta cùng tìm hiểu tại sao chúng ta cần phải làm như vậy thay vì sử dụng crontab, screen.]]></summary></entry><entry><title type="html">Ý nghĩa các biến môi trường PATH, CLASSPATH và JAVA_HOME khi cài đặt và sử dụng Java</title><link href="https://canhminhdo.github.io/blog/2020/Y-nghia-cac-bien-moi-truong-PATH-CLASSPATH-JAVA_HOME-khi-cai-dat-Java/" rel="alternate" type="text/html" title="Ý nghĩa các biến môi trường PATH, CLASSPATH và JAVA_HOME khi cài đặt và sử dụng Java" /><published>2020-09-10T11:53:00+00:00</published><updated>2020-09-10T11:53:00+00:00</updated><id>https://canhminhdo.github.io/blog/2020/Y-nghia-cac-bien-moi-truong-PATH-CLASSPATH-JAVA_HOME-khi-cai-dat-Java</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2020/Y-nghia-cac-bien-moi-truong-PATH-CLASSPATH-JAVA_HOME-khi-cai-dat-Java/"><![CDATA[<p>Khi bạn cài đặt và sử dụng Java trong các dự án của mình, có 3 biến môi trường quan trọng cần phải lưu ý là <strong>PATH</strong>, <strong>CLASSPATH</strong> và <strong>JAVA_HOME</strong>. Ý nghĩa của mỗi biến môi trường phục vụ những mục đích khác nhau.</p>
+
+<p><strong>JAVA_HOME</strong> là biến môi trường chỉ tới thư mục bạn cài đặt JDK, nhiều ứng dụng viết bằng Java yêu cầu sử dụng biến <strong>JAVA_HOME</strong> này để biết được nơi cài đặt của Java, ví dụ như Apache Tomcat.</p>
+
+<figure class="highlight"><pre><code class="language-pseudocode" data-lang="pseudocode">--- for csh shell
+setenv JAVA_HOME /work/$USER/ogatalab/Applications/Java/jdk1.8.0_261</code></pre></figure>
+
+<p><strong>PATH</strong> là biến môi trường cho bạn có thể sử dụng những câu lệnh của Java ở bất kỳ đâu, như là <strong>java</strong>, <strong>javac</strong>. Thường sẽ được trỏ tới thư mục bin nằm dưới thư mục cài đặt của jdk.</p>
+
+<figure class="highlight"><pre><code class="language-pseudocode" data-lang="pseudocode">--- for csh shell
+setenv PATH $JAVA_HOME/bin:$PATH</code></pre></figure>
+
+<p><strong>CLASSPATH</strong> là biến môi trường cho phép Java Runtime Environment (JRE) tìm kiếm các classes files và những tài nguyên khác như <strong>jar</strong>, <strong>zip</strong> files để chạy chương trình. Ngoài ra bạn có thể sử dụng <strong>wild cards (*)</strong> để chỉ định tất cả các <strong>jar</strong> files trong một thư mục sẽ được tìm kiếm.
+Ví dụ như <code class="language-plaintext highlighter-rouge">mydir/*</code>, chương trình java sẽ tìm kiếm được tất cả các <strong>jar</strong> files có trong thư mục <strong>mydir</strong>.</p>
+
+<figure class="highlight"><pre><code class="language-pseudocode" data-lang="pseudocode">--- for csh shell
+setenv CLASSPATH "/work/$USER/ogatalab/Applications/jpf-core/build/*":/work/$USER/ogatalab/Applications/jpf-core/build/annotations:/work/$USER/ogatalab/Applications/jpf-core/build/classes:/work/$USER/ogatalab/Applications/jpf-core/build/main:/work/$USER/ogatalab/Applications/jpf-core/build/peers</code></pre></figure>
+
+<p><strong>Chú ý:</strong> Khi sử dụng <strong>java</strong> command line, nếu bạn sử dụng <strong>-classpath</strong> hoặc <strong>-cp</strong> thì classpath mới sẽ được sử dụng thay vì <strong>CLASSPATH</strong>.</p>
+
+<p>Ngoài ra bạn có thể tham khảo thêm về biến môi trường <strong>JRE_HOME</strong>, có thể được yêu cầu từ những ứng dụng Java khác.</p>]]></content><author><name></name></author><category term="[&quot;Java Configuration&quot;]" /><category term="Java" /><summary type="html"><![CDATA[Khi bạn cài đặt và sử dụng Java trong các dự án của mình, có 3 biến môi trường quan trọng cần phải lưu ý là PATH, CLASSPATH và JAVA_HOME. Ý nghĩa của mỗi biến môi trường phục vụ những mục đích khác nhau.]]></summary></entry><entry><title type="html">C++ template code</title><link href="https://canhminhdo.github.io/blog/2020/c++-template-code/" rel="alternate" type="text/html" title="C++ template code" /><published>2020-08-09T00:18:00+00:00</published><updated>2020-08-09T00:18:00+00:00</updated><id>https://canhminhdo.github.io/blog/2020/c++-template-code</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2020/c++-template-code/"><![CDATA[<p>C++ template code as reference. We are updating …</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">// automatically include all standard libraries at one time</span>
 <span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
 </span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
@@ -203,7 +637,19 @@ setenv CLASSPATH "/work/$USER/ogatalab/Applications/jpf-core/build/*":/work/$USE
     <span class="k">if</span> <span class="p">(</span><span class="n">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">1e-9</span><span class="p">)</span> <span class="p">{}</span>  <span class="c1">// should not use a == b in the condition</span>
 <span class="p">}</span>
 
-<span class="c1">// updating ...</span></code></pre></figure>]]></content><author><name></name></author><category term="[&quot;Programming&quot;, &quot;Data Structures and Algorithms&quot;]"/><category term="C++"/><summary type="html"><![CDATA[C++ template code as reference. We are updating … // automatically include all standard libraries at one time #include &lt;bits/stdc++.h&gt; using namespace std; // Shortening code // Type names typedef long long ll; typedef vector&lt;int&gt; vi; typedef pair&lt;int, int&gt; pi; // Macros #define F first #define S second #define PB push_back #define MP make_pair #define REP(i, a, b) for (int i=a; i &lt;= b; i++) #define SQ(a) (a)*(a) int main() { // g++ -std=c++11 -O2 -Wall test.cpp -o test cout &lt;&lt; endl; cout &lt;&lt; "\n"; // this is better than endl // Floating point numbers problem double x=0.3*3+0.1; printf("%.20f\n", x); // 0.99999999999999988898 -&gt; it is wired double a, b; // comparing 2 float numbers with an epsilon if (abs(a-b) &lt; 1e-9) {} // should not use a== b in the condition } // updating ...]]></summary></entry><entry><title type="html">Tìm dãy con liên tiếp có tổng lớn nhất</title><link href="https://canhminhdo.github.io/blog/2020/tim-day-con-lient-tiep-co-tong-lon-nhat/" rel="alternate" type="text/html" title="Tìm dãy con liên tiếp có tổng lớn nhất"/><published>2020-08-08T23:40:00+00:00</published><updated>2020-08-08T23:40:00+00:00</updated><id>https://canhminhdo.github.io/blog/2020/tim-day-con-lient-tiep-co-tong-lon-nhat</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2020/tim-day-con-lient-tiep-co-tong-lon-nhat/"><![CDATA[<p>Dãy con liên tiếp có tổng lớn nhất (maximum subarray problem) là việc tìm ra một dãy con chứa các phần tử liên tiếp trong một dãy cho trước thoả mãn tổng của dãy con được chọn là lớn nhất. Xem thêm <a href="https://en.wikipedia.org/wiki/Maximum_subarray_problem">tại đây</a>.</p> <p>Ví dụ: cho một dãy số [−2, 1, −3, 4, −1, 2, 1, −5, 4], dãy con liên tiếp có tổng lớn nhất là [4, -1, 2, 1] với tổng là 6.</p> <p>Tuỳ vào từng cách cài đặt, chúng ta có thể có độ phức tạp thuật toán là \(O(n^3)\), \(O(n^2)\) hay \(O(n)\). Dưới đây là cách cài đặt thuật toán với độ phức tạp là \(O(n^3)\). Với <strong>i</strong> là phần tử đầu tiên của dãy con, <strong>j</strong> là phần tử cuối cùng của dãy con, <strong>k</strong> được lặp để tính tổng của dãy con <strong>[i, j]</strong> và so sánh với <strong>best</strong> để lấy giá trị lớn nhất.</p> <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">best</span> <span class="o">=</span> <span class="n">INT_MIN</span><span class="p">;</span>
+<span class="c1">// updating ...</span></code></pre></figure>]]></content><author><name></name></author><category term="[&quot;Programming&quot;, &quot;Data Structures and Algorithms&quot;]" /><category term="C++" /><summary type="html"><![CDATA[C++ template code as reference. We are updating … // automatically include all standard libraries at one time #include &lt;bits/stdc++.h&gt; using namespace std; // Shortening code // Type names typedef long long ll; typedef vector&lt;int&gt; vi; typedef pair&lt;int, int&gt; pi; // Macros #define F first #define S second #define PB push_back #define MP make_pair #define REP(i, a, b) for (int i = a; i &lt;= b; i++) #define SQ(a) (a)*(a) int main() { // g++ -std=c++11 -O2 -Wall test.cpp -o test cout &lt;&lt; endl; cout &lt;&lt; "\n"; // this is better than endl // Floating point numbers problem double x = 0.3*3+0.1; printf("%.20f\n", x); // 0.99999999999999988898 -&gt; it is wired double a, b; // comparing 2 float numbers with an epsilon if (abs(a-b) &lt; 1e-9) {} // should not use a == b in the condition } // updating ...]]></summary></entry><entry><title type="html">Tìm dãy con liên tiếp có tổng lớn nhất</title><link href="https://canhminhdo.github.io/blog/2020/tim-day-con-lient-tiep-co-tong-lon-nhat/" rel="alternate" type="text/html" title="Tìm dãy con liên tiếp có tổng lớn nhất" /><published>2020-08-08T23:40:00+00:00</published><updated>2020-08-08T23:40:00+00:00</updated><id>https://canhminhdo.github.io/blog/2020/tim-day-con-lient-tiep-co-tong-lon-nhat</id><content type="html" xml:base="https://canhminhdo.github.io/blog/2020/tim-day-con-lient-tiep-co-tong-lon-nhat/"><![CDATA[<p>Dãy con liên tiếp có tổng lớn nhất (maximum subarray problem) là việc tìm ra
+một dãy con chứa các phần tử liên tiếp trong một dãy cho trước thoả mãn tổng
+của dãy con được chọn là lớn nhất. Xem thêm <a href="https://en.wikipedia.org/wiki/Maximum_subarray_problem">tại đây</a>.</p>
+
+<p>Ví dụ: cho một dãy số [−2, 1, −3, 4, −1, 2, 1, −5, 4], dãy con liên tiếp có tổng
+lớn nhất là [4, -1, 2, 1] với tổng là 6.</p>
+
+<p>Tuỳ vào từng cách cài đặt, chúng ta có thể có độ phức tạp thuật toán là \(O(n^3)\), \(O(n^2)\) hay \(O(n)\).
+Dưới đây là cách cài đặt thuật toán với độ phức tạp là \(O(n^3)\). Với <strong>i</strong> là phần tử đầu tiên của dãy con,
+<strong>j</strong> là phần tử cuối cùng của dãy con, <strong>k</strong> được lặp để tính tổng của dãy con <strong>[i, j]</strong> và so sánh với <strong>best</strong>
+để lấy giá trị lớn nhất.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">best</span> <span class="o">=</span> <span class="n">INT_MIN</span><span class="p">;</span>
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">j</span> <span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -212,20 +658,43 @@ setenv CLASSPATH "/work/$USER/ogatalab/Applications/jpf-core/build/*":/work/$USE
         <span class="p">}</span>
         <span class="n">best</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">best</span><span class="p">,</span> <span class="n">sum</span><span class="p">);</span>
     <span class="p">}</span>
-<span class="p">}</span></code></pre></figure> <p>Chúng ta có thể cải thiện thuật toán để có được độ phức tạp là \(O(n^2)\). Bằng cách loại bỏ vòng lặp <strong>k</strong>, và tính toán tổng ngay trong vòng lặp <strong>j</strong> như sau.</p> <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">best</span> <span class="o">=</span> <span class="n">INT_MIN</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Chúng ta có thể cải thiện thuật toán để có được độ phức tạp là \(O(n^2)\). Bằng cách loại bỏ vòng lặp <strong>k</strong>,
+và tính toán tổng ngay trong vòng lặp <strong>j</strong> như sau.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">best</span> <span class="o">=</span> <span class="n">INT_MIN</span><span class="p">;</span>
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">j</span> <span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">sum</span> <span class="o">+=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
         <span class="n">best</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">best</span><span class="p">,</span> <span class="n">sum</span><span class="p">);</span>
     <span class="p">}</span>
-<span class="p">}</span></code></pre></figure> <p>Để có thể giảm độ phức tạp tính toán xuống \(O(n)\), chúng ta cùng tìm hiểu thuật toán <strong>Kadane’s algorithm</strong>. Tư tưởng của thật toán là chia bài toán thành bài toán nhỏ hơn, bằng cách tìm dãy con có tổng lớn nhất kết thúc tại vị trí k trong dãy. Khi đó sẽ có hai trường hợp xảy ra:</p> <ol> <li>Dãy con chỉ chứa phần thử thứ <strong>k</strong>. So sánh <strong>best</strong> với phần tử thứ <strong>k</strong> để cập nhật giá trị lớn nhất.</li> <li>Dãy con chứa phần tử thứ <strong>k</strong> và dãy con kết thúc ở phần thử thứ <strong>k - 1</strong>. Cập nhật tổng mới dựa trên tổng của dãy con <strong>k - 1</strong> và cộng thêm phần tử thứ <strong>k</strong>. So sánh tổng mới với <strong>best</strong> để cập nhật giá trị lớn nhất.</li> </ol> <p>Thuật toán được cài đặt như sau:</p> <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">best</span> <span class="o">=</span> <span class="n">INT_MIN</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Để có thể giảm độ phức tạp tính toán xuống \(O(n)\), chúng ta cùng tìm hiểu thuật toán <strong>Kadane’s algorithm</strong>.
+Tư tưởng của thật toán là chia bài toán thành bài toán nhỏ hơn, bằng cách tìm dãy con có tổng lớn nhất kết thúc
+tại vị trí k trong dãy. Khi đó sẽ có hai trường hợp xảy ra:</p>
+<ol>
+  <li>Dãy con chỉ chứa phần thử thứ <strong>k</strong>. So sánh <strong>best</strong> với phần tử thứ <strong>k</strong> để cập nhật giá trị lớn nhất.</li>
+  <li>Dãy con chứa phần tử thứ <strong>k</strong> và dãy con kết thúc ở phần thử thứ <strong>k - 1</strong>. Cập nhật tổng mới dựa trên tổng
+của dãy con <strong>k - 1</strong> và cộng thêm phần tử thứ <strong>k</strong>. So sánh tổng mới với <strong>best</strong> để cập nhật giá trị lớn nhất.</li>
+</ol>
+
+<p>Thuật toán được cài đặt như sau:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="n">best</span> <span class="o">=</span> <span class="n">INT_MIN</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">sum</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">sum</span> <span class="o">+</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
     <span class="n">best</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">sum</span><span class="p">,</span> <span class="n">best</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">best</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span></code></pre></figure> <p>Cách cài đặt chi tiết, cũng như lưu thông tin chỉ số của dãy con có tổng lớn nhất được mô tả sau đây. Bạn đọc có thể tham khảo</p> <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">best</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span></code></pre></figure>
+
+<p>Cách cài đặt chi tiết, cũng như lưu thông tin chỉ số của dãy con có tổng lớn nhất được mô tả sau đây. Bạn đọc có
+thể tham khảo</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
 </span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
@@ -265,5 +734,9 @@ setenv CLASSPATH "/work/$USER/ogatalab/Applications/jpf-core/build/*":/work/$USE
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
     <span class="n">findSubArrayMax</span><span class="p">();</span>
     <span class="n">findSubArrayMaxWithIndices</span><span class="p">();</span>
-<span class="p">}</span></code></pre></figure> <p>Kết quả khi chạy chương trình trên sẽ như sau:</p> <figure class="highlight"><pre><code class="language-pseudocode" data-lang="pseudocode">6
-start from 3 to 6</code></pre></figure>]]></content><author><name></name></author><category term="[&quot;Programming&quot;, &quot;Data Structures and Algorithms&quot;]"/><category term="C++"/><summary type="html"><![CDATA[Dãy con liên tiếp có tổng lớn nhất (maximum subarray problem) là việc tìm ra một dãy con chứa các phần tử liên tiếp trong một dãy cho trước thoả mãn tổng của dãy con được chọn là lớn nhất. Xem thêm tại đây.]]></summary></entry></feed>
+<span class="p">}</span></code></pre></figure>
+
+<p>Kết quả khi chạy chương trình trên sẽ như sau:</p>
+
+<figure class="highlight"><pre><code class="language-pseudocode" data-lang="pseudocode">6
+start from 3 to 6</code></pre></figure>]]></content><author><name></name></author><category term="[&quot;Programming&quot;, &quot;Data Structures and Algorithms&quot;]" /><category term="C++" /><summary type="html"><![CDATA[Dãy con liên tiếp có tổng lớn nhất (maximum subarray problem) là việc tìm ra một dãy con chứa các phần tử liên tiếp trong một dãy cho trước thoả mãn tổng của dãy con được chọn là lớn nhất. Xem thêm tại đây.]]></summary></entry></feed>
