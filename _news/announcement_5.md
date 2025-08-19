@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our application for <b>Kakenhi Research Activity Start-up FY2023</b> was accepted. :sparkles:
+Our application for <b>Grant-in-Aid for Research Activity Start-up FY2023</b> was accepted. :sparkles:

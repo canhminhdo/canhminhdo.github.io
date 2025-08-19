@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our application for <b>Kakenhi Joint International Research (B) FY2024</b> was accepted. :sparkles:
+Our application for <b>Fund for the Promotion of Joint International Research (International Collaborative Research) FY2024</b> was accepted. :sparkles:

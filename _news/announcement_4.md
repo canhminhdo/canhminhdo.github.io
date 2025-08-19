@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our application for <b>JAIST Research Grant FY2023</b> for Fundamental Research was accepted. :sparkles:
+Our application for <b>JAIST Research Grant FY2023 for Fundamental Research</b> was accepted. :sparkles:
