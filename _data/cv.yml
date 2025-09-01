@@ -19,7 +19,7 @@
 - title: Research Area
   type: list
   contents:
-    - My primary research interests are in the areas of formal methods, such as formal specification, model checking, theorem proving, and tools supporting formal methods. My research focuses on formal specification and formal verification of concurrent/distributed systems for both conventional and emerging technologies.
+    - My primary research interests are in the areas of formal methods, such as formal specification, model checking, theorem proving, and tools supporting formal methods. My research focuses on formal specification and formal verification of concurrent/distributed systems for both conventional and quantum technologies.
 
 - title: Education
   type: time_table
