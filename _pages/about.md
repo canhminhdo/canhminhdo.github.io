@@ -26,7 +26,7 @@ Hi, I am Canh, an assistant professor at the School of Information Science, <a h
     <a href='https://favpqc2023.gitlab.io/'>FAVPQC 2023</a>, 
     <a href='https://wrla2024.gitlab.io/'>WRLA 2024</a>,
     <a href='https://icfem2024.info/'>ICFEM 2024</a>, and
-    <a href='https://conf.researchr.org/track/fm-2026/fm-2026-tutorials'>FM 2026 (Tutorial Track).
+    <a href='https://conf.researchr.org/track/fm-2026/fm-2026-tutorials'>FM 2026 (Tutorial Track).</a>
   </li>
   <li>Reviewer of academic journals for 
     <a href='https://www.sciencedirect.com/journal/journal-of-systems-and-software'>JSS 2021</a> and
