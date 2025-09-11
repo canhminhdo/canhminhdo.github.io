@@ -9,6 +9,27 @@
   contents:
     - title: "<a href='https://www.jaist.ac.jp/~ogata/lecture/i217e/'>i217e Functional Programming</a>"
       institution: Japan Advanced Institute of Science and Technology
+      year: Oct 2025 - Dec 2025
+      description:
+        - "Co-lecturer with <a href='https://www.jaist.ac.jp/~ogata/'>Prof. Kazuhiro Ogata</a>"
+        - FY2025 ~ Term 2-1
+
+    - title: "<a href='https://www.jaist.ac.jp/~ogata/lecture/i116/'>i116 Fundamentals of Programming</a>"
+      institution: Japan Advanced Institute of Science and Technology
+      year: Jun 2025 - Aug 2025
+      description:
+        - "Co-lecturer with <a href='https://www.jaist.ac.jp/~ogata/'>Prof. Kazuhiro Ogata</a>"
+        - FY2025 ~ Term 1-2
+
+    - title: "<a href='https://www.jaist.ac.jp/~ogata/lecture/i217/'>i217 Functional Programming</a>"
+      institution: Japan Advanced Institute of Science and Technology
+      year: Jun 2025 - Aug 2025
+      description:
+        - "Co-lecturer with <a href='https://www.jaist.ac.jp/~ogata/'>Prof. Kazuhiro Ogata</a>"
+        - FY2025 ~ Term 1-2
+
+    - title: "<a href='https://www.jaist.ac.jp/~ogata/lecture/i217e/'>i217e Functional Programming</a>"
+      institution: Japan Advanced Institute of Science and Technology
       year: Oct 2024 - Dec 2024
       description:
         - "Co-lecturer with <a href='https://www.jaist.ac.jp/~ogata/'>Prof. Kazuhiro Ogata</a>"

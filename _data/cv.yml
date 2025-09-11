@@ -38,14 +38,14 @@
         - Advised by Prof. Kazuhiro Ogata
         - "Thesis: <a href='https://dspace.jaist.ac.jp/dspace/handle/10119/17563'>An Environment for Testing Concurrent Programs Based on Rewrite-theory Specifications</a>"
 
-    - title: Diploma in Information System Management (DISM)
-      institution: Vietnam Aptech
-      year: Oct 2011 - Dec 2012
-      description:
-
     - title: B.S. in Computer Science
       institution: National Economics University, Vietnam
       year: Oct 2009 - Sep 2013
+      description:
+    
+    - title: Diploma in Information System Management (DISM)
+      institution: Vietnam Aptech
+      year: Oct 2011 - Dec 2012
       description:
 
 - title: Working Experience
@@ -84,6 +84,12 @@
         - Research on formal specification and verification of post-quantum cryptographic protocols, variant-based unification, and narrowing
         - "Advised by <a href='https://personales.upv.es/sanesro/'>Prof. Santiago Escobar</a>"
     
+    - title: Research Collaborator
+      institution: "<a href='http://www.jaist.ac.jp/~ogata/'>Ogata Laboratory</a>, JAIST, Japan"
+      year: Apr 2021 - Mar 2023
+      description: 
+        - Participate in an international research project on "Formal Analysis and Verification of Post-quantum Cryptographic Protocols (FAVPQC)", ICT for Resilient, Safe and Secure Society, EIG CONCERT-Japan, SICORP, JST
+
     - title: Laboratory Assistant
       year: Oct 2019 - Sep 2022
       description: 
@@ -151,7 +157,12 @@
     - year: Sep 2022
       items: 
         - Outstanding Student Award from JAIST for completing the doctoral program with excellent academic performance
+    - year: Oct 2019
+      items: 
+        - Special Doctoral Research Fellow (DRF) from JAIST for outstanding and highly motivated students pursuing a three-year doctoral degree
     - year: Oct 2013
       items: 
         - Top Graduating Student Award from Hanoi City Youth Union
-        # - Highest GPA Gradutating Student in Computer Science at National Economic Univeristy
+    - year: Sept 2013
+      items: 
+        - Highest GPA Graduating Student in Computer Science at National Economics University

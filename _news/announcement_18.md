@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-07-16 1:07:00-0400
+date: 2025-02-27 9:00:00-0000
 inline: true
 related_posts: false
 ---
 
-Our paper, titled <b>Parallel Maude-NPA for Cryptographic Protocol Analysis</b>, has been accepted for publication in IEEE Transactions on Dependable and Secure Computing (IEEE TDSC) and selected for a JAIST press release ([link](https://www.jaist.ac.jp/english/whatsnew/press/2025/08/07-1.html)). :tada:
+I was honored to give a talk on QRAT: A Reachability Analysis Tool for Quantum Programs at <a href="https://jvrem2025.github.io/">JAIST-Vietnam Research Exchange Meeting (JVREM 2025)</a> in JAIST, Japan ([slides](assets/pdf/slides/invited-talks/2025-JVREM-slides.pdf)).
