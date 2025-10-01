@@ -19,7 +19,7 @@
 - title: Research Area
   type: list
   contents:
-    - My primary research interests are in the areas of formal methods, such as formal specification, model checking, theorem proving, and tools supporting formal methods. My research focuses on formal specification and formal verification of concurrent/distributed systems for both conventional and quantum technologies.
+    - My research interests are in the areas of formal methods, such as formal specification, model checking, theorem proving, and tools supporting formal methods. My current research focuses on formal specification and formal verification of concurrent/distributed systems for both conventional and quantum technologies.
 
 - title: Education
   type: time_table
@@ -51,9 +51,14 @@
 - title: Working Experience
   type: time_table
   contents:
+    - title: Senior Lecturer
+      institution: Japan Advanced Institute of Science and Technology
+      year: Oct 2025 - Present
+      description:
+
     - title: Assistant Professor
       institution: Japan Advanced Institute of Science and Technology
-      year: Apr 2023 - Present
+      year: Apr 2023 - Sept 2025
       description:
 
     - title: Postdoctoral Researcher
