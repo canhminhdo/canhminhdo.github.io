@@ -1,0 +1,1 @@
+scp -r _site/* canhdo@jaist.ac.jp:~/public_html/
