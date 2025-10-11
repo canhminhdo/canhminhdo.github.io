@@ -129,7 +129,7 @@ news_nav_title: News
 # -----------------------------------------------------------------------------
 
 blog_name: Canh's Log Book # blog_name will be displayed in your blog page
-blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
+blog_nav_title: # [Blog] your blog must have a title for it to be displayed in the nav bar
 blog_description: "Failure is success in progress -- Albert Einstein"
 permalink: /blog/:year/:title/
 
