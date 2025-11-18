@@ -28,7 +28,8 @@ My research interests are in the areas of formal methods, such as formal specifi
     <a href='https://wrla2024.gitlab.io/'>WRLA 2024</a>,
     <a href='https://icfem2024.info/'>ICFEM 2024</a>,
     <a href='https://kse2025.kse-conferences.org/'>KSE 2025</a>, 
-    <a href='https://ksiresearch.org/seke/seke26.html'>SEKE 2026</a>, and
+    <a href='https://ksiresearch.org/seke/seke26.html'>SEKE 2026</a>,
+    <a href='https://wrla2026.github.io/cfp.html'>WRLA 2026</a>, and
     <a href='https://conf.researchr.org/track/fm-2026/fm-2026-tutorials'>FM 2026 (Tutorial Track).</a>
   </li>
   <li>Reviewer of academic journals for 
